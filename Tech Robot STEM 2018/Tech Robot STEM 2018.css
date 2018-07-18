@@ -1,0 +1,224 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.tieuDe{
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 4px;
+    font-size: 26px;
+}
+.menuBar{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	z-index: 1;
+}
+.menu{
+	margin-left: 30%;
+	width: 90%;
+	position: relative;
+    top: -130px;
+}
+.menu ul li{
+	text-transform: uppercase;
+	list-style: none;
+	float: left;
+	margin: 15px 15px;
+	font-weight: 800;
+    letter-spacing: 2px;
+}
+a{
+	text-decoration: none;
+	color: #0000008a;
+}
+a:hover{
+	border-bottom: 3px solid red;
+	color: red;
+
+}
+.logo{
+	margin-left: 110px;
+	width: 10%;
+	position: relative;
+    top: -40px;
+}
+
+.pano{
+	position: relative;
+	top: 100px;
+}
+.moTa{
+	position: relative;
+	top: 160px;
+}
+
+.moTa p{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 20px;
+}
+.chuongTrinh{
+	width: 95%;
+	margin: auto;
+	position: relative;
+    top: 250px;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+.chuongTrinh table tr th{
+	padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+.album{
+	position: relative;
+	top: 320px;
+	width: 95%;
+	height: auto;
+	margin: auto;
+}
+.gallery{
+	margin: 15px;
+	float: left;
+	max-width: 30%;
+	height: auto;
+	border: 1px solid #d3e1e078;
+}
+.gallery img{
+	width: 100%;
+}
+.gallery img:hover{
+	box-shadow: 5px 5px grey;
+} 
+
+.diaDiem{
+	position: relative;
+	top: 450px;
+	width: 90%;
+	margin: auto;
+}
+.maps{
+	padding-bottom: 20px;
+	width: 100%;
+
+}
+.maps iframe{
+	display: block;
+	width: 100%;
+}
+
+.textThoiGianDiaDiem p{
+	text-align: left;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.dienGia{
+	position: relative;
+	top: 530px;
+	width: 70%;
+	margin: auto;
+}
+.anhDienGia{
+	width: 20%;
+	height: 20%;
+	margin: 60px;
+	float: right;
+
+	
+}
+.dienGia img{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	margin: auto;
+	border: 1px solid grey;
+}
+.dienGia p{
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	font-weight: 20px;
+	font-family: arial, sans-serif;
+}
+
+.formDangKy{
+	position: relative;
+	top: 550px;
+	margin: auto;
+	width: 60%;
+	margin-bottom: 30px;
+}
+footer{
+	position: relative;
+	top: 600px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	background: #222428;
+    color: #919294;
+    display: block;
+}
+#topPage{
+    bottom: 15px;
+    position: fixed;
+    right: 15px;
+    z-index: 100;
+    display: block;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: 18px;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
