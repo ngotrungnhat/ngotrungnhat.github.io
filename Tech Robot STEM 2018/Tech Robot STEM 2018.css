@@ -29,7 +29,7 @@
 	text-transform: uppercase;
 	list-style: none;
 	float: left;
-	margin: 15px 15px;
+	margin: 1%;
 	font-weight: 800;
     letter-spacing: 2px;
 }
@@ -52,6 +52,7 @@ a:hover{
 .pano{
 	position: relative;
 	top: 100px;
+	clear: both;
 }
 .moTa{
 	position: relative;
@@ -99,14 +100,15 @@ tr:nth-child(even) {
 	margin: auto;
 }
 .gallery{
-	margin: 15px;
+	padding: 15px;
 	float: left;
-	max-width: 30%;
+	width: 30%;
 	height: auto;
-	border: 1px solid #d3e1e078;
 }
 .gallery img{
 	width: 100%;
+	border: 1px solid #d3e1e078;
+
 }
 .gallery img:hover{
 	box-shadow: 5px 5px grey;
@@ -117,12 +119,13 @@ tr:nth-child(even) {
 	top: 450px;
 	width: 90%;
 	margin: auto;
+	clear: both;
 }
 .maps{
 	padding-bottom: 20px;
 	width: 100%;
-
 }
+
 .maps iframe{
 	display: block;
 	width: 100%;
@@ -141,22 +144,24 @@ tr:nth-child(even) {
 	top: 530px;
 	width: 70%;
 	margin: auto;
+	text-align: center;
 }
 .anhDienGia{
 	width: 20%;
 	height: 20%;
-	margin: 60px;
-	float: right;
-
-	
+	padding: 30px;
+	display: inline-block;
 }
+
 .dienGia img{
 	width: 100%;
 	height: auto;
 	border-radius: 50%;
 	margin: auto;
 	border: 1px solid grey;
+	text-align: center;
 }
+
 .dienGia p{
 	text-align: center;
 	padding-top: 15px;
@@ -166,6 +171,7 @@ tr:nth-child(even) {
 }
 
 .formDangKy{
+	clear: both;
 	position: relative;
 	top: 550px;
 	margin: auto;
