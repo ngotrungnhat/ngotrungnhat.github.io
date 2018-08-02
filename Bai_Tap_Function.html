@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài Tập Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<p><b>Bài 1.</b> Viết 1 function tính bình phương của 1 số.</p>");
+		function bai_01(x){
+			var binhphuong = x*x;
+			console.log(binhphuong);
+		}
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 2.</b> Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c)</p>");
+		function bai_02(a, b, c){
+			var binhphuong = (3*a + 2*b - c)*(3*a + 2*b - c);
+			console.log(binhphuong);
+		}
+	</script>
+
+	<script type="text/javascript">
+		document.write('<p><b>Bài 3.</b> Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi.</p>');
+		function bai_03(x){
+			var trichxuat = x.substring(0, 9);
+			var themdau = trichxuat + "...";
+			console.log(themdau);
+		}
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 4.</b> Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.</p>");
+		function bai_04(x){
+			var chudau = x.charAt(0);
+			var doansau = x.substring(1,999999999);
+			var viethoa = chudau.toUpperCase();
+			var chuthuong = doansau.toLowerCase();
+			var doanvan = viethoa + chuthuong;
+			console.log(doanvan);
+		}
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 5.</b> Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.</p>");
+		function bai_05(x) {
+		    x.sort(function(a, b){return a-b});
+		    console.log(x[0]);
+		}
+	</script>
+
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 6.</b> Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên.</p>");
+		function bai_06(x){
+			x.sort(function(a,b){return a.localeCompare(b)});
+			document.write(x);
+		}
+		bai_06(["B", "d", "C", "a"]);
+	</script>
+	
+	<script type="text/javascript">
+		document.write("<p><b>Bài 7. </b> Tạo 3 đối tượng là teacher, student và parent...</p>")
+		var teacher = {
+			firstName: "Kim",
+			lastName: "Dung",
+			age: 30,
+			say: function(){}
+		}
+		var student = {
+			firstName:"Ngô",
+			lastName: "Trung",
+			age:"23",
+			say: function(){}
+		}
+		var parent = {
+			firstName:"Ngô",
+			lastName: "Nhất",
+			age:"24",
+			say: function(){}
+		}
+		var aboutMe = function(){
+			document.write("Xin chào tôi là " + this.firstName + " " + this.lastName + " năm nay tôi " + this.age + " tuổi" + "<hr>");
+		}
+		teacher.say = aboutMe;
+		student.say = aboutMe;
+		parent.say = aboutMe;
+		teacher.say();
+		student.say();
+		parent.say();
+		
+	</script>
+
+</body>
+</html>
