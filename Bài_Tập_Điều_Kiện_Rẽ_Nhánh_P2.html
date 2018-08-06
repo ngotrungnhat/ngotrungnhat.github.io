@@ -30,15 +30,20 @@
 		function bai_02(x) {
 			var check = typeof x;
 			var length = x.length;
-			if (check != "string" ) {
-				x.toString();
+			var string = x.toString();
+			if (check != "string") {
+				if (string.length <= 10) {
+					document.write(string);
+				}else if (string.length > 10) {
+					document.write(string.substr(0, 10) + "...");
+				}
 			} else if (length <= 10) {
 				document.write(x);
 			} else if (length > 10) {
 				document.write(x.substr(0, 10) + "...");
 			}
 		}
-		bai_02("123123456789");
+		bai_02(19389748578475894758);
 	</script>
 
 	<script type="text/javascript">
@@ -103,12 +108,12 @@
 		function bai_06() {
 			var soChan = "";
 			var soLe = "";
-			for (i = 0, j=1; i <= 100; i = i + 2, j = j + 2) {
-				soChan += i + " ";
-				soLe += j + " ";
+			for (i = 1, j=2; j<101; i = i + 2, j = j + 2) {
+				document.write(`<span style='color:red'> ${i} <span><span style='color:blue'> ${j} <span>`);
+				// document.write("<span>" + " " + i + " " + "</span>" + "<span" + " " + " " + "</span>");
 			}
-			document.getElementById("soChan").innerHTML = soChan;
-			document.getElementById("soLe").innerHTML = soLe;
+			// document.getElementById("soChan").innerHTML = soChan;
+			// document.getElementById("soLe").innerHTML = soLe;
 		}
 		bai_06();
 	</script>
