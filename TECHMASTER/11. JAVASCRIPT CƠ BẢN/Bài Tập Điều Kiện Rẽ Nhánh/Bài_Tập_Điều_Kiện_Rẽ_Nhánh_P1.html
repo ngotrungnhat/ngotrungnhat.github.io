@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài Tập Điều Kiện Rẽ Nhánh P1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<p><b>Bài 1.</b> Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ...</p>");
+		function bai_01(a, b) {
+			var x, y;
+			x = typeof a;
+			y = typeof b;
+			if (x == "number") {
+				document.write("a là number" + "<br>");
+			}
+			if (y == "number") {
+				document.write("b là number" + "<br>");
+			}
+			if (a > b) {
+				document.write("Số lớn nhất là: " + a);
+			}
+			if (a < b) {
+				document.write("Số lớn nhất là: " + b);
+			}
+		}
+		bai_01("4",3);
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 2. </b>Viết 1 hàm dùng để tính giai thừa của 1 số.</p>");
+		function bai_02(x) {
+			if (Number.isInteger(x) == true && x>0) {
+				var ketQua = 1;
+				for (var i = 1; i <= x; i++) {
+					var ketQua = ketQua * i;
+				}
+			document.write("Kết Quả Tính Giai Thừa là: " + ketQua);
+			}
+		}
+		bai_02(8);
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 3. </b>Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.</p>");
+		function bai_03(x) {
+			var mangChan = [];
+			for (i = 0; i <= x.length -1; i++) {
+				var chiaHet = x[i] % 2;
+				if (chiaHet == 0) {
+					mangChan.push(x[i]);
+					mangChan.sort(function(a, b){return a - b});
+				}
+			}
+			document.write(mangChan);
+		}
+		bai_03([1,2,3,12,20,2,5,6,7,8,9,10]);
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 4. </b>Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.</p>");
+		
+		function bai_04() {
+			user = {
+			  	username: "NhấtNBJKBNKJNJKBNJNKJNJNKJNKJN",
+			 	password: "secret",
+			  	confirm: "secret"
+			}
+			if (user.username != "" && user.username.length <= 20) {
+				document.write("Username: " + user.username + "<br>");
+			}
+			if (user.password.length >= 6 && user.password.length <= 32) {
+				document.write("Password: " + user.password + "<br>");
+			}
+			if (user.confirm == user.password) {
+				document.write("Confirm: " + user.confirm);
+			}
+
+		}
+		bai_04();
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

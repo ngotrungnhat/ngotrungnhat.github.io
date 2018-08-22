@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài Tập Điều Kiện Rẽ Nhánh P2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<p><b>Bài 1. </b>In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm.</p>");
+		function bai_01() {
+			var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+			var day = new Date().getDay();
+			var month = new Date().getMonth();
+			var date = new Date().getDate();
+			var year = new Date().getFullYear();
+			if (month == 0 || month == 1 || month == 2) {
+				document.write("Spring - " + days[day]+ ", " + months[month]+ " " + date + ", " + year);
+			} else if (month == 3 || month == 4 || month == 5) {
+				document.write("Summer - " + days[day]+ ", " + months[month]+ " " + date + ", " + year);
+			} else if (month == 6 || month == 7 || month == 8) {
+				document.write("Autumn - " + days[day]+ ", " + months[month]+ " " + date + ", " + year);
+			}else
+				document.write("Winter - " + days[day]+ ", " + months[month]+ " " + date + ", " + year);
+		}
+		bai_01();
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 2. </b>Viết hàm cắt chuỗi với tham số là 1 chuỗi bất kỳ.</p>")
+		function bai_02(x) {
+			var check = typeof x;
+			var length = x.length;
+			var string = x.toString();
+			if (check != "string") {
+				if (string.length <= 10) {
+					document.write(string);
+				}else if (string.length > 10) {
+					document.write(string.substr(0, 10) + "...");
+				}
+			} else if (length <= 10) {
+				document.write(x);
+			} else if (length > 10) {
+				document.write(x.substr(0, 10) + "...");
+			}
+		}
+		bai_02(19389748578475894758);
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 3. </b>Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số. Hãy chuyển điểm số sang dạng chữ...</p>")
+		function bai_03(x) {
+			if (x >= 0 && x <= 3.9) {
+				document.write("F");
+			} else if (x >= 4 && x <= 5.4) {
+				document.write("D");
+			} else if (x >= 5.5 && x <= 6.9) {
+				document.write("C");
+			} else if (x >= 7 && x <= 8.4) {
+				document.write("B");
+			} else 
+				document.write("A");
+		}
+		bai_03(5);
+	</script>
+
+	<script type="text/javascript">
+		document.write('<p><b>Bài 4. </b>Viết hàm translate() có tác dụng dịch từ "Hello" sang 5 thứ tiếng khác nhau </p>')
+		function translate(x) {
+			switch(x){
+			case 81:
+				document.write("Japan: " + "こんにちは");
+				break;
+			case 297:
+				document.write("Aruba: " + "هتاف للترحيب");
+				break;
+			case 994:
+				document.write("Azerbaijan: " + "Përshëndetje për të mirëpritur");
+				break;
+			case 81:
+				document.write("Sundan: " + "Xush kelibsiz");
+				break;
+			default:
+				document.write("Xin Chào");
+				break;
+			}
+		}
+		translate(297);
+	</script>
+
+	<script type="text/javascript">
+		document.write("<p><b>Bài 5. </b>Cho 1 mảng gồm các giá trị true và false. Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào</p>")
+		function bai_05(x) {
+			for (i = 0; i <= x.length -1; i++) {
+				if (x[i] == true) {
+					break;
+				}
+			}
+			var viTri = i + 1;
+			document.write('Từ "true" xuất hiện lần đầu ở vị trí: ' + viTri);
+		}
+		bai_05([false, false, false, true, false, true, false, true]);
+	</script>
+	
+	<p id = "soChan" style="color: blue"></p>
+	<p id = "soLe" style="color: red"></p>
+	<script type="text/javascript">
+		document.write("<p><b>Bài 6. </b>Chỉ sử dụng while hoặc for, hãy viết function in ra màn hình các số từ 1 đến 100. Những giá trị là chẵn sẽ có màu xanh, giá trị lẻ có màu đỏ.</p>")
+		function bai_06() {
+			// var soChan = "";
+			// var soLe = "";
+			for (i = 1, j=2; j<101; i = i + 2, j = j + 2) {
+				// document.write(`<span style='color:red'> ${i} <span><span style='color:blue'> ${j} <span>`);
+				document.write("<span style='color:red'>" + " "+ i + " " + "<span>" + "<span style='color:blue'>" + " " + j + " " + "<span>");
+			}
+			// document.getElementById("soChan").innerHTML = soChan;
+			// document.getElementById("soLe").innerHTML = soLe;
+		}
+		bai_06();
+	</script>
+</body>
+</html>

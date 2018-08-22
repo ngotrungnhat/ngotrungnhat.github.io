@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="Style_Calculator.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			<input class="show" id="ketqua" type="text"/>
+		</div>
+
+		<div class="line one">
+			<input type="button" value="!" class="press advCal" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="CE" class="press advCal" onclick="ketqua.value='' "/>
+			<input type="button" value="&larr;" class="press advCal" onclick="ketqua.value=ketqua.value.substr(0, ketqua.value.length-1)"/>
+			<input type="button" value="/" class="press calculation" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="*" class="press calculation" onclick="ketqua.value+=this.value" />
+		</div>
+
+		<div class="line two">
+			<input type="button" value="^" class="press advCal"  onclick="ketqua.value+=this.value"/>
+			<input type="button" value="7" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="8" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="9" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="-" class="press calculation" onclick="ketqua.value+=this.value"/>
+		</div>
+
+		<div class="line three">
+			<input type="button" value="&#8730;" class="press advCal" onclick="ketqua.value=eval(Math.sqrt(ketqua.value))"/>
+			<input type="button" value="4" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="5" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="6" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="+" class="press calculation" onclick="ketqua.value+=this.value"/>
+		</div>
+
+		<div class="line four">
+			<input type="button" value="+/-" class="press advCal" onclick="ketqua.value=(-1)*ketqua.value"/>
+			<input type="button" value="1" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="2" class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="3" class="press operator" onclick="ketqua.value+=this.value"/>
+		</div>
+
+		<div class="line five">
+			<input type="button" value="%" class="press advCal" onclick="ketqua.value=eval(ketqua.value/100)"/>
+			<input type="button" value="0" class="press num zero" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="." class="press num" onclick="ketqua.value+=this.value"/>
+			<input type="button" value="=" class="press equal" onclick="ketqua.value=eval(ketqua.value)"/>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		function phepTinh() {
+			var thayThe = ketqua.value;
+			if (thayThe == "x") {
+				thayThe = thayThe.replace(/x/g, '*');
+			}
+		}
+	</script>
+
+</body>
+</html>
