@@ -1,0 +1,149 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.clearBoth{
+	clear: both;
+}
+.menuBar{
+	width: 100%;
+	height: 90px;
+	/*position: fixed;*/
+	top: 0px;
+}
+.menuBar_1{
+	background-color: #262626;
+	width: 100%;
+	height: 50px;
+	float: left;
+}
+/*.content{
+	width: 1046.276px;
+	margin: auto;
+}*/
+.menuBar_1 .logo img{
+	width: 70px;
+	height: 49px;
+	margin-left: 140.909px;
+	float: left;
+}
+.menuBar_1 .search{
+	margin-top: 10px;
+	margin-left: 340.909px;
+	width: 386px;
+	height: 50px;
+}
+.menuBar_1 .search form input{
+	width: 350px;
+	height: 30px;
+	border: none;
+	outline: none;
+	float: left;
+	font-family: roboto;
+	font-size: 15px;
+}
+.menuBar_1 .search form button{
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: none;
+	float: left;
+}
+.menuBar_1 .search form button:hover{
+	background-color: #e6e6e6;
+}
+.menuBar_1 .search form button:active{
+	background-color: #a6a6a6;
+}
+.menuBar_1 .search form button img{
+	width: 100%;
+	height: 30px;
+}
+.menuBar .nearSearch{
+	margin-left: 770px;
+	position: absolute;
+	top: 0px;
+	float: left;
+	height: 50px;
+	font-weight: 400;
+    font-style: normal!important;
+    font-size: 14px;
+    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+}
+.menuBar .nearSearch .music{
+	display: inline-block;
+	padding: 0 10px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	line-height: 50px;
+}
+.menuBar .nearSearch .music:hover{
+	background-color: #000000;
+	color: #00ff00;
+}
+.menuBar .nearSearch .news{
+	display: inline-block;
+	padding: 0 10px;
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	color: white;
+}
+.menuBar .nearSearch .news:hover{
+	background-color: #000000;
+	color: #00ff00;
+}
+.menuBar .nearSearch .radio{
+	display: inline-block;
+	padding: 0 10px;
+	width: 80px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	color: white;
+}
+.menuBar .nearSearch .radio:hover{
+	background-color: #000000;
+	color: #00ff00;
+}
+.login a{
+	width: 90px;
+	height: 50px;
+	border: 1px solid red;
+	float: left;
+	text-decoration: none;
+}
+.menuBar_2{
+	background-color: #e6e6e6;
+	width: 100%;
+	height: 40px;
+}
+.body{
+	width: 1046.276px;
+	height: 1000px;
+	margin: auto;
+	border: 0.5px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

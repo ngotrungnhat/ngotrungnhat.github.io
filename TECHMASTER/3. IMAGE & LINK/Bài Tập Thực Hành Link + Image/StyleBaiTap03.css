@@ -1,0 +1,79 @@
+<style type="text/css">
+	h1{
+		Không hiểu tại sao mà style nào nằm đầu lại không có tác dụng nên phải thêm bừa style này vào cho nó nằm đầu. hihi!
+	}
+	table, tr{
+		border: 0.5px solid #80808045;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	.smallImage{
+		max-width: 300px;
+		min-width: 100px;
+	}
+	.inverter{
+		display: inline;
+		font-size: 14px;
+		color: #333;
+		font-weight: 600;
+	    vertical-align: middle;
+	    border-radius: 2px;
+	    line-height: 18px;
+	    background: #fff;
+	    text-indent: 500cm;
+	    text-decoration: none;
+	}
+	.inverter{
+	    padding-left: 15px;
+	}
+	#body{
+		font: 14px/18px Arial,Helvetica,sans-serif;
+		outline: none;
+    	zoom: 1;
+    	background: black;
+	}
+	h3{
+		display: block;
+		font-size: 18px;
+	   	color: #666;
+	    font-weight: 600;
+	    margin-top: 20px;
+	    line-height: 1.3em;
+	}
+	div li{
+		display: block !important;
+		padding: 10px;
+    	font-size: 15px;
+	}
+	div{
+	    height: auto;
+	    width: 45%;
+	    padding: 0 30px 0 30px;
+	    margin: 0 auto;
+	    background: white;
+	}
+	.specs{
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	.class1{
+		font-weight: bold;
+	}
+	.grey{
+		background: #80808038;
+	}
+	#tinhnang{
+		background: #80808038;
+	}
+	.grp{
+		display: block!important;
+		font-size: 25px;
+		padding: 10px;
+		color: #999;
+	}
+	.bigImage{
+		max-width: 100%;
+	}
+</style>
+
