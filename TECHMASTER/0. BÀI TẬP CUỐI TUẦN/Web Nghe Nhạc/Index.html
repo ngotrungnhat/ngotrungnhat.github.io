@@ -3,52 +3,135 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nghe Nhạc</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="music.css">
-	<script src="music.js"></script>
 </head>
 <body>
-	<div class="menuBar">
-		<div class="menuBar_1">
-			<div class="content">
-				<div class="logo">
-					<img src="https://i.imgur.com/1wTJiUB.png" title="Đỉnh Cao Âm Nhạc" alt="music house">
-				</div>
-				<div class="search">
-					<form>
-						<input type="text" name="What search" placeholder="Nhập tên bài hát, tên ca sĩ...">
-						<button type="submit" name="What Search"><img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png"></button>
-					</form>
-				</div>
-				<div class="nearSearch">
-					<a class="music" href="" title="Music">MP3</a>
-					<a class="news" href="" title="Tin Tức Âm Nhạc">NEWS</a>
-					<a class="radio" href="" title="Nghe Radio">RADIO</a>
-				</div>
+	<div class="aroundMenuBar">
+		<div class="menuBar">
+			<div class="menuBar_1">
+				<div class="contentMenuBar_1">
+					<div class="logo">
+						<img src="https://i.imgur.com/1wTJiUB.png" title="Đỉnh Cao Âm Nhạc" alt="music house">
+					</div>
 
-				<div class="login">
-					<a href="">Đăng Nhập</a>
+					<div class="search">
+						<form>
+							<input type="text" name="What search" placeholder="Nhập tên bài hát, tên ca sĩ...">
+							<button type="submit" name="What Search"><img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png"></button>
+						</form>
+					</div>
+
+					<div class="nearSearch">
+						<ul class="mnr">
+							<li class="music">
+								<a href="" title="Music">MP3</a>
+							</li>
+							<li class="news">
+								<a href="" title="Tin Tức Âm Nhạc">NEWS</a>
+							</li>
+							<li class="nghedai">
+								<a href="" title="Nghe Radio">RADIO</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="login">
+						<a href="">Đăng Nhập</a>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="clearBoth"></div>
+			<div class="menuBar_2">
+				<div class="contentMenuBar_2">
+					<ul style="list-style-type:none">
+						<li class="imgIndex rank_1">
+							<img src="https://m.datviettour.com.vn/uploads/images/icons/5a4f407d02e04.png">
+						</li>
+						<li class="music rank_1">
+							<a href="">NHẠC</a>
+						</li>
+						<li class="album rank_1">
+							<a href="">ALBUM</a>
+						</li>
+						<li class="video rank_1">
+							<a href="">VIDEO</a>
+						</li>
+						<li class="topic rank_1">
+							<a href="">CHỦ ĐỀ</a>
+						</li>
+						<li class="bxh rank_1">
+							<a href="">BXH</a>
+						</li>
+						<li class="artist rank_1">
+							<a href="">NGHỆ SĨ</a>
+						</li>
+						<li class="radioMenu rank_1">
+							<a href="">RADIO</a>
+						</li>
+						<li class="newsMenu rank_1">
+							<a href="">TIN TỨC</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="clearBoth"></div>
-		<div class="menuBar_2">
-			
+	<div class="clearBoth"></div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8" style="border: 1px solid red">
+				<div class="body_1">
+					<div class="musicPlayer">
+						<audio id="isPlaying" controls autoplay>
+							<source src="Sáng Nay Mưa-JangMi.mp3" type="audio/mpeg">
+							</audio>
+							<div class="groupButton">
+								<button class="preview"></button>
+								<button class="play"></button>
+								<button class="next"></button>
+								<button class="repeat"></button>
+								<button class="mute"></button>
+								<input class="volume" type="range" name="slider">
+								<div class="mv">
+									MV
+								</div>
+								<div class="info">
+									<i class="fa fa-info-circle" style="font-size:28px;color:grey"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="col-sm-4" style="border: 1px solid blue">
+					<div class="body_2">
+						<p class="nextBai">Tiếp Theo</p>
+						<p class="auto_play">Auto Play</p>
+						<label class="switch">
+
+						  <input type="checkbox" checked>
+						  <span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="music.js"></script>
 
-	<div class="body">
-		
-	</div>
-
-	<div class="footer">
-		
-	</div>
-
-
-
-
-</body>
+	</body>
+	</html>
 
 
 
@@ -66,4 +149,4 @@
 
 
 
-</html>
+

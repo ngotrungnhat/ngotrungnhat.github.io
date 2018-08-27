@@ -3,14 +3,26 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body{
+	background-color: #f2f2f2;
+}
+ ol, ul {
+ 	margin-bottom: 0px;
+ }
+
 .clearBoth{
 	clear: both;
+}
+.aroundMenuBar{
+	width: 100%;
+	height: 90px;
 }
 .menuBar{
 	width: 100%;
 	height: 90px;
-	/*position: fixed;*/
+	position: fixed;
 	top: 0px;
+	z-index: 1;
 }
 .menuBar_1{
 	background-color: #262626;
@@ -18,30 +30,36 @@
 	height: 50px;
 	float: left;
 }
-/*.content{
-	width: 1046.276px;
+.contentMenuBar_1{
+	width: 1150px;
+	height: 50px;
 	margin: auto;
-}*/
-.menuBar_1 .logo img{
+}
+.menuBar_1 .contentMenuBar_1 .logo{
 	width: 70px;
 	height: 49px;
-	margin-left: 140.909px;
 	float: left;
+	margin-left: 10px;
 }
-.menuBar_1 .search{
-	margin-top: 10px;
-	margin-left: 340.909px;
+.menuBar_1 .logo img{
+	width: 100%;
+	height: 49px;
+}
+.menuBar_1 .contentMenuBar_1 .search{
 	width: 386px;
-	height: 50px;
+	height: 30px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 10px;
 }
 .menuBar_1 .search form input{
 	width: 350px;
 	height: 30px;
 	border: none;
 	outline: none;
-	float: left;
 	font-family: roboto;
 	font-size: 15px;
+	float: left;
 }
 .menuBar_1 .search form button{
 	width: 30px;
@@ -50,86 +68,317 @@
 	outline: none;
 	float: left;
 }
+.menuBar_1 .search form button img{
+	width: 100%;
+	height: 30px;
+}
 .menuBar_1 .search form button:hover{
 	background-color: #e6e6e6;
 }
 .menuBar_1 .search form button:active{
 	background-color: #a6a6a6;
 }
-.menuBar_1 .search form button img{
-	width: 100%;
-	height: 30px;
-}
-.menuBar .nearSearch{
-	margin-left: 770px;
-	position: absolute;
-	top: 0px;
-	float: left;
+.menuBar_1 .contentMenuBar_1 .nearSearch{
 	height: 50px;
-	font-weight: 400;
+	width: 210px;
+	float: left;
+	margin-left: 50px;
+	font-weight: 100;
     font-style: normal!important;
     font-size: 14px;
     font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
 }
-.menuBar .nearSearch .music{
-	display: inline-block;
-	padding: 0 10px;
-	width: 50px;
-	height: 50px;
-	text-align: center;
+.mnr li a{
 	text-decoration: none;
+	float: left;
+	padding: 15px 15px;
+	height: 50px;
 	color: white;
-	line-height: 50px;
 }
-.menuBar .nearSearch .music:hover{
+.mnr{
+	list-style-type: none;
+}
+.mnr li a:hover{
 	background-color: #000000;
 	color: #00ff00;
 }
-.menuBar .nearSearch .news{
-	display: inline-block;
-	padding: 0 10px;
-	width: 70px;
-	height: 50px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 50px;
-	color: white;
-}
-.menuBar .nearSearch .news:hover{
-	background-color: #000000;
-	color: #00ff00;
-}
-.menuBar .nearSearch .radio{
-	display: inline-block;
-	padding: 0 10px;
-	width: 80px;
-	height: 50px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 50px;
-	color: white;
-}
-.menuBar .nearSearch .radio:hover{
-	background-color: #000000;
-	color: #00ff00;
-}
-.login a{
+.menuBar_1 .contentMenuBar_1 .login{
 	width: 90px;
 	height: 50px;
-	border: 1px solid red;
 	float: left;
-	text-decoration: none;
+	margin-left: 230px;
 }
+.menuBar_1 .contentMenuBar_1 .login a{
+	text-decoration: none;
+	color: white;
+	line-height: 50px;
+}
+.menuBar_1 .contentMenuBar_1 .login a:hover{
+	color: #00ff00; 
+}
+
 .menuBar_2{
 	background-color: #e6e6e6;
 	width: 100%;
 	height: 40px;
 }
-.body{
-	width: 1046.276px;
-	height: 1000px;
+.contentMenuBar_2{
+	width: 1150px;
+	height: 40px;
+	margin-left: 80px;
+}
+.menuBar_2 .contentMenuBar_2 ul{
+	margin-left: 10px;
+}
+.menuBar_2 .contentMenuBar_2 ul .imgIndex{
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding-top: 10px;
+}
+.menuBar_2 .contentMenuBar_2 ul .imgIndex img{
+	width: 100%;
+	height: 20px;
+	cursor: pointer;
+}
+.menuBar_2 .contentMenuBar_2 ul .rank_1 a{
+	display: block;
+	text-decoration: none;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+	font-weight: 200;
+	color: black;
+	text-align: center;
+}
+.menuBar_2 .contentMenuBar_2 ul .rank_1 a:hover{
+	background-color: white;
+	color: #00ff00;
+}
+.container{
+	width: 1150px;
+	height: 2000px;
 	margin: auto;
 	border: 0.5px solid grey;
+	margin-top: 50px;
+	background-color: white;
+}
+.col-sm-8{
+	padding-right: 0px;
+     padding-left: 0px; 
+}
+.body_1{
+	width: 700px;
+	height: 2000px;
+}
+
+.musicPlayer{
+	width: 765px;
+	height: 250px;
+	/*filter: brightness(50%);*/
+	background-image: url("http://vip.img.cdn.keeng.vn/sata11/singer/2017/07/25/5VuFzqdorVphhZxLcWOu59772b3612bda.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.groupButton{
+	position: relative;
+	top: 190px;
+	left: -5px;
+}
+.preview{
+	background-image: url("http://vip.img.cdn.keeng.vn/web_v5/images/player_home_preview_a.png");
+	background-size: 44px 44px;
+	width: 44px;
+	height: 44px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+}
+.play{
+	background-image: url("https://i.imgur.com/UdziR70.png");
+	background-size: 44px 44px;
+	width: 44px;
+	height: 44px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	margin-left: 10px
+	margin-right: 5px;
+}
+.next{
+	background-repeat: no-repeat;
+	background-image: url("https://i.imgur.com/FuJZhFk.png");
+	background-size: 44px 44px;
+	width: 44px;
+	height: 44px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.repeat{
+	background-image: url("https://i.imgur.com/7yvYyDm.png");
+	background-repeat: no-repeat;
+	background-size: 31px 22px;
+	width: 31px;
+	height: 22px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	padding-top: 30px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.mute{
+	background-image: url("https://i.imgur.com/HEaeAV1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 25px;
+	height: 25px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	bottom: 4px;
+}
+input.volume{
+	display: inline;
+	position: relative;
+	bottom: 8px;
+	width: 10%;
+}
+.volume:active{
+	background-color: #00ff00;
+}
+.mv{
+	display: inline;
+	border: 1px solid white;
+	border-radius: 4px;
+	width: 23px;
+	height: 20px;
+	float: right;
+	color: white;
+    font-size: 13px;
+    position: relative;
+    top: 22px;
+    left: -82px;
+    background-color: transparent;
+    font-family: Verdana,Arial,sans-serif;
+    line-height: 1.6;
+    cursor: pointer;
+}
+.info{
+	position: relative;
+	left: 720px;
+	top: -30px;
+	color: white;
+	cursor: pointer;
+	width: 40px;
+}
+.mv:hover{
+	color: #00ff00;
+}
+audio{
+	display: none;
+}
+.body_1 .toolMusic .isPlaying{
+	width: 100%;
+	height: 100px;
+	z-index: 0;
+}
+
+p.nextBai{
+	display: inline;
+	float: left;
+	color: #00ff00;
+	font-size: 3vh;
+	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+	padding-right: 140px;
+	padding-top: 6px;
+}
+
+p.auto_play{
+	padding-top: 8px;
+	display: inline;
+	color: #a6a6a6;
+	font-size: 2vh;
+	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+	display: inline;
+	float: left;
+}
+
+.switch {
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  width: 46px;
+  height: 20px;
+  float: left;
+  margin-left: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00ff00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00ff00;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 
