@@ -85,53 +85,326 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8" style="border: 1px solid red">
-				<div class="body_1">
-					<div class="musicPlayer">
-						<audio id="isPlaying" controls autoplay>
-							<source src="Sáng Nay Mưa-JangMi.mp3" type="audio/mpeg">
-							</audio>
-							<div class="groupButton">
-								<button class="preview"></button>
-								<button class="play"></button>
-								<button class="next"></button>
-								<button class="repeat"></button>
-								<button class="mute"></button>
-								<input class="volume" type="range" name="slider">
-								<div class="mv">
-									MV
-								</div>
-								<div class="info">
-									<i class="fa fa-info-circle" style="font-size:28px;color:grey"></i>
-								</div>
+			<div class="col-sm-8 col-md-8" style="border: 1px solid red">
+				<div class="musicPlayer">
+					<audio id="isPlaying" controls autoplay>
+						<source src="Sáng Nay Mưa-JangMi.mp3" type="audio/mpeg">
+						</audio>
+						<div class="groupButton">
+							<button class="preview"></button>
+							<button class="play"></button>
+							<button class="next"></button>
+							<button class="repeat"></button>
+							<button class="mute"></button>
+							<input class="volume" type="range" name="slider">
+							<div class="mv">
+								MV
+							</div>
+							<div class="info">
+								<i class="fa fa-info-circle" style="font-size:28px;color:grey"></i>
 							</div>
 						</div>
 					</div>
-				</div>
 
 
 
-
-
-				<div class="col-sm-4" style="border: 1px solid blue">
-					<div class="body_2">
-						<p class="nextBai">Tiếp Theo</p>
-						<p class="auto_play">Auto Play</p>
-						<label class="switch">
-
-						  <input type="checkbox" checked>
-						  <span class="slider round"></span>
-						</label>
+					<div class="social_network">
+						<div class="like">
+							<div class="button_like">
+								<a href="">Thích</a>
+							</div>
+							<div class="num_like num"></div>
+						</div>
+						<div class="comment">
+							<div class="button_comment">
+								<a href="">Bình Luận</a>
+							</div>
+							<div class="num_comment num"></div>
+						</div>
+						<div class="share">
+							<a href="">Chia Sẻ</a>
+						</div>
 					</div>
+					<hr>
+
+					<div class="lyric-audio">
+						<h2 style="color:#90BE04; font-family: 'Roboto', sans-serif, arial; line-height: 34px;font-size: 20pt ">LỜI BÀI HÁT</h2>
+						<div class="info-show">
+							<p>Sáng nay mưa từng giọt lưa thưa</p>
+							<p>Sáng nay mưa anh có nhớ&nbsp;em chưa</p>
+							<p>Sáng nay mưa và nhiều gió nữa</p>
+							<p>Ước chi anh cầm tay em và hứa</p>
+							<p>&nbsp;</p>
+							<p>Sẽ không bao giờ lừa em đâu</p>
+							<p>Sẽ không hay để em chờ lâu</p>
+							<p>Sẽ luôn luôn nhận là anh sai</p>
+							<p>Dù nói đôi khi chẳng biết là của ai</p>
+							<p>&nbsp;</p>
+							<p>Trời lúc nắng và trời lúc mưa</p>
+							<p>Người lúc vui và có lúc buồn</p>
+							<p>Tình yêu có lúc ngọt ngào như mới</p>
+							<span id="read_more">
+								<p>Rồi cũng có lúc thình lình mưa rơi</p>
+								<p>&nbsp;</p>
+								<p>Chuyện hai đứa mình cũng thế thôi</p>
+								<p>Tình yêu rung động lúc đứng lúc ngồi</p>
+								<p>Chuyện con nít tập làm người lớn</p>
+								<p>Giận hờn rồi sẽ yêu nhau hơn.</p>
+							</span>
+							<button onclick="myFunction()" id="myBnt">Xem toàn bộ >> </button>
+						</div>
+					</div>
+
+
+					<div class="music-of-jangmi">
+						<h2>BÀI HÁT CỦA JANG MI</h2>
+				
+
+					
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/song/images/2018/07/24/IUYoacFE0CbEFlI7lG3x5b56d1600df80_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Sáng Nay Mưa</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											1.535.471
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/07/25/kAX7LK1nOtkhdvDDuyIs59772b362a2d4_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Sáng Nay Mưa (Acoustic Ver.)</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											235.878
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/07/25/ogOtaC0DOu4oK8lcfnpk59772b3542580_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Trọn Tình</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											487.561
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/10/27/skhu0jB6WBXD6e2XDxgN59f29d314c4f4_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Đừng Nhắc Chuyện Lòng</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											202.548
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/10/27/skhu0jB6WBXD6e2XDxgN59f29d314c4f4_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Duyên Phận</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											1.030.734
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/07/25/ogOtaC0DOu4oK8lcfnpk59772b3542580_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Có Em Chờ</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											188.409
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/07/25/ogOtaC0DOu4oK8lcfnpk59772b3542580_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Dạ Cổ Hoài Lang</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											60.876
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12 music-album">
+							<div class="ka-content audio-content">
+								<div class="col-sm-6 col-md-6">
+									<a class="ka-link" href="">
+										<img src="http://vip.img.cdn.keeng.vn/sata11/images/images_thumb/f_sata11/singer/2017/07/25/ogOtaC0DOu4oK8lcfnpk59772b3542580_103_103.jpg">
+									</a>
+									<h3 class="ka-info-h3">
+										<a href="">Đón Xuân Này Nhớ Xuân Xưa</a>
+									</h3>
+								</div>
+								<div class="col-sm-3 col-md-3">
+									<a class="singer-audio" href="">Jang Mi</a>
+								</div>
+								<div class="col-sm-2 col-md-2">
+									<p class="ka-info-singer">
+										<span class="ka-info-view">
+											<img src="http://vip.img.cdn.keeng.vn/web_v3//images/ver3_09_b.png" height="10">
+											69.502
+										</span>
+									</p>
+								</div>
+								<div class="col-sm-1 col-md-1">
+									<a class="song-share-audio" href=""></a>
+								</div>
+							</div>
+					</div>
+
+					
 				</div>
+				<div class="mv-of-jangmi"></div>
 			</div>
+
+
+
+			<div class="col-sm-4 col-md-4" style="border: 1px solid blue">
+					<p class="nextBai">Tiếp Theo</p>
+					<p class="auto_play">Auto Play</p>
+					<label class="switch">
+
+						<input type="checkbox" checked>
+						<span class="slider round">
+						</span>
+					</label>
+				</div>
 		</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="music.js"></script>
 
-	</body>
-	</html>
+</body>
+</html>
+
+
+
 
 
 
