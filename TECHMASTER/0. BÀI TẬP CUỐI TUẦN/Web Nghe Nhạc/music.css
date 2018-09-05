@@ -3,9 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-body{
-	background-color: #f2f2f2;
-}
+
  ol, ul {
  	margin-bottom: 0px;
  }
@@ -99,7 +97,7 @@ body{
 }
 .mnr li a:hover{
 	background-color: #000000;
-	color: #00ff00;
+	color: #90BE04;
 }
 .menuBar_1 .contentMenuBar_1 .login{
 	width: 90px;
@@ -113,7 +111,7 @@ body{
 	line-height: 50px;
 }
 .menuBar_1 .contentMenuBar_1 .login a:hover{
-	color: #00ff00; 
+	color: #90BE04; 
 }
 
 .menuBar_2{
@@ -156,31 +154,116 @@ body{
 }
 .menuBar_2 .contentMenuBar_2 ul .rank_1 a:hover{
 	background-color: white;
-	color: #00ff00;
+	color: #90BE04;
 }
+
 .container{
 	width: 1150px;
 	margin: auto;
 	margin-top: 50px;
 	background-color: white;
 }
+
 .col-sm-8{
 	padding-right: 0px;
      padding-left: 0px; 
 }
 
 .musicPlayer{
+	position: relative;
+	max-width: 765px;
+	max-height: 250px;
+}
+
+.backgroundPlayer{
 	width: 765px;
 	height: 250px;
-	/*filter: brightness(50%);*/
-	background-image: url("http://vip.img.cdn.keeng.vn/sata11/singer/2017/07/25/5VuFzqdorVphhZxLcWOu59772b3612bda.jpg");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+	overflow: hidden;
 }
+
+.backgroundPlayer img{
+	width: 765px;
+	height: auto;
+	filter: brightness(50%);
+}
+
+.player-info{
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+
+.player-info .thongTinCaSi{
+	float: left;
+	color: white;
+}
+
+.player-info .info-singer{
+	margin-left: 10px;
+}
+
+.player-info .info-singer h3{
+	margin-top: 0;
+	color: #90be04;
+	font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+}
+.player-info .info-singer p{
+	color: #a0acb9;
+	font-family: 'Roboto', sans-serif, arial;
+    font-size: 13px;
+}
+
+.player-info .listener-number{
+	margin-left: 220px;
+	font-size: 18px;
+}
+
+.progressContainer{
+	position: absolute;
+	top: 160px;
+	width: 765px;
+	height: 5px;
+	background-color: #bfbfbf;
+	cursor: pointer;
+}
+
+.timeStartMusic{
+	width: 43px;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	color: white;
+}
+
+.timeEndMusic{
+	width: 43px;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	left: 720px;
+	color: white;
+}
+
+.musicBar{
+	width: 10px;
+	height: 5px;
+	background-color: #90BE04;
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+
 .groupButton{
-	position: relative;
+	position: absolute;
 	top: 190px;
-	left: -5px;
+	left: 5px;
+}
+
+.group-button__wrap {
+	position: relative;
 }
 .preview{
 	background-image: url("http://vip.img.cdn.keeng.vn/web_v5/images/player_home_preview_a.png");
@@ -195,6 +278,7 @@ body{
 	margin-right: 10px;
 	background-repeat: no-repeat;
 }
+
 .play{
 	background-image: url("https://i.imgur.com/UdziR70.png");
 	background-size: 44px 44px;
@@ -208,6 +292,7 @@ body{
 	margin-left: 10px
 	margin-right: 5px;
 }
+
 .next{
 	background-repeat: no-repeat;
 	background-image: url("https://i.imgur.com/FuJZhFk.png");
@@ -221,6 +306,7 @@ body{
 	margin-left: 10px;
 	margin-right: 5px;
 }
+
 .repeat{
 	background-image: url("https://i.imgur.com/7yvYyDm.png");
 	background-repeat: no-repeat;
@@ -235,6 +321,7 @@ body{
 	margin-left: 10px;
 	margin-right: 5px;
 }
+
 .mute{
 	background-image: url("https://i.imgur.com/HEaeAV1.png");
 	background-repeat: no-repeat;
@@ -250,15 +337,47 @@ body{
 	position: relative;
 	bottom: 4px;
 }
-input.volume{
-	display: inline;
-	position: relative;
-	bottom: 8px;
-	width: 10%;
+
+.slider-container{
+	width: 20%;
+	position: absolute;
+	top: 28px;
+	left: 265px;
 }
-.volume:active{
-	background-color: #00ff00;
+
+input.volume {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
+
+input.volume:hover {
+    opacity: 1;
+}
+
+input.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 5px;
+    border: 0;
+    background: #90BE04;
+    cursor: pointer;
+}
+
+input.volume::-moz-range-thumb {
+    width: 10px;
+    height: 5px;
+    border: 0;
+    background: #90BE04;
+    cursor: pointer;
+}
+
 .mv{
 	display: inline;
 	border: 1px solid white;
@@ -268,28 +387,32 @@ input.volume{
 	float: right;
 	color: white;
     font-size: 13px;
-    position: relative;
-    top: 22px;
-    left: -82px;
+    position: absolute;
+    top: 10px;
+    left: 617px;
     background-color: transparent;
     font-family: Verdana,Arial,sans-serif;
     line-height: 1.6;
     cursor: pointer;
 }
+
 .info{
-	position: relative;
-	left: 720px;
-	top: -30px;
+	position: absolute;
+	left: 685px;
+	top: 7px;
 	color: white;
 	cursor: pointer;
 	width: 40px;
 }
+
 .mv:hover{
-	color: #00ff00;
+	color: #90BE04;
 }
+
 audio{
 	display: none;
 }
+
 .body_1 .toolMusic .isPlaying{
 	width: 100%;
 	height: 100px;
@@ -300,7 +423,7 @@ p.nextBai{
 	display: inline;
 	float: left;
 	color: #90BE04;
-	font-size: 3vh;
+	font-size: 18px;
 	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
 	padding-right: 140px;
 	padding-top: 6px;
@@ -315,7 +438,6 @@ div.social_network{
 div.social_network div.like{
 	width: 150px;
 	float: left;
-	background-color: 
 }
 
 div.social_network div.button_like{
@@ -396,7 +518,9 @@ div.social_network div.num{
 	border-radius: 2px;
     margin-top: 2px;
 }
+
 div.social_network div.num_like{margin-left: 6px}
+
 div.social_network div.num_comment{margin-left: 15px}
 
 div.social_network div.comment{
@@ -540,7 +664,7 @@ p.auto_play{
 	padding-top: 8px;
 	display: inline;
 	color: #a6a6a6;
-	font-size: 2vh;
+	font-size: 13px;
 	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
 	display: inline;
 	float: left;
@@ -583,11 +707,11 @@ p.auto_play{
 }
 
 input:checked + .slider {
-  background-color: #00ff00;
+  background-color: #90BE04;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #00ff00;
+  box-shadow: 0 0 1px #90BE04;
 }
 
 input:checked + .slider:before {
