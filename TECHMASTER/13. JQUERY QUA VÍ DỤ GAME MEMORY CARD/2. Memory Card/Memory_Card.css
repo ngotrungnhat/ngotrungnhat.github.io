@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+}
+
+.clearBoth{
+	clear: both;
+}
+
+.content{
+	position: relative;
+	z-index: 2;
+	overflow: auto;
+}
+
+.grid{
+	width: 12.5%;
+	padding: 10px;
+	float: left;
+}
+
+.card{
+	position: relative;
+	border: 1px solid black;
+}
+
+.card .front{
+	transform: rotateY(0deg);
+	
+}
+
+.card .back{
+	transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.card .front, .card .back{
+	backface-visibility: hidden;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+}
+
+.card.flipped .front{
+	transform: rotateY(180deg);
+}
+
+.card.flipped .back{
+	transform: rotateY(0deg);
+}
+
+img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
