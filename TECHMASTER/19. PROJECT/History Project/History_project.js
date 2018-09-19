@@ -38,11 +38,13 @@ opacity()
 // $(".flag").css("opacity","0.5");
 
 //TOGGLE WHEN SMALL SCREEN
-function navbarToggle(){
+function navbarToggle(x){
 	if ($(".navHeader").css("display") == "block") {
-		$(".navHeader").css("display","none");
+		$(".navHeader").css({"display": "none", "transition": "all 5s"});
+		x.classList.toggle("change");
 	} else {
-		$(".navHeader").css("display","block");
+		$(".navHeader").css({"display": "block", "transition": "all 5s"});
+		x.classList.toggle("change");
 	}
 };
 
@@ -52,6 +54,14 @@ $(document).ready(function(){
 		$(this).css({"color": "#ca27b1", "cursor": "pointer"});
 	}, function(){
 		$(this).css("color", "#753721");
+	});
+});
+
+$(document).ready(function(){
+	$("div.cards").hover(function(){
+		$(this).css({"color": "#ca27b1", "cursor": "pointer", "border": "2px solid #ca27b1"});
+	}, function(){
+		$(this).css({"color": "#753721", "border": "none"});
 	});
 });
 
