@@ -914,8 +914,8 @@ div.promo{
     }
 
     .grid *[class*=__col] {
-        width: 100%;
-        float: none;
+        width: 50%;
+        float: left;
     }
 }
 
