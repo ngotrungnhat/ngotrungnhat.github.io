@@ -123,9 +123,6 @@ a{
 
 .topHeader .menuToggle{
 	display: none;
-   /* width: 40px;
-    height: 28px;*/
-    /*background: url(Image_history/hamburgermenu.svg) no-repeat 0 0;*/
     -webkit-appearance: none;
     -moz-appearance: none;
     -webkit-box-shadow: none;
@@ -160,7 +157,6 @@ a{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-
 
 .navHeader{
 	overflow: hidden;
@@ -483,11 +479,10 @@ div.promo{
 }
 
 .main{
-	border: 1px solid black;
+    display: block;
 }
 
 .timeLine{
-	border: 1px solid red;
 	margin-left: -330px;
     float: right;
     width: calc(100% - 330px);
