@@ -42,7 +42,7 @@ function navbarToggle(x){
 	if ($(".navHeader").css("display") == "block") {
 		$(".navHeader").css({"display": "none", "transition": "all 5s"});
 		x.classList.toggle("change");
-	} else {
+	} else { 
 		$(".navHeader").css({"display": "block", "transition": "all 5s"});
 		x.classList.toggle("change");
 	}
