@@ -1,3 +1,4 @@
+
 * {
 	padding: 0;
 	margin: 0;
@@ -910,7 +911,10 @@ div.promo{
         padding-right: 15px;
     }
 
-    .pageHeader-has-nail:before, .pageHeader-has-nail:after, .pageHeader-has-nail-left:before, .pageHeader-has-nail-right:after{
+    .pageHeader-has-nail:before,
+    .pageHeader-has-nail:after,
+    .pageHeader-has-nail-left:before,
+    .pageHeader-has-nail-right:after {
         display: none;
     }
 
@@ -970,7 +974,6 @@ div.promo{
 		width: 30px;
 	}
 }
-
 
 
 
