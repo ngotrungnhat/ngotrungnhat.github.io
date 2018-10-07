@@ -30,26 +30,23 @@ function navbarToggle(x){
 };
 
 //EFECT HOVER
-$(document).ready(function(){
-	$("div.promo").hover(function(){
-		$(this).css({"color": "#ca27b1", "cursor": "pointer"});
-	}, function(){
-		$(this).css("color", "#753721");
-	});
-});
+// $(document).ready(function(){
+// 	$("div.promo").hover(function(){
+// 		$(this).css({"color": "#ca27b1", "cursor": "pointer"});
+// 	}, function(){
+// 		$(this).css("color", "#753721");
+// 	});
+// });
 
-$(document).ready(function(){
-	$("div.cards").hover(function(){
-		$(this).css({"color": "#ca27b1", "cursor": "pointer", "border": "2px solid #ca27b1"});
-	}, function(){
-		$(this).css({"color": "#753721", "border": "none"});
-	});
-});
+// $(document).ready(function(){
+// 	$("div.cards").hover(function(){
+// 		$(this).css({"color": "#ca27b1", "cursor": "pointer", "border": "2px solid #ca27b1"});
+// 	}, function(){
+// 		$(this).css({"color": "#753721", "border": "none"});
+// 	});
+// });
 
-// Get the modal
 var modal = document.getElementById('story-01');
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";

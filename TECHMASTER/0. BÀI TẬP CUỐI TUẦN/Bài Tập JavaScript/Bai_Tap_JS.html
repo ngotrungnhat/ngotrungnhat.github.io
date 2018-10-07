@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài Tập JavaScript</title>
+</head>
+<body>
+	<script>
+		//BÀI 01: Viết function tham số truyền vào là 3 số nguyên a, b, c. In ra màn hình hoặc console số lớn nhất.
+		function largestNumber(a, b, c){
+			var x = Math.max(a, b, c);
+			console.log("Số lớn nhất là: " + x);
+		};
+
+		//BÀI 02: Viết function truyền vào 2 tham số là số giờ làm và lương giờ (đều là số nguyên) rồi tính lương tổng cộng.
+		function salary(time, salaryOneHour){
+			if (time > 40) {
+				var overMoney = 40*salaryOneHour + (time - 40)*2*salaryOneHour;
+				console.log("Tiền lương là: " + overMoney + "$");
+			}else{
+				console.log("Tiền lương là: " + time*salaryOneHour + "$");
+			};
+		};
+
+		//BÀI 03: Viết function truyền vào 3 giá trị nguyên dương a, b, c. Kiểm tra xem a, b, c có phải cạnh của 3 tam giác hay không.
+		function triangle(a, b, c){
+			if (a+b>c && b+c>a && a+c>b) {
+				console.log("a, b, c là ba cạnh của tam giác");
+			} else {
+				console.log("a, b, c không phải là ba cạnh của tam giác");
+			};
+		};
+
+		//BÀI 04: Viết function truyền vào 2 số nguyên a và b. In ra tất cả các số nguyên từ a -> b trên một dòng.
+		function fromAToB(a, b){
+			for (i = a; i <= b; i++) {
+				console.log(i);
+			}
+		};
+
+		//BÀI 05: Viết function tham số truyền vào là số nguyên n. Tính tổng 1+ 2+ 3+ 4+...+n.
+		function total(n){
+			console.log((n*(n + 1))/2);
+		};
+
+		//BÀI 06: Viết function với tham số truyền vào là số nguyên n . tính tổng các số lẻ từ 0 đến n.
+		function totalOdd(n){
+			var total = 0;
+			for (i = 1; i <= n; i += 2) {
+				total = total + i;
+			}
+			console.log(total);
+		};
+
+		//BÀI 07: Viết function tham số truyền vào là một số nguyên kiểm tra xem số đó có phải là số nguyên tố hay không.
+		function prime(n){
+			var x = 0;
+			if (n<2) {
+				console.log(n + " không phải là số nguyên tố.");
+			} else {
+				for (i = 2; i <= Math.sqrt(n); i++){
+					if (n % i == 0){
+						x = x + 1;
+					};
+				};
+				if (x != 0){
+					console.log(n + " không phải là số nguyên tố.");
+				} else {
+					console.log(n + " là số nguyên tố.");
+				}
+			};
+		};
+
+		//BÀI 08: Viết function tìm ước chung lớn nhất và bội chung nhỏ nhất của 2 số nguyên dương a và b.
+		function euclid(a, b){
+			var a = Math.abs(a);
+			var b = Math.abs(b);
+			var x = a * b;
+			if (a == 0 || b == 0){
+				console.log("Ước chung lớn nhất là: "+ (a + b));
+			};
+			if (a > b) {
+				while(b != 0){
+					temp = a % b;
+					a = b;
+					b = temp;
+				};
+				console.log("Ước chung lớn nhất là: " + a);
+				console.log("Bội chung nhỏ nhất là: " + (x / a));
+			} else {
+				while(a != 0){
+					temp = b % a;
+					b = a;
+					a = temp;
+				};
+				console.log("Ước chung lớn nhất là: " + b);
+				console.log("Bội chung nhỏ nhất là: " + (x / b));
+			};
+
+		};
+
+		//BÀI 09: Viết function tham số truyền vào là một số nguyên dương lớn hơn 10000. In ra màn hình tổng các chữ số của nó.
+		function totalNum(n){
+			var nString = n.toString();
+			var total = 0;
+			for (i = 0; i < nString.length; i++){
+				total = total + parseInt(nString.charAt(i));
+			};
+			console.log("Tổng của các chữ số là: " + total);
+		};
+
+		//BÀI 10: viết function tham số truyền vào là một số nguyên dương lớn hơn 10000. In ra màn hình chữ số lớn nhất của nó.không
+		function maxNum(n){
+			var nString = n.toString();
+			var numMax = 0;
+			for (i = 0; i < nString.length; i++){
+				if (parseInt(nString.charAt(i)) > numMax) {
+					numMax = parseInt(nString.charAt(i));
+				};
+			};
+			console.log(numMax);
+		};
+	
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

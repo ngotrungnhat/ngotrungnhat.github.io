@@ -373,6 +373,11 @@ div.promo{
     color: #753721;
 }
 
+div.promo:hover{
+    color: #ca27b1;
+    cursor: pointer;
+}
+
 .promo_fig{
     width: 210px;
     height: 218px;
@@ -682,6 +687,23 @@ div.promo{
     float: left;
     padding-left: 10px;
     padding-right: 10px;
+    top: 0;
+    bottom: 0;
+}
+
+/*header.w3-teal, footer.w3-teal {
+    position: fixed;
+}*/
+
+div.scroll-text {
+    overflow: scroll;
+    height: 500px;
+}
+
+button.w3-button {
+    margin: 10px 0px;
+    outline: none;
+    padding: 4px 10px;
 }
 
 .cards {
@@ -699,6 +721,12 @@ div.promo{
     -ms-box-shadow: 0 6px 0 rgba(0,0,0,0.1);
     -o-box-shadow: 0 6px 0 rgba(0,0,0,0.1);
     box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+}
+
+div.cards:hover {
+    color: #ca27b1;
+    cursor: pointer;
+    border: 2px solid #ca27b1;
 }
 
 .history-chapters .cards {
