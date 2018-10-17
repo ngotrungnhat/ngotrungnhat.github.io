@@ -489,10 +489,59 @@ div.promo:hover{
 }
 
 .timeLine{
-	margin-left: -330px;
+	/*margin-left: -330px;
     float: right;
-    width: calc(100% - 330px);
+    width: calc(100% - 330px);*/
     display: block;
+}
+
+.contentLeft {
+    border: 1px solid black;
+    height: 1000px;
+    width: 40%;
+    float: left;
+    position: relative;
+}
+
+.contentBetween {
+    border: 1px solid blue;
+    width: 20%;
+    float: left;
+    position: relative;
+}
+
+.containerFoot {
+    margin: auto;
+    width: 100px;
+}
+
+.foot {
+    width: 30px;
+    margin: auto;
+}
+
+.footRight {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.footLeft {
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.footRight:hover, .footLeft:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.contentRight {
+    border: 1px solid red;
+    height: 1000px;
+    width: 40%;
+    float: right;
+    position: relative;
 }
 
 
@@ -724,9 +773,9 @@ button.w3-button {
 }
 
 div.cards:hover {
-    color: #ca27b1;
-    cursor: pointer;
-    border: 2px solid #ca27b1;
+    color: #ca27b1 !important;
+    cursor: pointer !important;
+    border: 2px solid #ca27b1 !important;
 }
 
 .history-chapters .cards {
@@ -798,6 +847,33 @@ div.cards:hover {
     -o-border-radius: 6px;
     border-radius: 6px;
 }
+
+.scrollToTop{
+    width:100px; 
+    height:100px;
+    padding:10px; 
+    text-align:center; 
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    bottom:75px;
+    right:40px;
+    display:none;
+    background: url(Image_history/back_to_top.png) no-repeat 0px 20px;
+    border-radius: 50%;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
 
 
 

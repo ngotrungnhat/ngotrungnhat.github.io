@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.relative {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	border: 1px solid black;
+}
+
+.clock01 {
+	width: 40%;
+	margin: 100px auto;
+	border: 1px solid #00ff00;
+}
+
+.clock02 {
+	/*width: 70%;
+    padding-top: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    bottom: 15%;
+    right: 15%;
+    border: 1px solid red;*/
+	width: 80%;
+	padding-top: 80%;
+	position: absolute;
+	top: 10%;
+   	left: 10%;
+   	bottom: 10%;
+   	right: 10%;
+	border: 1px solid red;
+}
+
+p.trademark {
+	font-size: 2vw;
+}
+
+p.nation {
+	font-size: 1vw;
+}
+
+p.text {
+	position: absolute;
+	top: 10%;
+	left: 38%;
+}
+
+.clockChild-child {
+	width: 80%;
+	padding-top: 80%;
+	position: absolute;
+	top: 9.8%;
+   	left: 9.8%;
+   	bottom: 9.8%;
+   	right: 9.8%;
+	border: 1px solid red;
+}
+
+.clockChild01 {
+	width: 35%;
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+    border: 1px solid blue;
+}
+
+.clockChild02 {
+	width: 35%;
+    position: absolute;
+    bottom: 40%;
+    right: 10%; 
+    border: 1px solid blue;
+}
+
+.clockChild03 {
+	width: 35%;
+    position: absolute;
+    left: 35%;
+    bottom: 5%;
+    border: 1px solid blue;
+}
