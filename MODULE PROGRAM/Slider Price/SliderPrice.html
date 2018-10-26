@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Content-Type" content="text/html"> -->
+  <!-- <title>Range Slider with jQuery UI - Demo</title> -->
+  <!-- <meta name="author" content="Jake Rocheleau"> -->
+  <!-- <link rel="shortcut icon" href="http://designm.ag/favicon.ico"> -->
+  <!-- <link rel="icon" href="http://designm.ag/favicon.ico"> -->
+  <!-- <link rel="stylesheet" type="text/css" media="all" href="css/styles.css"> -->
+  <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Acme"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+  <style>
+    div.ui-slider-range.ui-widget-header {
+    background: green;
+}
+  </style>
+</head>
+<body>
+  <div id="rangedval">
+  Range Value 01: <span id="rangeval01">0</span><br>
+  Range Value 02: <span id="rangeval02">1.000.000</span>
+
+  </div>
+  
+  <div id="rangeslider"></div>
+
+  <script>
+    $(function(){
+  $('#rangeslider').slider({
+    range: true,
+    min: 0,
+    max: 1000000,
+    values: [ 0, 1000000 ],
+    slide: function( event, ui ) {
+      var string_01 = ui.values[0].toString(),
+          string_02 = ui.values[1].toString(),
+          numLength_01 = string_01.length,
+          numLength_02 = string_02.length;
+
+          if (numLength_01 <= 3) {
+          $('#rangeval01').html(string_01);
+        } else if (numLength_01 <=6) {
+          $('#rangeval01').html(string_01.substr(0, (numLength_01-3)) + "." + string_01.substr((numLength_01-3), 3));
+        } else {
+          $('#rangeval01').html(string_01.substr(0, 1) + "." + string_01.substr(1, 3) + "." + string_01.substr(4, 3));
+        }
+
+        if (numLength_02 <= 3) {
+          $('#rangeval02').html(string_02);
+        } else if (numLength_02 <=6) {
+          $('#rangeval02').html(string_02.substr(0, (numLength_02-3)) + "." + string_02.substr((numLength_02-3), 3));
+        } else {
+          $('#rangeval02').html(string_02.substr(0, 1) + "." + string_02.substr(1, 3) + "." + string_02.substr(4, 3));
+        }
+
+
+
+    }
+  });
+});
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

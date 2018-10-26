@@ -1,0 +1,45 @@
+body {
+    background-color: #E7E7E7;
+    font-family: Helvetica, Arial, sans-serif;
+}
+    .containerGame {
+        position: relative;
+        top: 100px;
+    }
+
+        #wheelDiv {
+            height: 800px;
+            width: 800px;
+            float: left;
+            /*margin: auto;*/
+            top: -176.613633px !important;
+            left: -100px !important; 
+        }
+
+        #wheelDiv>svg {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            top: -176.613633px !important;
+            left: -100px !important; 
+        }
+
+        
+
+                        
+
+        @media (max-width: 600px) {
+            #wheelDiv {
+                height: 350px;
+                width: 350px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #wheelDiv {
+                height: 300px;
+                width: 300px;
+            }
+        }
+       

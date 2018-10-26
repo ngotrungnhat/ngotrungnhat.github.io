@@ -1,0 +1,47 @@
+<style>
+    .scrollToTop{
+        width:100px; 
+        height:100px;
+        padding:10px; 
+        text-align:center; 
+        background: whiteSmoke;
+        font-weight: bold;
+        color: #444;
+        text-decoration: none;
+        position:fixed;
+        bottom:75px;
+        right:40px;
+        display:none;
+        background: url(back_to_top.png) no-repeat 0px 20px;
+        border-radius: 50%;
+    }
+    .scrollToTop:hover{
+        text-decoration:none;
+    }
+</style>
+
+
+
+
+<a href="#" class="scrollToTop"><img src="back_to_top.png" alt=""></a>
+
+
+
+
+
+<!-- BACK TO TOP -->
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 1500) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},1500);
+        });
+    });
+</script>

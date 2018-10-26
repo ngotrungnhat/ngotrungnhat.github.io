@@ -64,6 +64,7 @@ a{
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
+    background-color: white;
     padding-top: 0;
     padding-bottom: 200px;
 }
@@ -271,7 +272,7 @@ a{
 	padding: 0 10px;
     width: 30px;
     cursor: pointer;
-    background: url(Image_history/ico_search_svg.svg) no-repeat center center;
+    background: url(../Image_history/ico_search_svg.svg) no-repeat center center;
     background-size: 18px auto;
     border: 0;
     font-size: 20px;
@@ -414,7 +415,7 @@ div.promo:hover{
     padding-bottom: 100px;
     margin-top: 30px;
     margin-bottom: 50px;
-    background-image: url("Image_history/welcome-bg.png");
+    background-image: url("../Image_history/welcome-bg.png");
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -430,6 +431,7 @@ div.promo:hover{
     color: #381f14;
     margin-top: 0;
     margin-bottom: 20px;
+    letter-spacing: 5px;
 }
 
 .welcome_text {
@@ -569,7 +571,7 @@ div.promo:hover{
 .indexBoard {
     padding: 10px;
     border-width: 11px 12px 19px 13px;
-    border-image: url(Image_history/frame-indexBoard.png) 11 12 19 13 round;
+    border-image: url(../Image_history/frame-indexBoard.png) 11 12 19 13 round;
     border-style: solid;
     background: #b56338;
     border-radius: 15px;
@@ -631,7 +633,7 @@ div.promo:hover{
 
 /*CSS HISTORICAL STORY*/
 .pageHeader {
-    background: url(Image_history/pageHeader-bg.png) no-repeat 0 0;
+    background: url(../Image_history/pageHeader-bg.png) no-repeat 0 0;
     padding: 20px 2.5%;
     background-size: 100% 100%;
     position: relative;
@@ -649,12 +651,12 @@ div.promo:hover{
 
 .pageHeader-has-nail:before, .pageHeader-has-nail-left:before {
     left: 1.5%;
-    background-image: url(Image_history/nail-left.png);
+    background-image: url(../Image_history/nail-left.png);
 }
 
 .pageHeader-has-nail:after, .pageHeader-has-nail-right:after {
     right: 1.5%;
-    background-image: url(Image_history/nail-right.png);
+    background-image: url(../Image_history/nail-right.png);
 }
 
 .pageHeader-has-nail:before, .pageHeader-has-nail:after, .pageHeader-has-nail-left:before, .pageHeader-has-nail-right:after {
@@ -676,7 +678,7 @@ div.promo:hover{
 
 .pageHeader_inner {
     padding: 20px 25px 15px;
-    background: url(Image_history/pageHeader-title-bg.png) no-repeat 0 0;
+    background: url(../Image_history/pageHeader-title-bg.png) no-repeat 0 0;
     background-size: 100% 100%;
 }
 
@@ -802,13 +804,13 @@ div.cards:hover {
     font-family: 'Baloo Da', cursive;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
+    /*-webkit-box-orient: vertical;*/
     display: block;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     font-size: 17px;
-    line-height: 1.1;
-    height: 35.2px;
+    /*line-height: 1.1;*/
+    /*height: 35.2px;*/
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
     -ms-transition: all 100ms ease-in-out;
@@ -817,15 +819,16 @@ div.cards:hover {
 }
 
 .history-chapters .card__text {
+    padding-top: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
+    /*-webkit-box-orient: vertical;*/
     display: block;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     font-size: 17px;
-    line-height: 1.1;
-    height: 35.2px;
+    /*line-height: 1.1;*/
+    /*height: 35.2px;*/
 }
 
 .card__image {
@@ -861,7 +864,7 @@ div.cards:hover {
     bottom:75px;
     right:40px;
     display:none;
-    background: url(Image_history/back_to_top.png) no-repeat 0px 20px;
+    background: url(../Image_history/back_to_top.png) no-repeat 0px 20px;
     border-radius: 50%;
 }
 .scrollToTop:hover{
@@ -885,199 +888,6 @@ div.cards:hover {
 
 
 
-@media screen and (min-width: 1201px) {
-	.navHeader{
-		display: block !important;
-	}
-
-    .grid .grid4__col:nth-child(4n+1) {
-        clear: left;
-    }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 1025px) {
-	.navHeader{
-		display: block !important;
-	}
-}
-
-@media screen and (max-width: 1199px) and (min-width: 768px) {
-    .grid .grid4__col {
-        width: 33.3333333333%;
-    }
-
-    .grid .grid4__col:nth-child(3n+1) {
-    clear: left;
-}
-}
-
-@media screen and (max-width: 1024px) {
-	
-	.siteHeader{
-		background-color: #fff;
-	    margin-left: -15px;
-	    margin-right: -15px;
-	    margin-bottom: 15px;
-	}
-	
-	.topHeader{
-		display: block;
-	   	width: auto;
-	    padding: 10px 15px 10px 55px;
-	    position: relative;
-	}
-
-	.topHeader_logo{
-		max-width: 280px;
-    	padding-left: 20px;
-	}
-
-	.topHeader_space{
-		display: none;
-	}
-
-	.topHeader_social{
-		display: none;
-	}
-
-	.topHeader .menuToggle{
-		display: block;
-	    position: absolute;
-	    left: 15px;
-	    top: 45%;
-	    margin-top: -14px;
-	}
-
-	.navHeader{
-		border-radius: 0;
-		display: none;
-	}
-
-	.navBar{
-		display: block;
-	}
-
-	.navBar_menu-menu, .navBar_search{
-		display: block;
-	}
-
-	.navBar_search{
-		display: block;
-	}
-
-	.navBar_search-form{
-		float: none;
-		width: auto;
-	}
-
-	.navbar-widgets{
-    	display: block;
-	}
-
-	.timeLine, .sidebar{
-		margin-top: 2rem;
-		margin-left: 0;
-	    float: none;
-	    width: auto;
-	}
-
-    .content-area, .sidebar {
-        margin-left: 0;
-        float: none;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 767px) and (min-width: 500px){
-    .grid .grid4__col {
-        width: 50%;
-        float: left;
-    }
-
-    .grid .grid4__col:nth-child(3n+1) {
-        clear: none;
-    }
-
-    .grid .grid4__col:nth-child(2n+1) {
-        clear: left;
-    }
-}
-
-@media screen and (max-width: 767px) {
-	.welcome {
-	    background-size: cover;
-	}
-
-    /*CSS HISTORICAL STORY*/
-    .pageHeader {
-        background-image: url(Image_history/pageHeader-bg-mobile.png);
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .pageHeader-has-nail:before,
-    .pageHeader-has-nail:after,
-    .pageHeader-has-nail-left:before,
-    .pageHeader-has-nail-right:after {
-        display: none;
-    }
-
-    .pageHeader_inner {
-        background-image: url(Image_history/pageHeader-title-bg-mobile.png);
-        padding: 15px;
-    }
-
-    .pageHeader__title {
-        font-size: 38px;
-    }
-
-    .grid *[class*=__col] {
-        width: 50%;
-        float: left;
-    }
-}
-
-@media screen and (max-width: 600px) {
-	.bag{
-	    padding-left: 0;
-    	padding-right: 0;
-	}
-
-	.siteHeader{
-		margin-left: 0;
-    	margin-right: 0;
-	}
-
-	.intro-title, .welcome_title{
-		font-size: 40px;
-	}
-
-	.welcome {
-	    background-image: url(Image_history/welcome-bg-small.png);
-	    background-size: 100% 100%;
-	    padding-bottom: 40px;
-	    padding-left: 20px;
-	    padding-right: 20px;
-	}
-
-    /*CSS HISTORICAL STORY*/
-    .grid__row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-	
-}
-
-@media screen and (max-width: 479px) {
-	.topHeader_logo{
-		max-width: 150px;
-    	padding-left: 0;
-	}
-
-	.topHeader .menuToggle{
-		width: 30px;
-	}
-}
 
 
 
