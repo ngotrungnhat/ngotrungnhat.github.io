@@ -11,7 +11,7 @@
 		padding-right: 20px;
 		padding-left: 20px;
 		text-decoration: none;
-		
+		font-family: "Francois One", Anton;
 	}
 
 	.sortBook a {color: #191616;}
@@ -19,8 +19,8 @@
 	.sortBook a:hover {
 		color: rgba(0,127,240,.8);
 		text-decoration: none;
-		padding: 0px 20px 8px 20px;
-		border-bottom: 2px solid rgba(0,127,240,.8);
+		padding: 0px 20px 6px 20px;
+		border-bottom: 1px solid rgba(0,127,240,.8);
 	}
 	
 	.sort01{ font-size: 18px; }
@@ -37,18 +37,104 @@
 
 	.sort07{}
 
+	.sort08 a:hover {
+		color: red;
+		text-decoration: none;
+		padding: 0px 0px 6px 40px;
+		border-bottom: none;
+	}
+
+	.fa {
+		font-size: 32px !important;
+		margin-left: 5px;
+	}
+
 
 	.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	    display: block;
+	    position: relative;
+	    padding-left: 35px;
+	    margin-bottom: 12px;
+	    cursor: pointer;
+	    font-size: 20px;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	}
+
+
+
+.bookCards {
+    color: #753721;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+    -o-box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+}
+
+.cardFloat:hover {
+	color: #ca27b1 !important;
+    cursor: pointer !important;
+}
+
+.book_card__body {
+	position: relative;
+    overflow: hidden;
+}
+
+.book_card__body:hover .cardBook {
+	-webkit-filter: brightness(30%); /* Safari 6.0 - 9.0 */
+    filter: brightness(30%);
+}
+
+.book_card__body:hover .shopping {
+	opacity: 1;
+}
+
+/*.cardBook:hover {
+	-webkit-filter: brightness(30%);  Safari 6.0 - 9.0 
+    filter: brightness(30%);
+}*/
+
+.shopping {
+	color: white;
+	position: absolute;
+	top: 42%;
+    left: 39%;
+    /*background-color: #e28d70;*/
+    width: 25%;
+    height: 20%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-right: 7px;
+    opacity: 0;
+}
+
+.shopping:hover {
+	cursor: pointer;
+}
+
+
+.fa {
+	color: white !important;
+}
+
+.fa:hover {
+	color: white !important;
+	cursor: pointer;
 }
 
 .contentFilter h2 {
@@ -141,9 +227,10 @@ div.ui-slider-range.ui-widget-header {
 		.valuePrice {
 			width: 40%;
 			height: 30px;
-			border: 1px solid black;
 			float: left;
 			text-align: center;
+			border-radius: 6px;
+			background-color: #dfb373;
 		}
 
 		.value_01 {
@@ -158,9 +245,19 @@ div.ui-slider-range.ui-widget-header {
 			width: 50%;
 			height: 30px;
 			margin: 10px auto 10px auto;
-			border: 1px solid red;
 			text-align: center;
+			border-radius: 6px;
+			background-color: #e28e71;
 		}
+
+		.ok:hover{
+			background-color: #e28e718a;
+			cursor: pointer;
+		}
+
+			.value_01 p, .value_02 p, .ok p {
+				padding-top: 5px;
+			}
 
 
 
@@ -168,6 +265,11 @@ div.ui-slider-range.ui-widget-header {
 
 .cardBook {
 	padding-top: 120%;
+	-webkit-transition: .5s ease;
+       -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+         -o-transition: .5s ease;
+            transition: .5s ease;
 }
 
 .cardFloat {
@@ -189,7 +291,7 @@ div.ui-slider-range.ui-widget-header {
 	font-size: 13px;
     color: #242424;
     font-weight: 500;
-    padding: 10px 0 0;
+    padding: 5px 0 0;
     text-align: left;
     margin-bottom: 0px;
 }
@@ -277,6 +379,54 @@ div.ui-slider-range.ui-widget-header {
 }
 
 
+
+
+
+
+/*CSS SNACKBAR*/
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    height: 100px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 50px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 50px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
 				
 
 

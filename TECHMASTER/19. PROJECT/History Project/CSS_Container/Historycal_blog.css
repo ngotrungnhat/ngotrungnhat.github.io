@@ -2,7 +2,6 @@
 
 .bagBlog {
 	max-width: 1370px;
-    /* padding: 0 15px; */
     margin: 0 auto;
 }
 
@@ -12,7 +11,8 @@
 }
 
 .child-site-content {
-	width: 90%;
+	max-width: 1370px;
+    padding: 0px 60px;
 	margin: auto;
 }
 
@@ -28,7 +28,43 @@
     .contentCarousel {
     	height: 300px;
     	float: left;
+        position: relative;
     }
+
+        .contentCarousel img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contentCarousel .imgText {
+            padding: 60px 20px 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            right: 0px;
+            font-size: 28px;
+            color: white;
+            font-family: "Francois One", Anton;
+            text-shadow: 2px 2px #000000;
+        }
+
+        .contentCarousel .contentImg {
+            display: none;
+            width: 100%;
+            font-size: 16px;
+            line-height: 30px;
+            font-family: "Francois One", Anton;
+            letter-spacing: 1px;
+            color: #fff;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            padding: 60px 20px 20px;
+            background: -webkit-linear-gradient(rgba(30,87,153,0) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.78) 100%);
+            background: -o-linear-gradient(rgba(30,87,153,0) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.78) 100%);
+            background: linear-gradient(rgba(30,87,153,0) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.78) 100%);
+        }
 
     .content01 {
     	background-color: blue;
@@ -36,6 +72,8 @@
     	border-right: 1px solid white;
     	border-bottom: 1px solid white;
     }
+
+
 
     .content02 {
     	background-color: red;
@@ -102,6 +140,117 @@
 	margin-top: 50px;
 	overflow: auto;
 	width: 100%;
+    position: relative;
+}
+
+    .cardContent {
+        width: 23.5%;
+        height: auto;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    /*.cardContent:after, .cardContent:before {
+        clear: left;
+    }*/
+    
+    .imagecardContent img {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s ease;
+           -moz-transition: all .4s ease;
+            -ms-transition: all .4s ease;
+             -o-transition: all .4s ease;
+                transition: all .4s ease;
+    }
+
+    .imagecardContent img:hover {
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2); 
+    }
+
+    .imagecardContent {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .imagecardContent:hover {
+    }
+
+
+
+    .cardContent:nth-child(4n+1) {
+        /*margin-left: 0px;
+        margin-right: 1%;*/
+        /*position: absolute;*/
+        left: 0;
+
+        /*float: left;*/
+    }
+
+    .cardContent:nth-child(4n+2) {
+        /*position: absolute;*/
+        left: 25.5%;
+    }
+
+     .cardContent:nth-child(4n+3) {
+        /*margin-left: 1%;
+        margin-right: 1%;*/
+        /*position: absolute;*/
+        left: 51%;
+    }
+
+    .cardContent:nth-child(4n+4) {
+        /*margin-left: 1%;
+        margin-right: 0px;
+        float: right !important;*/
+        /*position: absolute;*/
+        left: 76.5%;
+    }
+
+        .titleCardContent {}
+
+        .textCardContent {}
+
+        .blog_cardFloat {
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: auto ; 
+            border-radius: 0px 0px 6px 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+       }
+
+       .blog_card_text {font-size: 20px;}
+
+       .blog_card_text:hover {
+            color: #ca27b1 !important;
+            cursor: pointer !important;
+       }
+
+       .blog_author {font-size: 15px;}
+
+    .cardContent_01 {}
+
+    .cardContent_02 {}
+
+    .cardContent_03 {}
+
+
+
+
+
+
+
+
+.carousel-control-next, .carousel-control-prev {
+    width: 2% !important;
 }
 
 .infoGame {

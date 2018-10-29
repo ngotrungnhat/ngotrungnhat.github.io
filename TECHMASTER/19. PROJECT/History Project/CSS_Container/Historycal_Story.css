@@ -1,0 +1,11 @@
+.story_cardFloat {
+	height: 170px !important;
+}
+
+.figures_cardFloat {
+	display: block !important;
+}
+
+.figures_cardFloat h3 {
+	font-size: 20px !important;
+}

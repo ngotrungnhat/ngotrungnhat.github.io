@@ -45,6 +45,55 @@ function navbarToggle(x){
 // });
 
 
+//HOVER CONTENT CAROUSEL
+$(document).ready(function(){
+  $(".content01").hover(function(){
+    $(".content01 .imgText").css({"display": "none"});
+    $(".content01 .contentImg").css({"display": "block"});
+    $(".content01").css({"cursor": "pointer"});
+  }, function(){
+    $(".content01 .imgText").css({"display": "inline-block"});
+    $(".content01 .contentImg").css({"display": "none"});
+  });
+
+  $(".content02").hover(function(){
+    $(".content02 .imgText").css({"display": "none"});
+    $(".content02 .contentImg").css({"display": "block"});
+    $(".content02").css({"cursor": "pointer"});
+  }, function(){
+    $(".content02 .imgText").css({"display": "inline-block"});
+    $(".content02 .contentImg").css({"display": "none"});
+  });
+
+  $(".content03").hover(function(){
+    $(".content03 .imgText").css({"display": "none"});
+    $(".content03 .contentImg").css({"display": "block"});
+    $(".content03").css({"cursor": "pointer"});
+  }, function(){
+    $(".content03 .imgText").css({"display": "inline-block"});
+    $(".content03 .contentImg").css({"display": "none"});
+  });
+
+  $(".content04").hover(function(){
+    $(".content04 .imgText").css({"display": "none"});
+    $(".content04 .contentImg").css({"display": "block"});
+    $(".content04").css({"cursor": "pointer"});
+  }, function(){
+    $(".content04 .imgText").css({"display": "inline-block"});
+    $(".content04 .contentImg").css({"display": "none"});
+  });
+
+  $(".content05").hover(function(){
+    $(".content05 .imgText").css({"display": "none"});
+    $(".content05 .contentImg").css({"display": "block"});
+    $(".content05").css({"cursor": "pointer"});
+  }, function(){
+    $(".content05 .imgText").css({"display": "inline-block"});
+    $(".content05 .contentImg").css({"display": "none"});
+  });
+});
+
+
 var modal = document.getElementById('story-01');
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -52,6 +101,10 @@ window.onclick = function(event) {
     }
 }
 
+
+
+
+//HOVER TO PAGE
 $(document).ready(function(){
 	let index;
 	const lis = $('.pageList li');
@@ -185,6 +238,22 @@ $(function(){
       }
   });
 });
+
+
+
+// $(".shopping").mouseenter(function(){
+//     $(".cardBook" this).css({"-webkit-filter": "brightness(30%)", "filter": "brightness(30%)"});
+// });
+
+
+
+// JAVASCRIPT SNACKBAR
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
 
 
 
