@@ -746,10 +746,7 @@ div.promo:hover{
     position: fixed;
 }*/
 
-div.scroll-text {
-    overflow: scroll;
-    height: 500px;
-}
+
 
 button.w3-button {
     margin: 10px 0px;

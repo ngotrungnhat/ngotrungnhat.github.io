@@ -1,0 +1,657 @@
+
+.containerPerson {
+	margin: auto;
+	max-width: 850px;
+	background-color: #e9ebee;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+
+	.panePerson {
+		border: 1px solid #e9eaed;
+		width: 100%;
+		height: 360px;
+		position: relative;
+	}
+
+		.imgpane {
+			width: 100%;
+			height: 90%;
+			background-image: url(https://phanxipang.files.wordpress.com/2013/06/img_4599ss.jpg);
+			background-repeat: no-repeat;
+		   	background-size: cover;
+		    background-color: white;
+		    padding-top: 0;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		}
+
+		.avaPane {
+			width: 70%;
+			position: absolute;
+			top: 180px;
+			left: 5px;
+			z-index: 10;
+		}
+
+			.imgAva {
+				float: left;
+				border-radius: 50%;
+				width: 160px;
+				height: 160px;
+				border: 5px solid #fff;
+			}
+
+				.imgAva img {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+
+			.textAva {
+				padding-top: 60px;
+				padding-left: 15px;
+				float: left;
+				color: white;
+				line-height: 30px;
+				cursor: pointer;
+			    -webkit-font-smoothing: antialiased;
+			    line-height: 30px;
+			    text-rendering: optimizelegibility;
+			    text-shadow: 0 0 3px rgba(0,0,0,.8);
+			}
+
+				.textAva p { 
+					margin-bottom: 0.3rem;
+					font-size: 24px;
+					font-weight: 500;
+				}
+
+				.textAva span {
+					font-size: 20px;
+				}
+
+		.underImgPane {
+			width: 100%;
+			height: 13%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #fff;
+			z-index: 5;
+		}
+
+			.under {
+				float: left;
+				border-left: 1px solid #e9eaed;
+				height: 100%;
+				padding: 0 17px;
+				padding-top: 0px;
+				color: #365899;
+			    font-size: 14px;
+			    font-weight: 600;
+			    height: 43px;
+			    line-height: 3.05;
+			    cursor: pointer;
+			}
+
+			.under1 {
+				width: 20%;
+
+			}
+
+				.under4 p {
+					display: inline;
+					color: #89919c;
+				    font-size: 11px;
+				    font-weight: normal;
+				}
+
+				.under6 i {
+					width: 20px;
+					height: 16px;
+					background-size: 14px;
+					background-image: url(https://i.imgur.com/jp7myoi.png);
+				    background-repeat: no-repeat;
+				    display: inline-block;
+				}
+
+.contentPerson {
+	margin-top: 10px;
+	width: 100%;
+}
+	
+	.introPerson {
+		width: 315px;
+		float: left;
+		position: -webkit-sticky;
+		position: sticky;
+		top: -900px;
+	}
+
+		.infoPerson {
+			padding-top: 10px;
+			background-color: #fff;
+			border: 1px solid #e9eaed;
+		}
+
+			.infoPerson img {display: inline-block;}
+
+			.infoPerson p {
+				display: inline-block;
+				padding-left: 5px;
+			}
+
+			.titleInfo {
+			    font-size: 16px;
+			    line-height: 20px;
+			    padding-left: 10px;
+			}
+
+				.titleInfo img {
+					width: 24px;
+					height: 24px;
+					float: left;
+				}
+
+				.titleInfo p {
+					float: left;
+					padding-left: 5px;
+					padding-top: 3px;
+				}
+
+			.contentInfo {
+				font-size: 12px;
+				line-height: 16px;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+
+				.contentInfo p {
+					width: 250px;
+					float: left;
+				}
+
+				.contentInfo img {
+				    height: 16px;
+				    width: 16px;
+				    float: left;
+				}
+
+				.contentInfo a {
+					color: #0056b3;
+				}
+			
+			.imageInfo {
+				width: 100%;
+				height: 315px;
+			}
+
+				.imageInfo img {
+					width: 100%;
+					height: 100%;
+				}
+
+				.imageHili {
+					float: left;
+				}
+
+				.hili01 {
+					width: 210px;
+					height: 100%;
+				}
+
+				.hili02, .hili03, .hili04 {
+					width: 100px;
+					height: 105px;
+					padding-left: 5px;
+				}
+
+				.hili03, .hili04 {padding-top: 5px;}
+
+
+
+
+
+
+
+
+		.photoPerson {
+			margin-top: 10px;
+			background-color: #fff;
+			padding-top: 10px;
+			border: 1px solid #e9eaed;
+
+		}
+
+			.photoPer {
+				float: left;
+				width: 33.333333%;
+				padding: 2px;
+				cursor: pointer;
+			}
+
+
+
+
+
+
+
+
+		.friendPerson {
+			background-color: #fff;
+			width: 100%;
+			margin-top: 10px;
+			padding-top: 10px;
+			border: 1px solid #e9eaed;
+		}
+
+			.friendPer {
+				float: left;
+				width: 33.333333%;
+				height: 110px;
+				padding: 2px;
+				position: relative;
+				cursor: pointer;
+			}
+
+			.friendPer img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.friendPer p {
+				position: absolute;
+				bottom: 5px;
+				left: 5px;
+				font-family: Helvetica, Arial, sans-serif;
+			    font-size: 12px;
+			    color: #fff;
+			    margin-bottom: 0 !important;
+			    line-height: 1.34;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.langualePerson {
+			background-color: #fff;
+			border: 1px solid #e9eaed;
+		}
+
+
+
+
+
+
+
+	.timelinePerson {
+		width: 61.5%;
+		margin-left: 10px;
+		float: left;
+
+	}
+
+		.boxTimeline {
+			width: 100%;
+			border: 1px solid #e9eaed;
+		}
+
+			.headerBox {
+				width: 100%;
+				height: 35px;
+				border: 1px solid #ccd0d5;
+				background-color: #f5f6f7;
+			    border-radius: 2px 2px 0 0;
+			    font-weight: bold;
+			}
+
+				.headBox {
+					float: left;
+					padding: 4px 10px 4px 10px;
+				    border-left: 1px solid #ccd0d5;
+				    color: #365899;
+				    margin-top: 4px;
+					cursor: pointer;
+				}
+
+					.headBox img {
+						float: left;
+						width: 16px;
+						height: 16px;
+					}
+
+					.headBox p {
+						float: left;
+						font-size: 12px;
+					    font-weight: 600;
+					    line-height: 14px;
+					    margin-bottom: 0px !important;
+					    padding-left: 6px;
+					    padding-top: 2px;
+
+					}
+
+				.headerBox_01 {}
+
+			.bodyBox {
+				background-color: #fff;
+				width: 100%;
+				height: 100px;
+				border-radius: 2px 2px 0 0;
+				border-bottom: 1px solid #e9eaed;
+				position: relative;
+			}
+
+				.smallAva {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					position: absolute;
+					top: 28px;
+					left: 5px;
+				}
+
+					.smallAva img {
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+
+				.bodyBox input {
+					outline: none;
+					width: 100%;
+					height: 100%;
+					padding-left: 50px;
+					border: none;
+				}
+
+			.footerBox {
+				background-color: #fff;
+				width: 100%;
+				height: 50px;
+				padding-left: 10px;
+			}
+
+				.chan {
+					float: left;
+				    color: #365899;
+				    margin-top: 4px;
+					cursor: pointer;
+				    background: #f5f6f7;
+				    border-radius: 18px;
+				    cursor: pointer;
+				    padding: 10px 10px;
+				    margin-left: 5px;
+				}
+
+					.chan img {
+						float: left;
+						width: 16px;
+						height: 16px;
+						background-color: 
+					}
+
+					.chan p {
+						float: left;
+						font-size: 12px;
+					    font-weight: 600;
+					    line-height: 14px;
+					    margin-bottom: 0px !important;
+					    padding-left: 6px;
+					    padding-top: 2px;
+					}
+
+				.anh {}
+
+				.ganthe {}
+
+				.camxuc {}
+
+				.khac {
+					float: left;
+					padding: 4px 10px 4px 10px;
+				    color: #365899;
+				    margin-top: 4px;
+					cursor: pointer;
+				    background: #f5f6f7;
+				    border-radius: 18px;
+				    cursor: pointer;
+				    padding: 7px 35px;
+				    margin-left: 5px;
+				}
+
+		.contentTimeline {
+			width: 100%;
+			margin-top: 10px;
+			background-color: #fff;
+		}
+
+			.headerTimeline {
+				width: 100%;
+				height: 58px;
+				position: relative;
+			}
+
+				.imageTimeline {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+
+					.imageTimeline img {
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+
+				.maneTimeline {
+					position: absolute;
+					top: 8px;
+					left: 10px;
+				}
+
+					.maneTimeline h5 {
+						float: left;
+						color: #365899;
+					    cursor: pointer;
+					    font-size: 14px;
+					    line-height: 1.38;
+					    padding-left: 50px;
+					    margin: 0px !important;
+					    padding-top: 2px;
+					}
+
+					.maneTimeline p {
+						float: left;
+						margin: 0px !important;
+						padding-left: 5px;
+						color: grey;
+					}
+					
+					.maneTimeline img {
+						float: left; 
+						padding-left: 175px;
+					}
+
+				.timeTimeline {
+					width: 50%;
+					position: absolute;
+					top: 30px;
+					left: 60px;
+				}
+
+					.timeTimeline p {
+						float: left;
+					    color: #616770;
+						font-size: 12px;
+						font-weight: normal;
+					}
+
+					.timeTimeline span {
+						float: left;
+						position: absolute;
+					    top: -3px;
+					    left: 76px;
+					}
+						
+						.timeTimeline span img {
+							width: 12px;
+							height: 12px;
+						}
+
+
+			.bodyTimeline {
+				background-color: violet;
+				position: relative;
+				width: 100%;
+				height: 300px;
+				
+
+			}
+
+			.footerTimeline {
+				position: relative;
+				width: 100%;
+				height: 130px;
+				border: 1px solid yellow;
+			}
+
+				.numInteractive {border-bottom: 1px solid #e9eaed;}
+
+					.numInteractive span {
+						float: left;
+					}
+
+						.numInteractive span img {
+							width: 16px;
+							height: 16px;
+							cursor: pointer;
+						}
+
+					.numInteractive p {
+						padding-left: 5px;
+						padding-top: 2px;
+						float: left;
+					    color: #616770;
+						font-size: 12px;
+						font-weight: normal;
+						cursor: pointer;
+					}
+
+					.numInteractive p.cmt {padding-left: 30px;}
+
+				.selecInteractive {
+					width: 100%;
+					border-bottom: 1px solid #e9eaed;
+				}
+
+					.selec {
+						float: left;
+						padding: 10px 40px 0px 50px;
+					}
+
+					.selec:hover {
+						background-color: #eff1f3;
+						cursor: pointer;}
+
+						.selec img {
+							width: 18px;
+							height: 18px;
+						}
+
+						.selec p {
+							display: inline-block;
+						}
+
+					/*.likeSelec {}
+						
+						.likeSelec img {}
+
+						.likeSelec p {}
+*/
+
+				.cmtInteractive {
+					width: 100%;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+
+					.cmtImage {
+						width: 32px;
+						height: 32px;
+						border-radius: 50%;
+						float: left;
+					}
+
+						.cmtImage img {
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+						}
+
+					.cmtBox {
+						padding-left: 10px;
+						float: left;
+						width: calc(100% - 50px);
+						height: 32px;
+						position: relative;
+					}
+
+						.cmtBox input {
+							padding-left: 10px;
+							width: 100%;
+							height: 100%;
+							float: left;
+							outline: none;
+							border: none;
+							border-radius: 18px;
+							background-color: #f2f3f5;
+						    border: 1px solid #dddfe2;
+						}
+
+						.cmtEmoji {
+							width: 120px;
+							position: absolute;
+							top: 3px;
+							right: 15px;
+						}
+
+							.cmtEmoji img {
+								width: 18px;
+								height: 18px;
+								margin-left: 5px;
+							}
+
+ .figures_w3-container {background-color: #4267b2 !important;     color: #fff!important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

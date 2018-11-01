@@ -1,7 +1,9 @@
 
 //RESIZE CHIỀU CAO CỦA FIXED THEO FLAG.
 $(".fixedFlag").height($(".flag").height());
-
+$(".book_modal_content").height(0.65*(screen.height));
+// $(".panePerson").height(0.4*($(".panePerson").width()));
+// $(".imgAva").height($(".imgAva").width());
 //OPACITY FLAG
 // function opacity(){
 // 	var arrScale = [];
@@ -232,9 +234,6 @@ $(function(){
           } else {
               $('#rangeval02').html(string_02.substr(0, 1) + "." + string_02.substr(1, 3) + "." + string_02.substr(4, 3));
           }
-
-
-
       }
   });
 });
@@ -248,16 +247,39 @@ $(function(){
 
 
 // JAVASCRIPT SNACKBAR
-function myFunction() {
+function snackBar() {
     var x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
 
+//DETAILS IMAGE
+function detailsImg(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
 
 
 
+// JAVASCRIPT RATING STAR
+$(document).ready(function(){
+ $(".ha").mouseenter(function(){
+   $(this).css({"color": "orange"});
+ });
+
+ $(".ratingComent").mouseleave(function(){
+  $(".ha").css({"color": "gray !important"});
+ });
+ // $(".ha").hover(function(){
+ //   $(this).css({"color": "orange"});
+ // }, function(){
+ //   $(".ha").css({"color": "gray"});
+ // });
+});
 
 
 

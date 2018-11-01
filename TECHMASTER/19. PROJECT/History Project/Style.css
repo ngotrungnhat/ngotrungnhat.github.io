@@ -11,14 +11,22 @@
 @import url("CSS_Container/Historycal_Story.css");
 @import url("../CSS_Container/Historycal_Story.css");
 
+@import url("CSS_Container/figures_details.css");
+@import url("../CSS_Container/figures_details.css");
+
 @import url("CSS_Container/Historycal_Book.css");
 @import url("../CSS_Container/Historycal_Book.css");
+
+@import url("CSS_Container/product_details.css");
+@import url("../CSS_Container/product_details.css");
 
 @import url("CSS_Container/Historycal_Videos.css");
 @import url("../CSS_Container/Historycal_Videos.css");
 
 @import url("CSS_Container/Historycal_blog.css");
 @import url("../CSS_Container/Historycal_blog.css");
+
+
 
 @import url("CSS_Container/@media_History.css");
 @import url("../CSS_Container/@media_History.css");
