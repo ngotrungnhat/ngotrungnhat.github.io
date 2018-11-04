@@ -486,79 +486,6 @@ div.promo:hover{
    	text-decoration: none;
 }
 
-.main{
-    display: block;
-}
-
-.timeLine{
-	/*margin-left: -330px;
-    float: right;
-    width: calc(100% - 330px);*/
-    display: block;
-}
-
-.contentLeft {
-    border: 1px solid black;
-    height: 1000px;
-    width: 40%;
-    float: left;
-    position: relative;
-}
-
-.contentBetween {
-    border: 1px solid blue;
-    width: 20%;
-    float: left;
-    position: relative;
-}
-
-.containerFoot {
-    margin: auto;
-    width: 100px;
-}
-
-.foot {
-    width: 30px;
-    margin: auto;
-}
-
-.footRight {
-    margin-left: 25px;
-    margin-top: 10px;
-}
-
-.footLeft {
-    margin-right: 25px;
-    margin-top: 10px;
-}
-
-.footRight:hover, .footLeft:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-
-.contentRight {
-    border: 1px solid red;
-    height: 1000px;
-    width: 40%;
-    float: right;
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .sidebar {
     width: 300px;
     float: left;
@@ -626,8 +553,6 @@ div.promo:hover{
     display: block;
     padding: 7px 15px 7px 0;
 }
-
-
 
 
 
@@ -741,11 +666,6 @@ div.promo:hover{
     top: 0;
     bottom: 0;
 }
-
-/*header.w3-teal, footer.w3-teal {
-    position: fixed;
-}*/
-
 
 
 button.w3-button {
@@ -867,43 +787,3 @@ div.cards:hover {
 .scrollToTop:hover{
     text-decoration:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

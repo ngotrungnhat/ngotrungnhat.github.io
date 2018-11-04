@@ -1,0 +1,387 @@
+
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+	transition-duration: .0s !important;
+}
+
+.main{
+    display: block;
+    width: 100%;
+    height: 1000px;
+}
+
+	.containerTimeline {
+	    border: 1px solid blue;
+	    width: 100%;
+	    position: relative;
+	}
+
+		.containerFoot {
+			border: 1px solid red;
+			display: inline-block;
+		    margin: auto;
+		    width: 100%;
+		}
+
+		.foot_01 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(0deg) !important;
+		}
+
+		.foot_02 {
+			position: absolute;
+			top: 40px;
+			left: 32px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-10deg) !important;
+		}
+
+		.foot_03 {
+			position: absolute;
+			top: 79px;
+			left: 22px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-52deg) !important;
+		}
+
+		.foot_04 {
+			position: absolute;
+			top: 83px;
+			left: 74px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-64deg) !important;
+		}
+
+		.foot_05 {
+			position: absolute;
+			top: 117px;
+			left: 95px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-82deg) !important;
+		}
+
+		.foot_06 {
+			position: absolute;
+			top: 100px;
+			left: 138px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-74deg) !important;
+		}
+
+		.foot_07 {
+			position: absolute;
+			top: 126px;
+			left: 169px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-100deg) !important;
+		}
+
+		.foot_08 {
+			position: absolute;
+			top: 102px;
+			left: 208px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-83deg) !important;
+		}
+
+		/*.foot_09 {
+			position: absolute;
+			top: 126px;
+			left: 246px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-100deg) !important;
+		}
+
+		.foot_10 {
+			position: absolute;
+			top: 102px;
+			left: 286px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-83deg) !important;
+		}
+
+		.foot_11 {
+			position: absolute;
+			top: 126px;
+			left: 320px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-100deg) !important;
+		}*/
+
+		.straight_01 {
+			/*border: 1px solid red;*/
+			width: 72%;
+			height: 100px;
+			position: absolute;
+			top: 107px;
+			left: 226px;
+
+		}
+
+		.straight_01 div {
+			display: inline-block;
+			float: left;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-83deg) !important;
+		}
+
+		.foot {
+			    width: 30px;
+			    margin: auto;
+			}
+
+			.footRight {
+			    margin-left: 25px;
+		        margin-top: 28px;
+			}
+
+			.footLeft {
+			    margin-right: 25px;
+			    margin-left: 33px;
+			}
+
+			.footRight:hover, .footLeft:hover {
+			    opacity: 0.5;
+			    cursor: pointer;
+			}
+	
+	.crabsRight_01 {
+		border: 1px solid blue;
+		width: 20%;
+		float: right;
+		position: absolute;
+		top: 145px;
+		right: 7px;
+	}	
+
+		.foot_20 {
+			position: absolute;
+			top: -32px;
+			right: 288px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-72deg) !important;
+		}
+
+		.foot_21 {
+			position: absolute;
+			top: 15px;
+			right: 260px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-60deg) !important;
+		}
+
+		.foot_22 {
+			position: absolute;
+			top: 36px;
+			right: 200px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-21deg) !important;
+		}
+
+		.foot_23 {
+			position: absolute;
+			top: 92px;
+			right: 200px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-35deg) !important;
+		}
+
+		.foot_24 {
+			position: absolute;
+			top: 114px;
+			right: 156px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-11deg) !important;
+		}
+
+		.foot_25 {
+			position: absolute;
+			top: 165px;
+			right: 183px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-11deg) !important;
+		}
+
+		.foot_26 {
+			position: absolute;
+			top: 200px;
+			right: 140px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-4deg) !important;
+		}
+
+		.foot_27 {
+			position: absolute;
+			top: 247px;
+			right: 173px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-4deg) !important;
+		}
+
+		.foot_28 {
+			position: absolute;
+			top: 288px;
+			right: 133px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-4deg) !important;
+		}
+
+		.foot_29 {
+			position: absolute;
+			top: 332px;
+			right: 165px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-4deg) !important;
+		}
+		
+		.childCrabsRight_01 {
+			border: 1px solid red;
+			width: 30%;
+			float: right;
+		}
+			
+			.childCrabsRight_01 div {
+				display: inline-block;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+
+
+		/*.foot_12 {left: 360px;}
+		.foot_13 {left: 395px;}
+		.foot_14 {left: 430px;}
+		.foot_15 {left: 470px;}
+		.foot_16 {lsseft: 500px;}
+		.foot_17 {left: 540px;}
+		.foot_18 {left: 570px;}
+		.foot_19 {left: 610px;}
+		.foot_20 {left: 640px;}
+		.foot_21 {left: 680px;}
+		.foot_22 {left: 710px;}
+		.foot_23 {left: 750px;}
+		.foot_16 {left: 500px;}
+		.foot_17 {left: 540px;}
+		.foot_18 {left: 570px;}
+		.foot_19 {left: 610px;}
+*/
+		/*.foot_12, .foot_14, .foot_16, .foot_18, .foot_20, .foot_22 {
+			position: absolute;
+			top: 102px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-83deg) !important;
+		}
+
+		.foot_13, .foot_15, .foot_17, .foot_19, .foot_21 {
+			position: absolute;
+			top: 126px;
+			-webkit-transform: rotate(0deg) !important;
+		       -moz-transform: rotate(0deg) !important;
+		        -ms-transform: rotate(0deg) !important;
+		         -o-transform: rotate(0deg) !important;
+		            transform: rotate(-100deg) !important;
+		}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
