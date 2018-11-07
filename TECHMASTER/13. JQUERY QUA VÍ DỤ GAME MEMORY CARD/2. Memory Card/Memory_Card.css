@@ -4,8 +4,9 @@
 	box-sizing: border-box;
 }
 
-body{
-
+body, html{
+	height: 100%;
+	margin: 0;
 }
 
 .clearBoth{
@@ -13,6 +14,7 @@ body{
 }
 
 .content{
+	width: 95%;
 	position: relative;
 	z-index: 2;
 	overflow: auto;
@@ -62,6 +64,54 @@ body{
 img{
 	width: 100%;
 }
+
+.containerBar {
+	width: 5%;
+	height: 100%;
+	float: right;
+}
+
+	.timeBar {
+		width: 100%;
+		padding-top: 100%;
+		float: left;
+		background-color: grey;
+		border-radius: 50%;
+		position: relative;
+	}
+
+		.timeBar p {
+			text-align: center;
+			font-size: 2.7vw;
+			font-family: 'Baloo Da', cursive;
+			line-height: 1.1;
+			text-shadow: 0 7px 1px #a5a6a780;;
+		    margin-bottom: 0px !important;
+		    position: absolute;
+		    top: 20%;
+		    left: 20%;
+		}
+
+
+	#progressBar {
+		float: left;
+		width: 20px;
+		height: 90%;
+		background-color: #0A5F44;
+		border-radius: 6px;
+		margin-left: 40%;
+	}
+
+		.bar {
+			border-radius: 6px;
+		  	height: 0;
+		  	text-align: right;
+		  	padding: 0 3px;
+		  	line-height: 22px;
+		  	width: 100%;
+		  	background-color: #CBEA00;
+		  	box-sizing: border-box;
+		}
 
 
 

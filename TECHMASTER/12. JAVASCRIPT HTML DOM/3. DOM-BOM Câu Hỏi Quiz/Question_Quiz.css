@@ -1,97 +1,287 @@
 * {
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-		}
-		.cauHoi{
-			width: 95%;
-			height: 250px;
-			border: 1px solid black;
-			margin: auto;
-			border-radius: 20px;
-			margin-bottom: 20px;
-			margin-top: 10px;
-		}
-		.groupQuestion{
-			width: 95%;
-			/*border: 1px solid black;*/
-			overflow: auto;
-			/*position: relative;*/
-			/*top: 350px;*/
-			margin: auto;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-		}
-		.dapAn{
-			float: left;
-			width: 45%;
-			height: 130px;
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #e7e7e7 !important;
+}
 
-			/*border: 1px solid blue;*/
-		}
-		.dapAn button{
-			width: 100%;
-			height: 120px;
-			border-radius: 20px;
-			outline: 0;
-			background-color: #99ffff;
-		}
-		.dapAn button:active{
-			background-color: #00ffff;
-		}
-		.dapAn_1{
-			margin-right: 10%;
-			margin-bottom: 30px;
-		}
-		.dapAn_2{
-			
-		}
-		.dapAn_3{
-			margin-right: 10%;
-			/*margin-bottom: 50px;*/
-			
-		}
-		.dapAn_4{
-			
-		}
-		#cauHoi{
+.clearBoth{clear: both;}
+
+	.introGame {
+		margin: auto;
+		display: block;
+		width: 90%;
+		height: 100%;
+	}
+
+		.introGame h1 {
+			padding-top: 50px;
 			text-align: center;
-			padding-top: 100px;
+			font-size: 40px;
+			font-family: 'Baloo Da', cursive;
+			line-height: 1.1;
+			text-shadow: 0 7px 1px #a5a6a780;;
+		    margin-bottom: 0px !important;
+		    color: #753721;
 		}
-		.result {
-			width: 95%;
-			height: 80px;
-			margin: 20px auto;
+
+		.selecMoney {
+			width: 60%;
+			margin: auto;
 		}
-		#numTrue {
-			width: 45%;
+
+			.numMoney {
+				width: 100%;
+				height: 50px;
+				margin-top: 40px;
+			}
+
+			.selec_01 {}
+
+				.amountMoney, .amountQuestion {
+					width: 40%;
+					height: 100%;
+					float: left;
+				}
+
+				.amountMoney:hover .triangle-between, .amountQuestion:hover .triangle-between{
+					cursor: pointer;
+					background-color: #753721;
+				}
+
+				.amountMoney:hover .triangle-left, .amountQuestion:hover .triangle-left {
+					border-right: 60px solid #753721;
+				}
+
+				.amountMoney:hover .triangle-right, .amountQuestion:hover .triangle-right {
+					border-left: 60px solid #753721;
+				}
+
+					.triangle-left {
+						width: 0;
+						height: 0;
+						border-top: 25px solid transparent;
+						border-right: 60px solid #c1603d;
+						border-bottom: 25px solid transparent;
+						float: left;
+					}
+
+					.triangle-between {
+						width: calc(100% - 120px);
+						height: 50px;
+						background-color: #c1603d;
+						float: left;
+						padding-top: 10px;
+						text-align: center;
+						font-size: 30px;
+						font-family: 'Baloo Da', cursive;
+						line-height: 1.1;
+						text-shadow: 0 7px 1px #a5a6a780;;
+					    margin-bottom: 0px !important;
+					    color: #fff;
+					}
+
+					.triangle-right {
+						width: 0;
+						height: 0;
+						border-top: 25px solid transparent;
+						border-left: 60px solid #c1603d;
+						border-bottom: 25px solid transparent;
+						float: left;
+					}
+
+				.hyphen {
+					background-color: #e28f71;
+					width: 20%;
+					height: 2px;
+					float: left;
+					margin-top: 23.7px;
+				}
+				
+			.selec_02 {}
+
+			.selec_03 {}
+
+			.selec_04 {}
+
+			.selec_05 {}
+
+
+
+	.playGame {
+		display: none;
+		height: 100%;
+		width: 100%;
+	}
+
+		.contestQuiz {
+			width: 80%;
+			height: 100%;
 			float: left;
-			height: 80px;
-			border: 1px solid black;
-			margin-right: 5%;
-			border-radius: 20px;
-			text-align: center;
-			padding-top: 20px;
-			color: #00ff00;
-			font-size: 30px;
-			font-weight: bold;
-			
 		}
-		#numFalse {
-			width: 45%;
+
+			.cauHoi{
+				width: 95%;
+				height: 50%;
+				margin: auto;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				margin-top: 10px;
+			}
+
+				.cauHoi p {
+					text-align: center;
+					font-size: 20px;
+					font-family: 'Baloo Da', cursive;
+					line-height: 1.1;
+					text-shadow: 0 7px 1px #a5a6a780;;
+				    margin-bottom: 0px !important;
+				}
+
+			#cauHoi{
+				text-align: center;
+				padding-top: 100px;
+			}
+
+			.groupAnswer{
+				width: 95%;
+				overflow: auto;
+				margin: auto;
+				margin-top: 30px;
+			}
+
+				.dapAn{
+					float: left;
+					width: 45%;
+					height: 10%;
+				}
+
+					.dapAn button {
+						font-size: 25px;
+						font-family: 'Baloo Da', cursive;
+						line-height: 1.1;
+						text-shadow: 0 7px 1px #a5a6a780;;
+					    margin-bottom: 0px !important;
+					}
+
+				.dapAn_1{
+					margin-right: 10%;
+					margin-bottom: 30px;
+				}
+
+				.dapAn_2{}
+
+				.dapAn_3{margin-right: 10%;}
+
+				.dapAn_4{}
+
+					.dapAn button{
+						width: 100%;
+						height: 120px;
+						border-radius: 20px;
+						outline: 0;
+						background-color: #99ffff;
+					}
+
+					.dapAn button:active{
+						background-color: #00ffff;
+					}
+
+					.dapAn button:hover {cursor: pointer;}
+
+		.resultQuiz {
+			width: 20%;
+			height: 100%;
 			float: left;
-			height: 80px;
-			border: 1px solid black;
-			margin-left: 5%;
-			border-radius: 20px;
-			text-align: center;
-			padding-top: 20px;
-			color: #ff1a1a;
-			font-size: 30px;
-			font-weight: bold;
 		}
-		.clearBoth{
-			clear: both;
+		
+	
+
+	.endGame {
+		display: none;
+		width: 100%;
+		height: 100%;
+	}
+
+		.cicrleGame {
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			background-color: #c1603d;
+			border-radius: 50%;
 		}
+
+		.timePlay {border: 1px solid #ffffff;}
+
+		.scoresGame {border: 1px solid #ffffff;}
+
+		.numQuestion {border: 1px solid #ffffff;}
+		
+		.playAgain {border: 1px solid #ffffff;}
+
+			.childCicrleGame {
+				width: 100px;
+				height: 100px;
+				margin: auto;
+				margin-top: 25px;
+				background-color: #fff;
+				border-radius: 50%;
+				text-align: center;
+			}
+
+				.childCicrleGame p {
+					font-family: 'Baloo Da', cursive;
+					line-height: 1.1;
+					text-shadow: 0 7px 1px #a5a6a780;;
+				    margin-bottom: 0px !important;
+				}
+
+			.childTimePlay {}
+
+				.childTimePlay p {
+				    font-size: 60px;
+				    color: #000;
+				    padding-top: 20px;
+				}
+
+			.childScoresGame {}
+
+				.childScoresGame p {
+				    font-size: 60px;
+				    color: red;
+				    padding-top: 20px;
+				}				
+
+			.childNumQuestion {}
+
+				.childNumQuestion p {
+				    font-size: 45px;
+				    color: red;
+				    padding-top: 18px;
+				}	
+			
+			.childPlayAgain {}
+
+				.childPlayAgain p {
+				    font-size: 34px;
+				    color: red;
+				    padding-top: 27px;
+				}	
+
+
+
+
+
+
+
+
 
 
 

@@ -2,6 +2,7 @@
 //RESIZE CHIỀU CAO CỦA FIXED THEO FLAG.
 $(".fixedFlag").height($(".flag").height());
 $(".book_modal_content").height(0.65*(screen.height));
+$(".story_modal_content").height(0.65*(screen.height));
 // $(".panePerson").height(0.4*($(".panePerson").width()));
 // $(".imgAva").height($(".imgAva").width());
 //OPACITY FLAG

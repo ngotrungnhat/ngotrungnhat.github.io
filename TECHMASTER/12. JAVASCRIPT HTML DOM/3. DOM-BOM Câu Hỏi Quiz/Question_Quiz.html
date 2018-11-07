@@ -4,27 +4,133 @@
 	<meta charset="utf-8">
 	<title>Câu Hỏi Quiz</title>
 	<link rel="stylesheet" type="text/css" href="Question_Quiz.css">
+	<!-- FONT FAMILY GOOGLE -->
+	<link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da|Francois+One" rel="stylesheet">
 </head>
 <body>
-	<div class="result">
-		<div id="numTrue">SỐ ĐÁP ÁN ĐÚNG LÀ:</div>
-		<div id="numFalse">SỐ ĐÁP ÁN SAI LÀ:</div>
+	<div id="introGame" class="introGame">
+		<h1>Bạn Cần Bao Nhiêu Tiền???</h1>
+		<div class="selecMoney">
+			<div class="selec_01 numMoney">
+				<div class="amountMoney" onclick="pageQuestion()">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">15.000.000</div>
+					<div class="triangle-right"></div>
+				</div>
+				<div class="hyphen"></div>
+				<div class="amountQuestion" onclick="pageQuestion()">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">15 Câu hỏi</div>
+					<div class="triangle-right"></div>
+				</div>
+			</div>
+			<div class="selec_02 numMoney">
+				<div class="amountMoney">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">25.000.000</div>
+					<div class="triangle-right"></div>
+				</div>
+				<div class="hyphen"></div>
+				<div class="amountQuestion">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">20 Câu hỏi</div>
+					<div class="triangle-right"></div>
+				</div>
+			</div>
+			<div class="selec_03 numMoney">
+				<div class="amountMoney">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">30.000.000</div>
+					<div class="triangle-right"></div>
+				</div>
+				<div class="hyphen"></div>
+				<div class="amountQuestion">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">25 Câu hỏi</div>
+					<div class="triangle-right"></div>
+				</div>
+			</div>
+			<div class="selec_04 numMoney">
+				<div class="amountMoney">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">40.000.000</div>
+					<div class="triangle-right"></div>
+				</div>
+				<div class="hyphen"></div>
+				<div class="amountQuestion">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">30 Câu hỏi</div>
+					<div class="triangle-right"></div>
+				</div>
+			</div>
+			<div class="selec_05 numMoney">
+				<div class="amountMoney">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">50.000.000</div>
+					<div class="triangle-right"></div>
+				</div>
+				<div class="hyphen"></div>
+				<div class="amountQuestion">
+					<div class="triangle-left"></div>
+					<div class="triangle-between">40 Câu hỏi</div>
+					<div class="triangle-right"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="playGame" class="playGame">
+		<div class="contestQuiz">
+			<div class="cauHoi"><p id="cauHoi"></p></div>
+			<div class="groupAnswer">
+				<div class="dapAn dapAn_1"><button type="button" onclick="button(this)" id="dapAn_1"></button></div>
+				<div class="dapAn dapAn_2"><button type="button" onclick="button(this)" id="dapAn_2"></button></div>
+				<div class="dapAn dapAn_3"><button type="button" onclick="button(this)" id="dapAn_3"></button></div>
+				<div class="dapAn dapAn_4"><button type="button" onclick="button(this)" id="dapAn_4"></button></div>
+			</div>
+		</div>
+
+		<div class="resultQuiz">
+			<div class="timePlay cicrleGame">
+				<div class="childTimePlay childCicrleGame"><p id="timePlay"></p></div>
+			</div>
+			<div class="scoresGame cicrleGame">
+				<div class="childScoresGame childCicrleGame"><p id="scoresGame">0</p></div>
+			</div>
+			<div class="numQuestion cicrleGame">
+				<div class="childNumQuestion childCicrleGame"><p id="numQuestion">0/15</p></div>
+			</div>
+			<div class="playAgain cicrleGame">
+				<div class="childPlayAgain childCicrleGame">
+					<p>Again</p>
+				</div>
+			</div>
+		</div>
 		<div class="clearBoth"></div>
 	</div>
-	<div class="cauHoi"><p id="cauHoi"></p></div>
-	
-	
-	<div class="groupQuestion">
-		<div class="dapAn dapAn_1"><button type="button" onclick="button(this)" id="dapAn_1"></button></div>
-		<div class="dapAn dapAn_2"><button type="button" onclick="button(this)" id="dapAn_2"></button></div>
-		<div class="dapAn dapAn_3"><button type="button" onclick="button(this)" id="dapAn_3"></button></div>
-		<div class="dapAn dapAn_4"><button type="button" onclick="button(this)" id="dapAn_4">></button></div>
-	</div>
-	
-	<!-- <div class="retry"><button type="button" id="retry" value="abc">CHƠI LẠI</button></div> -->
 
+	<div id="endGame" class="endGame"></div>
+	
+	
 	<script type="text/javascript" src="Group_Question.js"></script>
 	<script type="text/javascript" src="Question_Quiz.js"></script>
 </body>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
