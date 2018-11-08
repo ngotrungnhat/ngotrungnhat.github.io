@@ -104,37 +104,6 @@
     	border-top: 1px solid white;
     }
 
-.containerContentBlog_01 {
-	overflow: auto;
-	margin-top: 50px;
-	width: 100%;
-}
-
-.contentBlog {
-	width: 50%;
-	float: left;
-}
-
-.contentBlog01 {
-	height: 450px;
-	background-color: red;
-}
-
-.contentBlog02 {
-	height: 150px;
-	background-color: blue;
-}
-
-.contentBlog03 {
-	height: 150px;
-	background-color: yellow;
-}
-
-.contentBlog04 {
-	height: 150px;
-	background-color: orange;
-}
-
 .containerContentBlog_02 {
 	border: 1px solid red;
 	margin-top: 50px;
@@ -284,11 +253,12 @@
    					border-bottom: 5px solid transparent;
    					text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
    					font-family: "Francois One", Anton;
+                    margin-bottom: 20px;
                 }
 
                     div.nameGame h1 {
-                        font-size: 3vw;
-                        padding-top: 0.5vw;
+                        font-size: 45px;
+                        padding-top: 4px;
                     }
 
                 .contentGame {
@@ -301,6 +271,17 @@
                     position: relative;
                 }
 
+                    .contentGame p {
+                        color: #96847d;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+                        font-family: "Francois One", Anton;
+                        line-height: 1.1;
+                        height: 50%;
+                    }
+
                     a.start {
                         display: block;
                         width: 20%;
@@ -309,11 +290,12 @@
                         cursor: pointer;
                         margin-left: auto;
                         margin-right: auto;
-                        margin-top: 44%;
+                        margin-top: 100px;
                         text-decoration: none;
                         border-radius: 10px;
                         border-bottom: 5px solid transparent;
                         border-color: #b25736;
+                        padding-top: 6px;
                     }
 
                     a.start:hover {

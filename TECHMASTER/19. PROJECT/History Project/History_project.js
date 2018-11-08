@@ -104,6 +104,21 @@ window.onclick = function(event) {
     }
 }
 
+var form = document.getElementById('formLogin');
+window.onclick = function(event) {
+    if (event.target == form) {
+        form.style.display = "none";
+    }
+}
+
+var video = document.getElementById('video01');
+window.onclick = function(event) {
+    if (event.target == video) {
+        video.style.display = "none";
+    }
+}
+
+
 
 
 

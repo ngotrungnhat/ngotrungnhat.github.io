@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="../Style.css">
 	<!-- CSS AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- CSS OF W3.CSS -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<div id="page" class="site">
@@ -88,15 +90,8 @@
 
 					<div class="timeLine content-area video_content_area">
 
-						<!-- div class="filter">
-							filter
-						</div> -->
-
 						<div class="grid history-chapters mb20">
 							<div class="grid__row">
-
-
-
 
 								<!-- PHIM TÀI LIỆU -->
 								<div class="container-movie-list">
@@ -104,13 +99,10 @@
 										<span class="title-list"><a href="See_More_Tai_Lieu.html">Video tài liệu</a></span>
 										<a href="See_More_Tai_Lieu.html" class="more-list">Xem tất cả >></a>
 									</div>
-									
-									
-
 
 									<div class="film-list">
 										
-										<div class="grid4__col">
+										<div onclick="document.getElementById('video01').style.display='block'" class="grid4__col">
 											<div class="cards video_cards">
 												<div class="card__body mb10">
 													<div class="card__image card__image--square card__image--round-edge cardBook" style="background-image: url('https://i.ytimg.com/vi/gvJ_lCM1Yf4/hqdefault.jpg');">
@@ -128,7 +120,7 @@
 											</div>
 										</div>
 
-										<div class="grid4__col">
+										<div onclick="document.getElementById('video01').style.display='block'" class="grid4__col">
 											<div class="cards video_cards">
 												<div class="card__body mb10">
 													<div class="card__image card__image--square card__image--round-edge cardBook" style="background-image: url('https://i.ytimg.com/vi/YjZEsQiz1GY/hqdefault.jpg');">
@@ -912,6 +904,30 @@
 												</div>
 											</div>
 										</div>
+
+										<div id="video01" class="w3-modal">
+											<div class="book_modal_content w3-modal-content w3-animate-zoom w3-card-4">
+												<header class="figures_w3-container w3-container"> 
+													<div onclick="document.getElementById('video01').style.display='none'" class="w3-button w3-display-topright">&times;</div>
+													<h2 style="text-align: center;">Tài Liệu Mật Của Nga về Chiến Tranh Việt Nam</h2>
+												</header>
+												<div class="w3-container scroll-text">
+
+													<video width="400" controls>
+													  	<source src="../Video_history/video.mp4" type="video/mp4">
+													  	Your browser does not support HTML5 video.
+													</video>
+
+												</div>
+												<footer class="figures_w3-container w3-container">
+													<div class="w3-container">
+													   <button class="w3-button w3-right w3-white w3-border" 
+													   onclick="document.getElementById('video01').style.display='none'">Close</button>
+												  </div>
+												</footer>
+											</div>
+										</div>
+
 
 										<div class="clearBoth"></div>
 									</div>

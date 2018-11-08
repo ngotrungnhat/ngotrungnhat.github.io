@@ -451,9 +451,42 @@
 					<p class="welcome_text">
 						Dân ta phải biết sử ta cho cường gốc tích nước nhà Việt Nam.
 					</p>
-					<p class="welcome_cta">
-						<a href="" class="button button-brown">ĐĂNG KÝ NGAY HÔM NAY</a>
-					</p>
+					<div onclick="document.getElementById('formLogin').style.display='block'" class="welcome_cta">
+						<div class="button button-brown">ĐĂNG KÝ NGAY HÔM NAY</div>
+					</div>
+
+					<div id="formLogin" class="w3-modal">
+						<div class="story_modal_content w3-modal-content w3-animate-zoom w3-card-4">
+							<header class="story_w3-container w3-container"> 
+								<div onclick="document.getElementById('formLogin').style.display='none'" class="w3-button w3-display-topright">&times;</div>
+								<h2 style="text-align: center;">Âm Mưu Xâm Lược Việt Nam Của Pháp</h2>
+							</header>
+							<div class="w3-container scroll-text">
+								
+								<div class="containerModalLogin">
+									<div class="childContainerModalLogin">
+										<h1>Đăng Ký/Đăng Nhập</h1>
+										<input class="input01" type="" name="" placeholder="Username">
+										<input class="input02" type="" name="" placeholder="*******">
+										<div class="seclecLogin">
+											<div class="login loginregister">Đăng Ký</div>
+											<div class="register loginregister">Đăng Nhập</div>
+										</div>
+										<p>Forgot Password?</p>
+									</div>
+								</div>
+								
+
+							</div>
+							<footer class="story_w3-container w3-container">
+								<div class="w3-container">
+								   <button class="w3-button w3-right w3-white w3-border" 
+								   onclick="document.getElementById('formLogin').style.display='none'">Close</button>
+							  </div>
+							</footer>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>

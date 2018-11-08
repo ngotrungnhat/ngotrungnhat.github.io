@@ -1,3 +1,5 @@
+h3.card__text {padding: 0 !important;}
+
 .story_cardFloat {
 	height: 170px !important;
 }
@@ -34,7 +36,7 @@
 	margin: auto;
 }
 
-	.containerContentModalStory p, h3 {
+	.containerContentModalStory p, .containerContentModalStory h3 {
 		padding: 10px 20px;
 		font-family: 'Baloo Da', cursive;
 	    font-size: 20px;

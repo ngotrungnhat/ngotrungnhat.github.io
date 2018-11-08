@@ -787,3 +787,10 @@ div.cards:hover {
 .scrollToTop:hover{
     text-decoration:none;
 }
+
+
+
+video {
+    width: 100%;
+    height: auto;
+}
