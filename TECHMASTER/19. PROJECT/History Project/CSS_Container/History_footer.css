@@ -1,0 +1,149 @@
+
+.containerFooter {
+	width: 100%;
+	height: 500px;
+
+}
+
+	.logoFooter {
+		padding-top: 50px;
+		width: 30%;
+		float: left;
+	}
+
+		.networkLogo {
+			width: 35%;
+			margin: auto;
+		}
+
+			.networkLogo img {width: 100%;}
+
+		.webLogo {
+			width: 60%;
+			margin: auto;
+			margin-top: 20px;
+		}
+
+			.webLogo img {width: 100%;}
+
+		.sologanLogo {
+			width: 100%;
+			margin: auto;
+			font-family: 'Baloo Da', cursive;
+		    font-size: 1.8vw;
+		    line-height: 1.1;
+		    color: #353330;
+		    margin-top: 20px;
+		    text-align: center;
+		}
+
+	.mapFooter {
+		padding-top: 50px;
+		width: 30%;
+		float: left;
+	}
+
+		.mapFooter h2 {
+			font-family: "Francois One", Anton;
+		    font-size: 40px;
+		    color: #fff;
+		    text-transform: uppercase;
+		    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+		    text-align: center;
+		}
+
+		.mapFooter p {
+			font-family: "Francois One", Anton;
+		    font-size: 20px;
+		    color: #fff;
+		    text-transform: uppercase;
+		    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+		    text-align: center;
+		}
+
+		.mapFooter p:hover {
+			color: #e28e71;
+			cursor: pointer;
+		}
+
+	.contactFooter {
+		width: 40%;
+		float: left;
+		padding-left: 20px;
+		padding-top: 50px;
+	}
+
+		.contactFooter h2 {
+			font-family: "Francois One", Anton;
+		    font-size: 40px;
+		    color: #fff;
+		    text-transform: uppercase;
+		    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+		    text-align: center;
+		}
+
+		.followUs {}
+
+			.followUs p {
+				width: 25%;
+				font-family: 'Baloo Da', cursive;
+			    font-size: 1.8vw;
+			    line-height: 1.1;
+			    color: #353330;
+			    margin-top: 20px;
+			    float: left;
+			}
+
+			.logoFollow {
+				padding-top: 10px;
+				width: 75%;
+				float: left;
+			}
+				.logoFollow img {
+					float: left;
+					width: 10%;
+					margin-right: 5%;
+				}
+
+				.logoFollow img:hover {cursor: pointer;}
+
+		.contactUs {
+			width: 100%;
+			margin-top: 50px;
+		}
+
+			.contactUs div {
+				padding-top: 10px;
+				width: 100%;
+			}
+
+			.contactUs img {
+				float: left;
+				width: 4%;
+			}
+
+			.contactUs p {
+				float: left;
+				padding-left: 10px;
+				padding-top: 5px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
