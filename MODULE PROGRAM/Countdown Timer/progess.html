@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progess</title>
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+		}
+		#progressBar {
+			float: right;
+			margin-right: 10px;
+			width: 20px;
+			margin-top: 50px;
+			height: 90%;
+			background-color: #0A5F44;
+			border-radius: 6px;
+		}
+
+		#progressBar div {
+			border-radius: 6px;
+		  	height: 0;
+		  	text-align: right;
+		  	padding: 0 3px;
+		  	line-height: 22px;
+		  	width: 100%;
+		  	background-color: #CBEA00;
+		  	box-sizing: border-box;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="progressBar">
+	  <div class="bar">60</div>
+	</div>
+
+	<script>
+		function progress(timeleft, timetotal, $element) {
+		    var progressBarWidth = timeleft * $element.height() / timetotal;
+		    $element.find('div').animate({ height: progressBarWidth }, 500).html(timeleft%60);
+		    if(timeleft > 0) {
+		        setTimeout(function() {
+		            progress(timeleft - 1, timetotal, $element);
+		        }, 1000);
+		    }
+		};
+		progress(60, 60, $('#progressBar'));
+	</script>
+	
+</body>
+</html>

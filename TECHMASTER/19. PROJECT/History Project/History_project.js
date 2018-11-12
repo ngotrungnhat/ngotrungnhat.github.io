@@ -97,17 +97,34 @@ $(document).ready(function(){
 });
 
 
-var modal = document.getElementById('story-01');
+
+
+var story = document.getElementById('story-01');
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == story) {
+        story.style.display = "none";
     }
 }
+
+var figures = document.getElementById('figures-01');
+window.onclick = function(event) {
+    if (event.target == figures) {
+        figures.style.display = "none";
+    }
+}
+
 
 var form = document.getElementById('formLogin');
 window.onclick = function(event) {
     if (event.target == form) {
         form.style.display = "none";
+    }
+}
+
+var book = document.getElementById('book-01');
+window.onclick = function(event) {
+    if (event.target == book) {
+        book.style.display = "none";
     }
 }
 
@@ -117,6 +134,15 @@ window.onclick = function(event) {
         video.style.display = "none";
     }
 }
+
+var timeline = document.getElementById('timeline-01');
+window.onclick = function(event) {
+    if (event.target == timeline) {
+        timeline.style.display = "none";
+    }
+}
+
+
 
 
 
