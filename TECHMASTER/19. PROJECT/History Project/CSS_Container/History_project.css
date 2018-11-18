@@ -65,7 +65,7 @@ a{
     background-position: center 0;
     background-size: cover;
     padding-top: 0;
-    padding-bottom: 200px;
+    padding-bottom: 2px;
 }
 
 .bag{
@@ -482,6 +482,7 @@ div.promo:hover{
     background-color: #5d3d09;
     color: #fff;
    	text-decoration: none;
+    cursor: pointer;
 }
 
 .sidebar {
