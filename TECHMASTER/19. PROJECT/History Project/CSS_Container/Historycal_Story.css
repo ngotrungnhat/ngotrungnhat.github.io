@@ -1,4 +1,8 @@
-h3.card__text {padding: 0 !important;}
+/*h3.card__text {padding: 0 !important;}*/
+
+.story_cards {
+	padding: 0;
+}
 
 .story_cardFloat {
 	height: 170px !important;

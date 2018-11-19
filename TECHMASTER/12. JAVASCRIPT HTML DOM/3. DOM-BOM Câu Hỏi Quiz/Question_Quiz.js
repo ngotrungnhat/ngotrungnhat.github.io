@@ -55,7 +55,6 @@ function button(x) {
 	document.getElementById("dapAn_3").innerHTML = GroupQuestion[sortQuestion][sortAnswer_3];
 	document.getElementById("dapAn_4").innerHTML = GroupQuestion[sortQuestion][sortAnswer_4];
 	numQuestion += 1;
-	console.log(numQuestion)
 	document.getElementById("numQuestion").innerHTML = (numQuestion + "/" + 15);
 }
 
@@ -69,23 +68,3 @@ function myTimer() {
 		clearInterval(myVar);
  	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

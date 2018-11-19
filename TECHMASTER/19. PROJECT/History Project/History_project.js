@@ -1,25 +1,132 @@
+// IN HEADER
+$(document).ready(function(){
+  $(".header").append(
+    `<div class="siteHeader">
+      <div class="topHeader">
+        <div class="topHeader_logo">
+          <a href="../Index_history_project.html">
+            <img src="https://i.imgur.com/Y9P26e7.png" alt="">
+          </a>
+        </div>
+        <div class="topHeader_space"></div>
+        <div class="topHeader_social">
+          <a href=""><img src="../Image_history/ico_tw_svg.svg" alt="1"></a>
+          <a href=""><img src="../Image_history/ico_fb_svg.svg" alt="2"></a>
+          <a href=""><img src="../Image_history/ico_yt_svg.svg" alt="3"></a>
+          <a href="" class="network-logo"><img src="../Image_history/kni_network_logo.svg" alt="4"></a>
+        </div>
+        <div class="menuToggle" onclick="navbarToggle(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div class="navHeader">
+        <div class="navBar">
+          <div class="navBar_menu">
+            <ul class="navBar_menu-menu">
+              <li class="navBar_menu-item"><a href="Historical_story.html">Câu Chuyện</a></li>
+              <li class="navBar_menu-item"><a href="Historical_figures.html">Nhân Vật</a></li>
+              <li class="navBar_menu-item"><a href="Historical_book.html">Sách</a></li>
+              <li class="navBar_menu-item"><a href="Historical_videos.html">Videos</a></li>
+              <li class="navBar_menu-item"><a href="Historical_games.html">Games</a></li>
+              <li class="navBar_menu-item"><a href="Historical_blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="navBar_search">
+            <form action="" class="navBar_search-form">
+              <input type="text" class="navBar_search-input" value placeholder="Bạn đang tìm kiếm điều gì?">
+              <input type="text" class="navBar_search-submit">
+            </form>
+          </div>
+        </div>
+        <div class="navbar-widgets">
+          <div class="headerWidgets">
+            <div class="headerWidgets-title">KẾT NỐI VỚI CHÚNG TÔI</div>
+            <div class="socialLinks">
+              <a href=""><img src="../Image_history/ico_tw_svg.svg" alt="1"></a>
+              <a href=""><img src="../Image_history/ico_fb_svg.svg" alt="2"></a>
+              <a href=""><img src="../Image_history/ico_yt_svg.svg" alt="3"></a>
+              <a href="" class="network-logo"><img src="../Image_history/kni_network_logo.svg" alt="4"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`
+  );
+});
 
-//RESIZE CHIỀU CAO CỦA FIXED THEO FLAG.
-$(".fixedFlag").height($(".flag").height());
+// IN FOOTER
+$(document).ready(function(){
+  $(".site-footer").append(
+    `<a href="#" class="scrollToTop"><img src="../Image_history/back_to_top.png" alt=""></a>
+    <div class="containerFooter">
+      <div class="logoFooter">
+        <div class="networkLogo"><img src="../Image_history/kni_network_logo.svg"></div>
+        <div class="webLogo"><img src="https://i.imgur.com/Y9P26e7.png"></div>
+        <div class="sologanLogo">Hiện Tại Là Quá Khứ Của Tương Lai</div>
+      </div>
+      <div class="mapFooter">
+        <h2>Website map</h2>
+        <p>Trang Chủ</p>
+        <p>Câu Chuyện</p>
+        <p>Nhân Vật</p>
+        <p>Sách</p>
+        <p>Videos</p>
+        <p>Games</p>
+        <p>Blog</p>
+      </div>
+      <div class="contactFooter">
+        <h2>Liên hệ</h2>
+        <div class="followUs">
+          <p class="follow">Follow Us</p>
+          <div class="logoFollow">
+            <img src="https://image.flaticon.com/icons/svg/145/145802.svg">
+            <img src="https://image.flaticon.com/icons/svg/145/145812.svg">
+            <img src="https://image.flaticon.com/icons/svg/145/145804.svg">
+            <img src="https://image.flaticon.com/icons/svg/145/145808.svg">
+            <img src="../Image_history/ico_yt_svg.svg">
+            <div class="clearBoth"></div>
+          </div>
+          <div class="clearBoth"></div>
+        </div>
+        <div class="contactUs">
+          <div>
+            <img src="https://image.flaticon.com/icons/svg/66/66455.svg">
+            <p>Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            <div class="clearBoth"></div>
+          </div>
+          <div>
+            <img src="https://image.flaticon.com/icons/svg/15/15892.svg">
+            <p>024 3869 4242</p>
+            <div class="clearBoth"></div>
+          </div>
+          <div>
+            <img src="https://image.flaticon.com/icons/svg/126/126516.svg">
+            <p>techmaster@techmaster.vn</p>
+            <div class="clearBoth"></div>
+          </div>
+          <div class="clearBoth"></div>
+        </div>
+      </div>
+    </div>`
+  );
+  //BACK TO TOP
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 1500) {
+          $('.scrollToTop').fadeIn();
+      } else {
+          $('.scrollToTop').fadeOut();
+      }
+  });
+
+  $('.scrollToTop').click(function(){
+      $('html, body').animate({scrollTop : 0},1500);
+  });
+});
+
+//RESIZE CHIỀU CAO
 $(".book_modal_content").height(0.65*(screen.height));
-$(".story_modal_content").height(0.65*(screen.height));
-// $(".panePerson").height(0.4*($(".panePerson").width()));
-// $(".imgAva").height($(".imgAva").width());
-//OPACITY FLAG
-// function opacity(){
-// 	var arrScale = [];
-// 	var heightScroll = $("html").scrollTop();
-// 	var heightScreen = screen.availHeight;
-// 	var scaleOpacity = heightScroll/heightScreen;
-// 	for (i = 2; i >= 0; i = i-0.2) {
-// 		arrScale.push(i.toFixed(2));
-// 	}
-// 	for (var j = 0; j <= 1; j = j + 0.1) {
-// 		if (scaleOpacity.toFixed(2) >= arrScale[j.toFixed(1)*10] && scaleOpacity.toFixed(2) <= arrScale[j.toFixed(1)*10 +1]) {
-// 		}
-// 	}
-// }
-// opacity()
 
 //TOGGLE WHEN SMALL SCREEN
 function navbarToggle(x){
@@ -31,22 +138,6 @@ function navbarToggle(x){
 		x.classList.toggle("change");
 	}
 };
-
-//EFECT HOVER
-// $(document).ready(function(){
-// 	$(".pageList li:nth-child(n)").hover(function(){
-// 		$(".grid4__col div.cards:nth-child(n)").css({"color": "#ca27b1", "cursor": "pointer", "border": "2px solid #ca27b1"});
-// 	}, function(){
-// 		$(".grid4__col div.cards:nth-child(n)").css({"color": "#753721", "border": "none"});
-// 	});
-// });// $(document).ready(function(){
-// 	$("div.cards").hover(function(){
-// 		$(this).css({"color": "#ca27b1", "cursor": "pointer", "border": "2px solid #ca27b1"});
-// 	}, function(){
-// 		$(this).css({"color": "#753721", "border": "none"});
-// 	});
-// });
-
 
 //HOVER CONTENT CAROUSEL
 $(document).ready(function(){
@@ -96,57 +187,47 @@ $(document).ready(function(){
   });
 });
 
-
-
-
 var story = document.getElementById('story-01');
 window.onclick = function(event) {
-    if (event.target == story) {
-        story.style.display = "none";
-    }
+  if (event.target == story) {
+      story.style.display = "none";
+  }
 }
 
 var figures = document.getElementById('figures-01');
 window.onclick = function(event) {
-    if (event.target == figures) {
-        figures.style.display = "none";
-    }
+  if (event.target == figures) {
+      figures.style.display = "none";
+  }
 }
-
 
 var form = document.getElementById('formLogin');
 window.onclick = function(event) {
-    if (event.target == form) {
-        form.style.display = "none";
-    }
+  if (event.target == form) {
+      form.style.display = "none";
+  }
 }
 
 var book = document.getElementById('book-01');
 window.onclick = function(event) {
-    if (event.target == book) {
-        book.style.display = "none";
-    }
+  if (event.target == book) {
+      book.style.display = "none";
+  }
 }
 
 var video = document.getElementById('video01');
 window.onclick = function(event) {
-    if (event.target == video) {
-        video.style.display = "none";
-    }
+  if (event.target == video) {
+      video.style.display = "none";
+  }
 }
 
 var timeline = document.getElementById('timeline-01');
 window.onclick = function(event) {
-    if (event.target == timeline) {
-        timeline.style.display = "none";
-    }
+  if (event.target == timeline) {
+      timeline.style.display = "none";
+  }
 }
-
-
-
-
-
-
 
 //HOVER TO PAGE
 $(document).ready(function(){
@@ -161,41 +242,6 @@ $(document).ready(function(){
 		cards.css({"color": "#753721", "border": "none"});
 	});
 });
-
-
-
-
-// let html = `<div class="containerFoot">
-// 								<div class="foot footRight" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-offset="300"><img src="Image_history/footprint_right.png" alt=""></div>
-// 								<div class="foot footLeft" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-offset="300"><img src="Image_history/footprint_left.png" alt=""></div>
-// 							</div>`;
-
-// for (let i = 0; i< 10; i++){
-// 	$('.contentBetween').append(html);
-// }
-
-
-
-
-//BACK TO TOP
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 1500) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-
-    $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},1500);
-    });
-});
-
-
-
-
-
 
 //WHEEL ITEM
 window.onload = function () {
@@ -246,8 +292,6 @@ window.onload = function () {
     wheel.createWheel();
 };
 
-
-
 // JAVASCRIPT JQUERYUI SLIDER PRICE
 $(function(){
     $('#rangeslider').slider({
@@ -280,21 +324,12 @@ $(function(){
   });
 });
 
-
-
-// $(".shopping").mouseenter(function(){
-//     $(".cardBook" this).css({"-webkit-filter": "brightness(30%)", "filter": "brightness(30%)"});
-// });
-
-
-
 // JAVASCRIPT SNACKBAR
 function snackBar() {
     var x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
-
 
 //DETAILS IMAGE
 function detailsImg(imgs) {
@@ -305,23 +340,55 @@ function detailsImg(imgs) {
     expandImg.parentElement.style.display = "block";
 }
 
-
-
 // JAVASCRIPT RATING STAR
 $(document).ready(function(){
  $(".ha").mouseenter(function(){
    $(this).css({"color": "orange"});
  });
-
  $(".ratingComent").mouseleave(function(){
   $(".ha").css({"color": "gray !important"});
  });
- // $(".ha").hover(function(){
- //   $(this).css({"color": "orange"});
- // }, function(){
- //   $(".ha").css({"color": "gray"});
- // });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

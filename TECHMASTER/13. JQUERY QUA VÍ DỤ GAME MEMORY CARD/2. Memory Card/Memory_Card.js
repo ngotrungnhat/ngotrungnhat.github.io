@@ -35,7 +35,6 @@ function flip(card){
 				current.css('pointer-events', 'auto');
 				current = null;
 			}, 500);
-			console.log("Khác nhau");
 		} else {
 			setTimeout(function(){
 				$(card).css("opacity", "0");
@@ -44,7 +43,6 @@ function flip(card){
 				$(card).css('pointer-events', 'auto');
 				current.css('pointer-events', 'auto');
 			},500);
-			console.log("Giống nhau")
 		}
 	}
 };
@@ -55,16 +53,18 @@ $(document).ready(function(){
 	console.log(newArr);
 
 	for (var i = 0; i < newArr.length; i++) {
-		$(".content").append('<div class="grid">'+ '<div class="card"  data-class = "'+newArr[i].charAt(9)+'" onclick="flip(this)">'+			
-				'<div class="front">'+
-					'<img src="img_card/front.png">'+
+		$(".content").append(
+			'<div class="grid">'+
+				'<div class="card"  data-class = "'+newArr[i].charAt(9)+'" onclick="flip(this)">'+			
+					'<div class="front">'+
+						'<img src="img_card/front.png">'+
+					'</div>'+
+					'<div class="back">'+
+						'<img src="'+newArr[i]+'">'+
+					'</div>'+
 				'</div>'+
-				'<div class="back">'+
-					'<img src="'+newArr[i]+'">'+
-				'</div>'+
-			'</div>'+
-		'</div>')
-		console.log(newArr[i].charAt(9));
+			'</div>'
+		)
 	}
 	$(".content").append('<div class = "clearBoth"></div>');
 });
@@ -76,7 +76,6 @@ function progress(timeleft, timetotal, $element) {
     if(timeleft > 0) {
         setTimeout(function() {progress(timeleft - 1, timetotal, $element);}, 1000);
     }
-    console.log(timeleft)
     document.getElementById("timeBar").innerHTML = timeleft;
 };
 progress(60, 60, $('#progressBar'));
