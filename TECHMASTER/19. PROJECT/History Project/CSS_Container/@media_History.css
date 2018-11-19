@@ -4,9 +4,9 @@
 		display: block !important;
 	}
 
-    .grid .grid4__col:nth-child(4n+1) {
+    /*.grid .grid4__col:nth-child(4n+1) {
         clear: left;
-    }
+    }*/
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
