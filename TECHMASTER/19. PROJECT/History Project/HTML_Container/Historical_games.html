@@ -178,7 +178,56 @@
 		</div>
 	</div>
 
+<script>
+	//WHEEL ITEM
+	window.onload = function () {
+	    wheel = new wheelnav('wheelDiv');
+	    wheel.keynavigateEnabled = true;
+	    wheel.slicePathFunction = slicePath().DonutSlice;
+	    wheel.sliceTransformFunction = sliceTransform().RotateTransform;
+	    wheel.animatetime = 1000;
+	    wheel.animateeffect = 'linear';
+	    wheel.slicePathFunction = slicePath().CogBasePieSlice;
+	    wheel.sliceHoverPathFunction = slicePath().CogSlice;
+	    wheel.sliceSelectedPathFunction = slicePath().CogSlice;
+	    wheel.sliceHoverTransformFunction = sliceTransform().RotateTitleTransform;
+	    wheel.sliceSelectedTransformFunction = sliceTransform().MoveMiddleTransform;
+	    wheel.wheelRadius = wheel.wheelRadius * 0.8;
+	    wheel.hoverPercent = 0.9;
+	    wheel.selectedPercent = 1.1;
+	    wheel.wheelRadius = wheel.wheelRadius * 0.8;
+	    wheel.colors = colorpalette.fractallove;
 
+	    wheel.initWheel(["imgsrc:../Image_history/Image_Games/duhanhthoigian.png", "imgsrc:../Image_history/Image_Games/latthe.jpeg", "imgsrc:../Image_history/Image_Games/quiz.ico", "imgsrc:../Image_history/Image_Games/vongquanhthegioi.png"]);
+
+	    wheel.navItems[0].navigateFunction = function(){
+	    	$(".infoGame01").css({"display": "block"});
+			$(".infoGame02").css({"display": "none"});
+			$(".infoGame03").css({"display": "none"});
+			$(".infoGame04").css({"display": "none"});
+
+	    };
+	    wheel.navItems[1].navigateFunction = function(){
+	    	$(".infoGame01").css({"display": "none"});
+			$(".infoGame02").css({"display": "block"});
+			$(".infoGame03").css({"display": "none"});
+			$(".infoGame04").css({"display": "none"});
+	    };
+	    wheel.navItems[2].navigateFunction = function(){
+	    	$(".infoGame01").css({"display": "none"});
+			$(".infoGame02").css({"display": "none"});
+			$(".infoGame03").css({"display": "block"});
+			$(".infoGame04").css({"display": "none"});
+	    };
+	    wheel.navItems[3].navigateFunction = function(){
+	    	$(".infoGame01").css({"display": "none"});
+			$(".infoGame02").css({"display": "none"});
+			$(".infoGame03").css({"display": "none"});
+			$(".infoGame04").css({"display": "block"});
+	    };
+	    wheel.createWheel();
+	};
+</script>
 <!-- CDN jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- CDN Bootstrap -->

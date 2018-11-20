@@ -16,7 +16,7 @@ BooksArray = [
 	},
 
 	{
-		imageBook: "https://newshop.vn/public/uploads/products/14048/lich-su-bia-truoc.png",
+		imageBook: "https://i.imgur.com/tzE0aNC.png",
 		nameBook: "Lịch Sử Việt Nam Từ Nguồn Gốc Đến Giữa...",
 		nameAuthor: "Gs.Lê Thành Khôi",
 		finalSale: "160.000",
@@ -775,10 +775,9 @@ for (var i = 0; i < BooksArray.length; i++) {
 				<div class="book_card__body mb10">
 					<div class="card__image card__image--square card__image--round-edge cardBook" style="background-image: url('`+ BooksArray[i].imageBook +`');">
 					</div>
-					<div onclick="snackBar()" class="shopping">
-						<div onclick="snackBar()" class="fa fa-shopping-cart "></div>
+					<div class="shopping" class="btn btn-danger my-cart-btn" data-id="`+ (i+1) +`" data-name="`+ BooksArray[i].nameBook +`" data-price="`+ BooksArray[i].finalSale +`" data-quantity="1" data-image="`+ BooksArray[i].imageBook +`">
+						<div class="fa fa-shopping-cart "></div>
 					</div>
-					<div id="snackbar">Đã thêm vào giỏ hàng</div>
 				</div>
 				<div onclick="document.getElementById('book-`+ (i+1) +`').style.display='block'"  class="cardFloat">
 					<h3 class="card__text">`+ BooksArray[i].nameBook +`</h3>
@@ -889,63 +888,33 @@ function chonLoc(){
 	}
 };
 
-$(".containerSlect label:nth-child(1) span:nth-child(2)").click(function(){
+$(".containerSlect label:nth-child(1)").click(function(){
     for (var i = 0; i < BooksArray.length; i++) {
 		if (i>=15 && i<39) {$(`.hidden` + (i+1)).css({"display": "block"})}
 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
 	}
 });
 
-$(".containerSlect label:nth-child(2) span:nth-child(2)").click(function(){
+$(".containerSlect label:nth-child(2)").click(function(){
     for (var i = 0; i < BooksArray.length; i++) {
 		if (i>=20 && i<44) {$(`.hidden` + (i+1)).css({"display": "block"})}
 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
 	}
 });
 
-$(".containerSlect label:nth-child(3) span:nth-child(2)").click(function(){
+$(".containerSlect label:nth-child(3)").click(function(){
     for (var i = 0; i < BooksArray.length; i++) {
 		if (i>=25 && i<49) {$(`.hidden` + (i+1)).css({"display": "block"})}
 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
 	}
 });
 
-$(".containerSlect label:nth-child(4) span:nth-child(2)").click(function(){
+$(".containerSlect label:nth-child(4)").click(function(){
     for (var i = 0; i < BooksArray.length; i++) {
 		if (i>=30 && i<54) {$(`.hidden` + (i+1)).css({"display": "block"})}
 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
 	}
 });
-
-// function giamGiaNhieu(){
-// 	for (var i = 0; i < BooksArray.length; i++) {
-// 		if (i>=13 && i<37) {$(`.hidden` + (i+1)).css({"display": "block"})}
-// 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
-// 	}
-// };
-
-// function giaThap(){
-// 	for (var i = 0; i < BooksArray.length; i++) {
-// 		if (i>=33 && i<57) {$(`.hidden` + (i+1)).css({"display": "block"})}
-// 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
-// 	}
-// };
-
-// function giaCao(){
-// 	for (var i = 0; i < BooksArray.length; i++) {
-// 		if (i>=43 && i<67) {$(`.hidden` + (i+1)).css({"display": "block"})}
-// 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
-// 	}
-// };
-
-// function chonLoc(){
-// 	for (var i = 0; i < BooksArray.length; i++) {
-// 		if (i>=53 && i<77) {$(`.hidden` + (i+1)).css({"display": "block"})}
-// 		else {$(`.hidden` + (i+1)).css({"display": "none"})};
-// 	}
-// };
-
-
 
 $(document).ready(function(){
 	$(".books_javascript_modal").append(
@@ -1176,6 +1145,37 @@ $(document).ready(function(){
 	$(".book_modal_content").height(0.65*(screen.height))
 });
 
+// // JAVASCRIPT JQUERYUI SLIDER PRICE
+// $(function(){
+//     $('#rangeslider').slider({
+//         range: true,
+//         min: 0,
+//         max: 1000000,
+//         values: [ 0, 1000000 ],
+//         slide: function( event, ui ) {
+//             var string_01 = ui.values[0].toString(),
+//             string_02 = ui.values[1].toString(),
+//             numLength_01 = string_01.length,
+//             numLength_02 = string_02.length;
+
+//             if (numLength_01 <= 3) {
+//               $('#rangeval01').html(string_01);
+//           } else if (numLength_01 <=6) {
+//               $('#rangeval01').html(string_01.substr(0, (numLength_01-3)) + "." + string_01.substr((numLength_01-3), 3));
+//           } else {
+//               $('#rangeval01').html(string_01.substr(0, 1) + "." + string_01.substr(1, 3) + "." + string_01.substr(4, 3));
+//           }
+
+//           if (numLength_02 <= 3) {
+//               $('#rangeval02').html(string_02);
+//           } else if (numLength_02 <=6) {
+//               $('#rangeval02').html(string_02.substr(0, (numLength_02-3)) + "." + string_02.substr((numLength_02-3), 3));
+//           } else {
+//               $('#rangeval02').html(string_02.substr(0, 1) + "." + string_02.substr(1, 3) + "." + string_02.substr(4, 3));
+//           }
+//       }
+//   });
+// });
 
 
 

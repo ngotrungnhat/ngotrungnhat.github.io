@@ -541,11 +541,13 @@ div.promo:hover{
     box-shadow: 0 1px 0 #9b4c1d;
 }
 
-.pageList>li {
-    font-family: 'Baloo Da', cursive;
+.pageList li {
+    font-family: 'Baloo Da', cursive !important;
     font-size: 1rem;
     font-weight: 500;
 }
+
+.pageList li h2{font-family: 'Baloo Da', cursive !important;}
 
 .pageList a {
     color: inherit;
@@ -693,7 +695,7 @@ button.w3-button {
 div.cards:hover {
     color: #ca27b1 !important;
     cursor: pointer !important;
-    border: 2px solid #ca27b1 !important;
+    /*border: 2px solid #ca27b1 !important;*/
 }
 
 .history-chapters .cards {
