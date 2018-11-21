@@ -16,7 +16,7 @@ BooksArray = [
 	},
 
 	{
-		imageBook: "https://i.imgur.com/tzE0aNC.png",
+		imageBook: "https://newshop.vn/public/uploads/products/14048/lich-su-bia-truoc.png",
 		nameBook: "Lịch Sử Việt Nam Từ Nguồn Gốc Đến Giữa...",
 		nameAuthor: "Gs.Lê Thành Khôi",
 		finalSale: "160.000",
