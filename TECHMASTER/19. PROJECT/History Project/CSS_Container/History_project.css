@@ -543,7 +543,7 @@ div.promo:hover{
 
 .pageList li {
     font-family: 'Baloo Da', cursive !important;
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     font-weight: 500;
 }
 

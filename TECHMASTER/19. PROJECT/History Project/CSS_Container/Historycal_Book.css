@@ -1,3 +1,5 @@
+.list-pager ul li a {color: #000 !important}
+li.navBar_menu-item a:hover {color: #fff;}
 .containerSortBook {
 	width: 100%;
     height: 30px;
@@ -17,25 +19,13 @@
 	.sortBook a {color: #191616;}
 
 	.sortBook a:hover {
-		color: rgba(0,127,240,.8);
+		color: rgba(0,127,240,.8) !important;
 		text-decoration: none;
-		padding: 0px 20px 8px 20px;
+		padding: 0px 20px 10px 20px;
 		border-bottom: 1px solid rgba(0,127,240,.8);
 	}
 	
 	.sort01{ font-size: 18px; }
-
-	.sort02{}
-
-	.sort03{}
-
-	.sort04{}
-
-	.sort05{}
-
-	.sort06{}
-
-	.sort07{}
 
 	.sort08 a:hover {
 		color: red;
@@ -44,13 +34,7 @@
 		border-bottom: none;
 	}
 
-	.fa {
-		font-size: 32px !important;
-		margin-left: 5px;
-	}
-
-
-	.container {
+	.containerLabel {
 	    display: block;
 	    position: relative;
 	    padding-left: 35px;
@@ -61,9 +45,8 @@
 	    -moz-user-select: none;
 	    -ms-user-select: none;
 	    user-select: none;
+	    font-weight: 500 !important;
 	}
-
-
 
 .bookCards {
     color: #753721;
@@ -101,10 +84,6 @@
 	opacity: 1;
 }
 
-/*.cardBook:hover {
-	-webkit-filter: brightness(30%);  Safari 6.0 - 9.0 
-    filter: brightness(30%);
-}*/
 
 .shopping {
 	color: white;
@@ -129,6 +108,7 @@
 
 
 .fa {
+	font-size: 40px !important;
 	color: white !important;
 }
 
@@ -146,7 +126,7 @@
 }
 
 /* Hide the browser's default radio button */
-.container input {
+.containerLabel input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -164,12 +144,12 @@
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.containerLabel:hover input ~ .checkmark {
     background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.containerLabel input:checked ~ .checkmark {
     background-color: #2196F3;
 }
 
@@ -181,12 +161,12 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.containerLabel input:checked ~ .checkmark:after {
     display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+.containerLabel .checkmark:after {
  	top: 6px;
 	left: 6px;
 	width: 8px;
@@ -328,10 +308,6 @@ div.ui-slider-range.ui-widget-header {
 	}
 
 
-
-
-
-
 .list-pager {
     margin-top: 15px;
     margin-bottom: 0;
@@ -381,55 +357,6 @@ div.ui-slider-range.ui-widget-header {
 
 
 
-
-
-
-/*CSS SNACKBAR*/
-#snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    height: 100px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    top: 50px;
-    font-size: 20px;
-    padding-top: 20px;
-}
-
-#snackbar.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-    from {top: 0; opacity: 0;} 
-    to {top: 50px; opacity: 1;}
-}
-
-@keyframes fadein {
-    from {top: 0; opacity: 0;}
-    to {top: 50px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-    from {top: 50px; opacity: 1;} 
-    to {top: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {top: 50px; opacity: 1;}
-    to {top: 0; opacity: 0;}
-}
-
-
 .badge-notify{
     background:red !important;
     position:relative;
@@ -444,12 +371,24 @@ div.ui-slider-range.ui-widget-header {
   .sortBook h3 {
   	margin-top: 0 !important;
   }
-				
+	
 
 
 
+.glyphicon {
+    font-size: 28px;
+}
+/*.glyphicon:hover {cursor: pointer;}*/
 
-
+div.containerSortBook {
+	margin-top: 50px;
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    padding-top: 20px;
+    padding-bottom: 29px;
+}
 
 
 

@@ -775,7 +775,7 @@ for (var i = 0; i < BooksArray.length; i++) {
 				<div class="book_card__body mb10">
 					<div class="card__image card__image--square card__image--round-edge cardBook" style="background-image: url('`+ BooksArray[i].imageBook +`');">
 					</div>
-					<div class="shopping" class="btn btn-danger my-cart-btn" data-id="`+ (i+1) +`" data-name="`+ BooksArray[i].nameBook +`" data-price="`+ BooksArray[i].finalSale +`" data-quantity="1" data-image="`+ BooksArray[i].imageBook +`">
+					<div class="shopping btn btn-danger my-cart-btn" data-id="`+ (i+1) +`" data-name="`+ BooksArray[i].nameBook +`" data-price="`+ BooksArray[i].finalSale +`" data-quantity="1" data-image="`+ BooksArray[i].imageBook +`">
 						<div class="fa fa-shopping-cart "></div>
 					</div>
 				</div>
@@ -1145,62 +1145,84 @@ $(document).ready(function(){
 	$(".book_modal_content").height(0.65*(screen.height))
 });
 
-// // JAVASCRIPT JQUERYUI SLIDER PRICE
-// $(function(){
-//     $('#rangeslider').slider({
-//         range: true,
-//         min: 0,
-//         max: 1000000,
-//         values: [ 0, 1000000 ],
-//         slide: function( event, ui ) {
-//             var string_01 = ui.values[0].toString(),
-//             string_02 = ui.values[1].toString(),
-//             numLength_01 = string_01.length,
-//             numLength_02 = string_02.length;
+$(function() {
+		var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="100px" height="100px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: 0,
+        right: 400
+      }, 5000 , "linear", function() {
+        $image.remove();
+      });
+    }
 
-//             if (numLength_01 <= 3) {
-//               $('#rangeval01').html(string_01);
-//           } else if (numLength_01 <=6) {
-//               $('#rangeval01').html(string_01.substr(0, (numLength_01-3)) + "." + string_01.substr((numLength_01-3), 3));
-//           } else {
-//               $('#rangeval01').html(string_01.substr(0, 1) + "." + string_01.substr(1, 3) + "." + string_01.substr(4, 3));
-//           }
+    $('.my-cart-btn').myCart({
+      currencySymbol: '$',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      cartItems: [],
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+        checkoutString += "\n\n id \t name \t \t \t \t price \t \t quantity";
+        $.each(products, function(){
+          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + " \t " + this.price + " \t " + " \t " + this.quantity);
+        });
+        alert(checkoutString)
+        console.log("checking out", products, totalPrice, totalQuantity);
+      },
+      getDiscountPrice: function(products, totalPrice, totalQuantity) {
+        console.log("calculating discount", products, totalPrice, totalQuantity);
+        return totalPrice * 0.2;
+      }
+    });
+});
 
-//           if (numLength_02 <= 3) {
-//               $('#rangeval02').html(string_02);
-//           } else if (numLength_02 <=6) {
-//               $('#rangeval02').html(string_02.substr(0, (numLength_02-3)) + "." + string_02.substr((numLength_02-3), 3));
-//           } else {
-//               $('#rangeval02').html(string_02.substr(0, 1) + "." + string_02.substr(1, 3) + "." + string_02.substr(4, 3));
-//           }
-//       }
-//   });
-// });
+// JAVASCRIPT JQUERYUI SLIDER PRICE
+$(function(){
+    $('#rangeslider').slider({
+        range: true,
+        min: 0,
+        max: 1000000,
+        values: [ 0, 1000000 ],
+        slide: function( event, ui ) {
+            var string_01 = ui.values[0].toString(),
+            string_02 = ui.values[1].toString(),
+            numLength_01 = string_01.length,
+            numLength_02 = string_02.length;
 
+            if (numLength_01 <= 3) {
+              $('#rangeval01').html(string_01);
+          } else if (numLength_01 <=6) {
+              $('#rangeval01').html(string_01.substr(0, (numLength_01-3)) + "." + string_01.substr((numLength_01-3), 3));
+          } else {
+              $('#rangeval01').html(string_01.substr(0, 1) + "." + string_01.substr(1, 3) + "." + string_01.substr(4, 3));
+          }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          if (numLength_02 <= 3) {
+              $('#rangeval02').html(string_02);
+          } else if (numLength_02 <=6) {
+              $('#rangeval02').html(string_02.substr(0, (numLength_02-3)) + "." + string_02.substr((numLength_02-3), 3));
+          } else {
+              $('#rangeval02').html(string_02.substr(0, 1) + "." + string_02.substr(1, 3) + "." + string_02.substr(4, 3));
+          }
+      }
+  });
+});
