@@ -591,22 +591,10 @@ for (var i = 0; i < 8; i++) {
 		</div>`
 	);
 };
-	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var video = document.getElementById('video01');
+// window.onclick = function(event) {
+//   if (event.target == video) {
+//       video.style.display = "none";
+//   }
+// }

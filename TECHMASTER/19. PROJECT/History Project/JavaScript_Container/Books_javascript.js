@@ -1143,6 +1143,13 @@ $(document).ready(function(){
 		</div>`
 	)
 	$(".book_modal_content").height(0.65*(screen.height))
+
+	var book = document.getElementById('book-1');
+	window.onclick = function(event) {
+  	if (event.target == book) {
+      book.style.display = "none";
+  }
+}
 });
 
 $(function() {
@@ -1154,7 +1161,7 @@ $(function() {
       $image.animate({
         top: 0,
         right: 400
-      }, 5000 , "linear", function() {
+      }, 500 , "linear", function() {
         $image.remove();
       });
     }
@@ -1226,3 +1233,9 @@ $(function(){
       }
   });
 });
+// var xy = $("#book-1").attr("style");
+// console.log(xy);
+
+// if ($("#book-1").css("display") == "none") {
+// 	$(".containerSortBook").show();
+// } else {$(".containerSortBook").hide();}

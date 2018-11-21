@@ -443,112 +443,112 @@ StoryModal = [
     textImgContent_04: "Phong trào thu hút được một số các quan lại trong triều đình và văn thân. Ngoài ra, phong trào còn thu hút đông đảo các tầng lớp sĩ phu yêu nước thời bấy giờ"
   },
 
-  // {
-  //   // titleContentModal: "",
-  //   // textSubject: "",
-  //   // textContent_01: ``,
-  //   // imgContent_01: "",
-  //   // textImgContent_01: "",
-  //   // textContent_02: ``,
-  //   // imgContent_02: "",
-  //   // textImgContent_02: "",
-  //   // textContent_03: ``,
-  //   // imgContent_03: "",
-  //   // textImgContent_03: "",
-  //   // textContent_04: ``,
-  //   // imgContent_04: "",
-  //   // textImgContent_04: ""
-  // },
+  {
+    titleContentModal: "",
+    textSubject: "",
+    textContent_01: ``,
+    imgContent_01: "",
+    textImgContent_01: "",
+    textContent_02: ``,
+    imgContent_02: "",
+    textImgContent_02: "",
+    textContent_03: ``,
+    imgContent_03: "",
+    textImgContent_03: "",
+    textContent_04: ``,
+    imgContent_04: "",
+    textImgContent_04: ""
+  },
 
-  // {
-  //   // titleContentModal: "",
-  //   // textSubject: "",
-  //   // textContent_01: ``,
-  //   // imgContent_01: "",
-  //   // textImgContent_01: "",
-  //   // textContent_02: ``,
-  //   // imgContent_02: "",
-  //   // textImgContent_02: "",
-  //   // textContent_03: ``,
-  //   // imgContent_03: "",
-  //   // textImgContent_03: "",
-  //   // textContent_04: ``,
-  //   // imgContent_04: "",
-  //   // textImgContent_04: ""
-  // },
+  {
+    titleContentModal: "",
+    textSubject: "",
+    textContent_01: ``,
+    imgContent_01: "",
+    textImgContent_01: "",
+    textContent_02: ``,
+    imgContent_02: "",
+    textImgContent_02: "",
+    textContent_03: ``,
+    imgContent_03: "",
+    textImgContent_03: "",
+    textContent_04: ``,
+    imgContent_04: "",
+    textImgContent_04: ""
+  },
 
-  // {
-  //   // titleContentModal: "",
-  //   // textSubject: "",
-  //   // textContent_01: ``,
-  //   // imgContent_01: "",
-  //   // textImgContent_01: "",
-  //   // textContent_02: ``,
-  //   // imgContent_02: "",
-  //   // textImgContent_02: "",
-  //   // textContent_03: ``,
-  //   // imgContent_03: "",
-  //   // textImgContent_03: "",
-  //   // textContent_04: ``,
-  //   // imgContent_04: "",
-  //   // textImgContent_04: ""
-  // },
+  {
+    titleContentModal: "",
+    textSubject: "",
+    textContent_01: ``,
+    imgContent_01: "",
+    textImgContent_01: "",
+    textContent_02: ``,
+    imgContent_02: "",
+    textImgContent_02: "",
+    textContent_03: ``,
+    imgContent_03: "",
+    textImgContent_03: "",
+    textContent_04: ``,
+    imgContent_04: "",
+    textImgContent_04: ""
+  },
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 
-  // {},
+  {},
 ];
 
 for (var i = 0; i < StoryModal.length; i++) {
@@ -594,5 +594,16 @@ for (var i = 0; i < StoryModal.length; i++) {
       </div>
     </div>`
   )
+  
 };
 $(".story_modal_content").height(0.65*(screen.height));
+
+  var story1 = document.getElementById("story-1");
+  var story2 = document.getElementById("story-2");
+  window.onclick = function(event) {
+    if (event.target == story1) {
+        story1.style.display = "none";
+    } else if (event.target == story2) {
+        story2.style.display = "none";
+    }
+  }

@@ -1,3 +1,13 @@
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+return array;
+};
+
 FiguresArray = [
 	{
 		backgroungFigures: "http://nghiencuuquocte.net/wp-content/uploads/2015/09/ngo-dinh-diem1.jpg",
@@ -120,25 +130,83 @@ FiguresArray = [
 	}
 ];
 
-for (var i = 0; i < FiguresArray.length; i++) {
+newFiguresArray = FiguresArray.concat(FiguresArray, FiguresArray, FiguresArray);
+// newFiguresArray = shuffleArray(newFiguresArray);
+
+for (var i = 0; i < newFiguresArray.length; i++) {
 	$(".figures_Javascript_grid__row").append(
-		`<div onclick="document.getElementById('figures-`+ (i+1) +`').style.display='block'" class="grid4__col">
+		`<div onclick="document.getElementById('figures-`+ (i+1) +`').style.display='block'" class="grid4__col` +` `+ `hidden` + (i+1) + `">
 			<div class="cards" data-hover="`+ (i+1) +`">
 				<div class="card__body mb10">
-					<div class="card__image card__image--square card__image--round-edge" style="background-image: url(`+ FiguresArray[i].backgroungFigures +`);">
+					<div class="card__image card__image--square card__image--round-edge" style="background-image: url(`+ newFiguresArray[i].backgroungFigures +`);">
 					</div>
 				</div>
 				<div class="cardFloat video_carsFloat blog_cardFloat text-center figures_cardFloat">
-					<h3 class="card__text blog_card_text">`+ FiguresArray[i].nameFigures +`</h3>
-					<p class="author blog_author text-center">(`+ FiguresArray[i].bornFigures +`)</p>
+					<h3 class="card__text blog_card_text">`+ newFiguresArray[i].nameFigures +`</h3>
+					<p class="author blog_author text-center">(`+ newFiguresArray[i].bornFigures +`)</p>
 				</div>
 			</div>
 		</div>`
 	)
 
 	$(".pageList").append(
-		`<li><a href="">`+ (i+1) +`. `+ FiguresArray[i].nameFigures +`</a></li>`
+		`<li class="hidden` + (i+1) + `"><a href="">`+ (i+1) +`. `+ newFiguresArray[i].nameFigures +`</a></li>`
 	)
+
+	if (i<20) {
+		$(`.hidden` + (i+1)).css({"display": "block"})
+	} else {
+		$(`.hidden` + (i+1)).css({"display": "none"})
+	}
+};
+
+
+function functionNextFigures01() {
+	for (var i = 0; i < newFiguresArray.length; i++) {
+		if (i<20) {
+			$(`.hidden` + (i+1)).css({"display": "block"})
+		} else {
+			$(`.hidden` + (i+1)).css({"display": "none"})
+		}
+	}
+	$(".normal01").addClass("current");
+	$(".normal02, .normal03, .normal04, .normal05").removeClass("current");
+};
+
+function functionNextFigures02() {
+	for (var i = 0; i < newFiguresArray.length; i++) {
+		if (i<40) {
+			$(`.hidden` + (i+1)).css({"display": "block"})
+		} else {
+			$(`.hidden` + (i+1)).css({"display": "none"})
+		}
+	}
+	$(".normal01, .normal02").addClass("current");
+	$(".normal03, .normal04, .normal05").removeClass("current");
+};
+
+function functionNextFigures03() {
+	for (var i = 0; i < newFiguresArray.length; i++) {
+		if (i<60) {
+			$(`.hidden` + (i+1)).css({"display": "block"})
+		} else {
+			$(`.hidden` + (i+1)).css({"display": "none"})
+		}
+	}
+	$(".normal01, .normal02, .normal03").addClass("current");
+	$(".normal04, .normal05").removeClass("current");
+};
+
+function functionNextFigures04() {
+	for (var i = 0; i < newFiguresArray.length; i++) {
+		if (i<80) {
+			$(`.hidden` + (i+1)).css({"display": "block"})
+		} else {
+			$(`.hidden` + (i+1)).css({"display": "none"})
+		}
+	}
+	$(".normal01, .normal02, .normal03, .normal04").addClass("current");
+	$(".normal05").removeClass("current");
 };
 
 $(".figures_Javascript_modal").append(
@@ -410,6 +478,12 @@ $(".figures_Javascript_modal").append(
 	</div>`
 );
 $(".figures_modal_content").height(0.65*(screen.height));
+var figures = document.getElementById('figures-1');
+window.onclick = function(event) {
+  if (event.target == figures) {
+      figures.style.display = "none";
+  }
+}
 
 timelineNgoDinhDiem = [
 	{

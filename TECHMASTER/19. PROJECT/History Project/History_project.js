@@ -10,10 +10,10 @@ $(document).ready(function(){
         </div>
         <div class="topHeader_space"></div>
         <div class="topHeader_social">
-          <a href=""><img src="../Image_history/ico_tw_svg.svg" alt="1"></a>
-          <a href=""><img src="../Image_history/ico_fb_svg.svg" alt="2"></a>
-          <a href=""><img src="../Image_history/ico_yt_svg.svg" alt="3"></a>
-          <a href="" class="network-logo"><img src="../Image_history/kni_network_logo.svg" alt="4"></a>
+          <a href=""><img src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="1"></a>
+          <a href=""><img src="https://image.flaticon.com/icons/svg/145/145802.svg" alt="2"></a>
+          <a href=""><img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="3"></a>
+          <a href="" class="network-logo"><img src="https://kidspast.com/wp-content/themes/kids-past/img/svg/kni_network_logo.svg" alt="4"></a>
         </div>
         <div class="menuToggle" onclick="navbarToggle(this)">
           <div class="bar1"></div>
@@ -44,10 +44,10 @@ $(document).ready(function(){
           <div class="headerWidgets">
             <div class="headerWidgets-title">KẾT NỐI VỚI CHÚNG TÔI</div>
             <div class="socialLinks">
-              <a href=""><img src="../Image_history/ico_tw_svg.svg" alt="1"></a>
-              <a href=""><img src="../Image_history/ico_fb_svg.svg" alt="2"></a>
-              <a href=""><img src="../Image_history/ico_yt_svg.svg" alt="3"></a>
-              <a href="" class="network-logo"><img src="../Image_history/kni_network_logo.svg" alt="4"></a>
+              <a href=""><img src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="1"></a>
+              <a href=""><img src="https://image.flaticon.com/icons/svg/145/145802.svg" alt="2"></a>
+              <a href=""><img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="3"></a>
+              <a href="" class="network-logo"><img src="https://kidspast.com/wp-content/themes/kids-past/img/svg/kni_network_logo.svg" alt="4"></a>
             </div>
           </div>
         </div>
@@ -59,10 +59,10 @@ $(document).ready(function(){
 // IN FOOTER
 $(document).ready(function(){
   $(".site-footer").append(
-    `<a href="#" class="scrollToTop"><img src="../Image_history/back_to_top.png" alt=""></a>
+    `<a href="#" class="scrollToTop"><img src="https://i.imgur.com/2uqxwwu.png" alt=""></a>
     <div class="containerFooter">
       <div class="logoFooter">
-        <div class="networkLogo"><img src="../Image_history/kni_network_logo.svg"></div>
+        <div class="networkLogo"><img src="https://kidspast.com/wp-content/themes/kids-past/img/svg/kni_network_logo.svg"></div>
         <div class="webLogo"><img src="https://i.imgur.com/Y9P26e7.png"></div>
         <div class="sologanLogo">Hiện Tại Là Quá Khứ Của Tương Lai</div>
       </div>
@@ -85,7 +85,7 @@ $(document).ready(function(){
             <img src="https://image.flaticon.com/icons/svg/145/145812.svg">
             <img src="https://image.flaticon.com/icons/svg/145/145804.svg">
             <img src="https://image.flaticon.com/icons/svg/145/145808.svg">
-            <img src="../Image_history/ico_yt_svg.svg">
+            <img src="https://image.flaticon.com/icons/svg/174/174883.svg">
             <div class="clearBoth"></div>
           </div>
           <div class="clearBoth"></div>
@@ -127,6 +127,10 @@ $(document).ready(function(){
 
 //RESIZE CHIỀU CAO
 $(".book_modal_content").height(0.65*(screen.height));
+$(".story_modal_content").height(0.65*(screen.height));
+$(".login_modal_content").height(0.65*(screen.height));
+
+
 
 //TOGGLE WHEN SMALL SCREEN
 function navbarToggle(x){
@@ -187,45 +191,13 @@ $(document).ready(function(){
   });
 });
 
-var story = document.getElementById('story-01');
-window.onclick = function(event) {
-  if (event.target == story) {
-      story.style.display = "none";
-  }
-}
-
-var figures = document.getElementById('figures-01');
-window.onclick = function(event) {
-  if (event.target == figures) {
-      figures.style.display = "none";
-  }
-}
-
 var form = document.getElementById('formLogin');
-window.onclick = function(event) {
-  if (event.target == form) {
-      form.style.display = "none";
-  }
-}
-
-var book = document.getElementById('book-01');
-window.onclick = function(event) {
-  if (event.target == book) {
-      book.style.display = "none";
-  }
-}
-
-var video = document.getElementById('video01');
-window.onclick = function(event) {
-  if (event.target == video) {
-      video.style.display = "none";
-  }
-}
-
 var timeline = document.getElementById('timeline-01');
 window.onclick = function(event) {
   if (event.target == timeline) {
       timeline.style.display = "none";
+  } else if (event.target == form) {
+      form.style.display = "none";
   }
 }
 
@@ -237,7 +209,7 @@ $(document).ready(function(){
 	lis.hover(function(){
 		index = $(this).attr('data-test');
 		const cardIndex = $(`.cards[data-hover='${index}']`);
-		$(cardIndex).css({"color": "#ca27b1", "cursor": "pointer", "border": "2px solid #ca27b1"});
+		$(cardIndex).css({"color": "#ca27b1", "cursor": "pointer"});
 	}, function(){
 		cards.css({"color": "#753721", "border": "none"});
 	});
