@@ -3,6 +3,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
     .containerGame {
+        max-width: 1370px;
+        margin: auto;
         position: relative;
         top: 100px;
     }
