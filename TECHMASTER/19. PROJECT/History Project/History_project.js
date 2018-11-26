@@ -4,7 +4,7 @@ $(document).ready(function(){
     `<div class="siteHeader">
       <div class="topHeader">
         <div class="topHeader_logo">
-          <a href="../Index_history_project.html">
+          <a href="../Index.html">
             <img src="https://i.imgur.com/Y9P26e7.png" alt="">
           </a>
         </div>
