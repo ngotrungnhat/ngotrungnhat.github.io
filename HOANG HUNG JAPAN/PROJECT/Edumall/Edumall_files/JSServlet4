@@ -1,0 +1,71 @@
+var customConfig = customConfig || {pages: {}, templates: {}, allowOverride: ["trackReferrer", "trackLocation"]};
+customConfig.pages.PRODUCT_PAGE = {
+match: [
+]
+,
+register: [
+	{
+		type: "url-regexp",
+		pattern: "(.*)",
+		registerGroup: {
+			1:"itemmeta.itemUrl"
+		}
+	},
+],
+postRenderFunction: function($) {
+	if (!window.gr_editor_proxied) {
+
+		var _itemId = null;
+
+		var viewEventPush = {
+			type: "event",
+			eventType: "VIEW",
+			pageVersion: 0
+		};
+		var itemId = "";
+		var textualProperties = [];
+		itemId = encodeURIComponent(textualProperties.join(""));
+		var canonicalUrl = $("link[rel='canonical']").attr("href");
+		if (canonicalUrl) itemId = canonicalUrl;
+		viewEventPush.itemId = itemId;
+		if (itemId) _gravity.push(viewEventPush);
+			_gravity.push({
+				type: "event",
+				eventType: "BROWSE"
+			});
+	} else {
+		console.info("In editor proxy mode. Will not send VIEW and BROWSE event.")
+	}
+	}
+}
+customConfig.pages.GENERATED_FALLBACK = {
+	match: [
+		{
+			type: 'url-regexp',
+			selector: '*'
+		}
+	],
+	postRenderFunction: function($) {
+		_gravity.push({
+			type: 'event',
+			eventType: 'BROWSE'
+		});
+	}
+}
+
+
+var gacid = "-";
+try {
+	gacid = (function getGACookie() {
+		var value = "; " + document.cookie;
+		var parts = value.split("; _ga=");
+		if (parts.length == 2) {
+			var gt = parts.pop().split(";").shift();
+			var ps = gt.split(".");
+			return ps[ps.length-2]+"."+ps[ps.length-1];		}
+	})();
+} catch(e) {}
+var _gravity = _gravity || [];
+_gravity.push({'type':'set', 'gacid': gacid});
+_gravity.push({type: "customconfig", config: customConfig, environment: "prod"});
+
