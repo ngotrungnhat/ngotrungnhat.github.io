@@ -47,7 +47,7 @@ $(document).ready(function(){
               <a href=""><img src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="1"></a>
               <a href=""><img src="https://image.flaticon.com/icons/svg/145/145802.svg" alt="2"></a>
               <a href=""><img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="3"></a>
-              <a href="" class="network-logo"><img src="https://kidspast.com/wp-content/themes/kids-past/img/svg/kni_network_logo.svg" alt="4"></a>
+              <a href="" class="network-logo"><img src="Image_history/kni_network_logo.svg" alt="4"></a>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ $(document).ready(function(){
     `<a href="#" class="scrollToTop"><img src="https://i.imgur.com/2uqxwwu.png" alt=""></a>
     <div class="containerFooter">
       <div class="logoFooter">
-        <div class="networkLogo"><img src="https://kidspast.com/wp-content/themes/kids-past/img/svg/kni_network_logo.svg"></div>
+        <div class="networkLogo"><img src="Image_history/kni_network_logo.svg"></div>
         <div class="webLogo"><img src="https://i.imgur.com/Y9P26e7.png"></div>
         <div class="sologanLogo">Hiện Tại Là Quá Khứ Của Tương Lai</div>
       </div>
