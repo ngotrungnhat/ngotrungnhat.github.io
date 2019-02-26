@@ -13,7 +13,7 @@ $(document).ready(function(){
           <a href=""><img src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="1"></a>
           <a href=""><img src="https://image.flaticon.com/icons/svg/145/145802.svg" alt="2"></a>
           <a href=""><img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="3"></a>
-          <a href="" class="network-logo"><img src="Image_history/kki-logo.png" alt="4"></a>
+          <a href="" class="network-logo"><img src="Image_history/kni_network_logo.svg" alt="4"></a>
         </div>
         <div class="menuToggle" onclick="navbarToggle(this)">
           <div class="bar1"></div>
