@@ -392,10 +392,6 @@ function functionNextStory03(){
 };
 
 
-
-
-
-
 // MODAL MODAL MODAL MODAL
 StoryModal = [
   {
