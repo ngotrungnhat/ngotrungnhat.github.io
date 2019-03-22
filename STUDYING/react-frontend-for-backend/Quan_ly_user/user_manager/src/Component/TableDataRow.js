@@ -6,10 +6,11 @@ class TableDataRow extends Component {
             return "Admin"
         }else if (this.props.quyen === 2) {
             return "Moderator"
-        }else{
+        }else {
             return "Normal"
         }
     }
+
     render() {
         return (
             <tr>
@@ -19,12 +20,12 @@ class TableDataRow extends Component {
                 <td>{this.quyenShow()}</td>
                 <td>
                     <div className="btn-group" style={{width: '100%'}}>
-                    <div className="btn btn-warning sua">
-                        <i className="fa fa-edit">Sửa</i>
-                    </div>
-                    <div className="btn btn-danger xoa">
-                        <i className="fa fa-delete">Xóa</i>
-                    </div>
+                        <div className="btn btn-warning sua" onClick={()=>this.props.editFunctionChild()}>
+                            <i className="fa fa-edit">Sửa</i>
+                        </div>
+                        <div onClick={(idUser)=>this.props.deleteButtonClick(this.props.id)} className="btn btn-danger xoa">
+                            <i className="fa fa-delete">Xóa</i>
+                        </div>
                     </div>
                 </td>
             </tr>

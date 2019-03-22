@@ -1,55 +1,48 @@
 import React, { Component } from 'react';
 
 class AddUser extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            trangThaiChinhSua: false
-        }
+    
+    isChange = (event) => {
+        const name = event.target.name
+        const value = event.target.value
+        this.setState({
+            [name]: value
+       });
     }
 
-    hienThiNut = () => {
-        if (this.state.trangThaiChinhSua === true) {
-            return <div onClick={() => this.thayDoiNut()} className="btn btn-block btn-outline-secondary">Close</div>
-        }else{return <div onClick={() => this.thayDoiNut()} className="btn btn-block btn-outline-info">Add User</div>}
-    }
-    thayDoiNut = () => {
-        this.setState({
-            trangThaiChinhSua: !this.state.trangThaiChinhSua
-        });
-    }
-    hienThiForm = () => {
-        if (this.state.trangThaiChinhSua === true) {
+    trangThaiForm = () => {
+        if (this.props.displayButton === true) {
             return (
-                <div className="card text-black  mb-3 mt-2">
-                <div className="card-header">Thêm mới User vào hệ thống</div>
-                <div className="card-body">
-                <div className="form-group">
-                    <label >User</label>
-                    <input type="text" className="form-control" name="true" aria-describedby="helpId" placeholder="Nhập Tên Đăng Nhập" />
+                <div className="card text-black  mb-3 mt-5">
+                    <div className="card-header">Thêm mới User vào hệ thống</div>
+                    <div className="card-body">
+                    <div className="form-group">
+                        <label >User</label>
+                        <input onChange={(event) => this.isChange(event)} type="text" className="form-control" name="name" aria-describedby="helpId" placeholder="Nhập Tên Đăng Nhập" />
+                    </div>
+                    <div className="form-group">
+                        <label >Phone</label>
+                        <input onChange={(event) => this.isChange(event)} type="text" className="form-control" aria-describedby="helpId" name="tel" placeholder="Nhập Số Điện Thoại" />
+                    </div>
+                    <select onChange={(event) => this.isChange(event)} className="custom-select" name="permistion">
+                        <option >Chọn quyền mặc định</option>
+                        <option value="1">Admin</option>
+                        <option value="2">Moderater</option>
+                        <option value="3">Normal</option>
+                    </select>
+                    </div>
+                    <input onClick={(name, tel, permistion) => this.props.propsObjectAddUser(this.state.name, this.state.tel, this.state.permistion)} type="reset" className="btn btn-block btn-primary" value="Thêm Mới" />
                 </div>
-                <div className="form-group">
-                    <label >Phone</label>
-                    <input type="text" className="form-control" aria-describedby="helpId" placeholder="Nhập Số Điện Thoại" />
-                </div>
-                <select className="custom-select">
-                    <option >Chọn quyền mặc định</option>
-                    <option >Admin</option>
-                    <option >Moderater</option>
-                    <option >Normal</option>
-                </select>
-                </div>
-                <div className="btn btn-block btn-primary">Thêm Mới</div>
-            </div>
             )
         }
     }
+
     render() {
+               
         return (
-            <div >
-                {this.hienThiNut()}
-                {this.hienThiForm()}
-            </div>
+            <form >
+                {this.trangThaiForm()}
+            </form>
 
         );
     }
