@@ -1,6 +1,6 @@
 import { noteData } from "./firebaseConnect";
 
-const redux = require('redux');
+var redux = require('redux');
 const noteInitialState = {
     testConnect: "testThoi"
 }
