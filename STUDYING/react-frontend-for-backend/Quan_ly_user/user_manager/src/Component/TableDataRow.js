@@ -10,8 +10,12 @@ class TableDataRow extends Component {
             return "Normal"
         }
     }
+    
+    
+    // 
 
     render() {
+        //this.props.tuoicon
         return (
             <tr>
                 <td>{this.props.stt}</td>

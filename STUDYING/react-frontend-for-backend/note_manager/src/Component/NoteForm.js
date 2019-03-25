@@ -40,7 +40,7 @@ class NoteForm extends Component {
                     <div onClick={()=>this.addData(this.state.noteTitle, this.state.noteContent)} type="reset" className="btn btn-block btn-primary">Save</div>
                 </form>
             </div>
-
+            
         );
     }
 }

@@ -97,14 +97,14 @@ class App extends Component {
     localStorage.setItem('userData', JSON.stringify(tempData));
   }
 
-
   render() { 
     var resultSearch = [];
     this.state.data.forEach((item) => {
       if (item.name.indexOf(this.state.textSearch) !== -1) {
         resultSearch.push(item)
       }
-    });
+    })
+    console.log(resultSearch)
       
     return (
       <div>

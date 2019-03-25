@@ -11,7 +11,7 @@ class App extends Component {
     noteData.push(objData)
   }
   render() {
-    //LẤY DỮ LIỆU IN RA TỪ FIREBASE
+    // LẤY DỮ LIỆU IN RA TỪ FIREBASE
     noteData.once('value').then(function(snapshot){
       console.log(snapshot.val());
     });

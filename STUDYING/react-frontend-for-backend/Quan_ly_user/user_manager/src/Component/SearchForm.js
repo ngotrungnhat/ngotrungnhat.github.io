@@ -5,7 +5,7 @@ class SearchForm extends Component {
    constructor(props) {
        super(props);
        this.state = {
-           tempValue: ""
+        //    tempValue: ""
         //    objInfoEditUser: {}
        }
    }
@@ -22,6 +22,7 @@ class SearchForm extends Component {
         this.setState({
             tempValue: event.target.value
         });
+        console.log(this.state.tempValue)
         this.props.getTextSearch(event.target.value)
     }
 
