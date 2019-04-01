@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -26,10 +26,61 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
-        
-       
+        <div class="col-8">
+          <div id="noteId" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header" role="tab" id="note01">
+                  <h5 class="mb-0" style="display: inline">
+                    <a data-toggle="collapse" data-parent="#noteId" href="#note-01" aria-expanded="true" aria-controls="note-01">
+                      Monday, March 26, 2019
+                    </a>
+                  </h5>
+                  <div class="btn-group " style='display: inline;cursor: pointer; float: right;'>
+                    <div class="btn btn-warning sua" >
+                        <i class="fa fa-edit">Sửa</i>
+                    </div>
+                    <div class="btn btn-danger xoa">
+                        <i class="fa fa-delete">Xóa</i>
+                    </div>
+                </div>
+                
+              </div>
+              <div id="note-01" class="collapse in" role="tabpanel" aria-labelledby="note-01">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit soluta nemo inventore dolorum eum ipsam eos quidem eligendi illum officiis ullam, aspernatur possimus quasi? Eos debitis eligendi officiis aliquid quis!
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="note02">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" data-parent="#noteId" href="#note-02" aria-expanded="true" aria-controls="note-02">
+                    Tuesday, March 30, 2019
+                  </a>
+                </h5>
+              </div>
+              <div id="note-02" class="collapse in" role="tabpanel" aria-labelledby="note-02">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit soluta nemo inventore dolorum eum ipsam eos quidem eligendi illum officiis ullam, aspernatur possimus quasi? Eos debitis eligendi officiis aliquid quis!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <h2>SỬA NỘI DUNG NOTE</h2>
+          <div class="form-group">
+            <label>Tiêu Đề Note</label>
+            <input type="text" class="form-control" name="noteTitle" aria-describedby="helpId" placeholder="Nhập tiêu đề note">
+          </div>
+          <div class="form-group">
+            <label>Nội Dung Note</label>
+            <textarea class="form-control" name="noteContent" id="" rows="5" placeholder="Nhập nội dung note"></textarea>
+          </div>
+          <div class="btn btn-block btn-primary">Lưu Thay Đổi</div>
+        </div>
       </div>  
     </div>
 

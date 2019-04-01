@@ -3,7 +3,6 @@ import TableDataRow from './TableDataRow';
 
 class TableData extends Component {
     mappingData = () => this.props.dataUserProps.map((value, key) => (
-      // console.log(value),   
             <TableDataRow
               key={key}
               stt={key+1}
