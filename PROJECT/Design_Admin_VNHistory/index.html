@@ -7,16 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONT FAMILY GOOGLE -->
+	  <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da|Francois+One" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Link CSS Chung -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <!-- Link CSS index -->
     <!-- <link rel="stylesheet" href="index.css"> -->
   </head>
   <body>
-      
+    <div id="page" class="site">
+      <div class="container header">
+        <div class="topHeader">
+          <div class="topHeader__logo">
+            <a href="#abc"><img src="https://i.imgur.com/Y9P26e7.png" alt="Image logo"></a>
+          </div>
+          <div class="topHeader__title">
+            <h1>TRANG QUẢN LÝ</h1>
+          </div>
+          <div onclick="navbarToggle(this)" class="topHeader__menuToggle">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="navHeader">
+          <div class="navBar">
+            <ul class="navBar__menu">
+              <li class="navBar__menu-item"><a href="#">Trang Chủ</a></li>
+              <li class="navBar__menu-item"><a href="#">Câu Chuyện</a></li>
+              <li class="navBar__menu-item"><a href="#">Nhân Vật</a></li>
+              <li class="navBar__menu-item"><a href="#">Sách</a></li>
+              <li class="navBar__menu-item"><a href="#">Vides</a></li>
+              <li class="navBar__menu-item"><a href="#">Games</a></li>
+              <li class="navBar__menu-item"><a href="#">Blog</a></li>
+            </ul>
+            <div class="navBar__search">
+              <form action="" class="navBar__search-form">
+                <input type="text" class="navBar__search-input" placeholder="Bạn đang tìm kiếm điều gì?">
+                <input type="text" class="navBar__search-submit">
+              </form>
+            </div>
+          </div>
+          <div class="navBar-widgets"></div>
+        </div>
+      </div>
+      <div class="container loginForm">
+          <div class="login">
+            <h1>Đăng Ký/Đăng Nhập</h1>
+            <input class="input01" type="" name="" placeholder="Username">
+            <input class="input02" type="Password" name="" placeholder="*******">
+          </div>
+          <div class="selectLogin">
+            <div class="loginregister">Đăng Ký</div>
+            <div class="register loginregister">Đăng Nhập</div>
+          </div>
+          <p>Forgot Password?</p>
+    </div>
     <!-- Optional JavaScript -->
+    <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
