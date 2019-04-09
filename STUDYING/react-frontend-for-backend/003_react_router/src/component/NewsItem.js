@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import data from './dulieu.json';
-import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter as NavLink } from "react-router-dom";
 
 class NewsItem extends Component {
 
