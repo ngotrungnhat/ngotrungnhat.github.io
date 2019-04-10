@@ -21,9 +21,7 @@ class App extends Component {
   
   componentWillMount() {
     if (this.state.data === null) {
-      getProductData().then((res) => {
-        this.setState({data: res})
-      })
+      getProductData().then((res) => {this.setState({data: res})})
     }
   }
   
@@ -41,9 +39,9 @@ class App extends Component {
     var name = event.target.name
     var value = event.target.value
     this.setState({[name]: value})
-}
+  }
 
-handleClick = () => {
+  handleClick = () => {
     addProductAction(this.state.product_name, this.state.product_price, this.state.image).then((responsive) => {
       var item = {},
           dataTemp = this.state.data;
@@ -53,7 +51,7 @@ handleClick = () => {
       dataTemp.push(item)
       this.setState({data: dataTemp})
     })
-}
+  }
 
   render() {
     return (
