@@ -2,15 +2,22 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 
 class NoteContentItem extends Component {
-  twoAction  = () => {
-    this.props.getEditData(this.props.note)
+
+  // deleteAction  = () => {
+  //   this.props.getEditData(this.props.note)
+  //   this.props.delete()
+  //   this.props.alertOn('Xóa Phần Tử '+ this.props.note.noteTitle +' Thành Công')
+  // }
+
+  handleEditData = () => {
     this.props.changeEditStatus()
+    this.props.getDataNeedEdit(this.props.note)
   }
-  deleteAction  = () => {
-    this.props.getEditData(this.props.note)
-    this.props.delete()
-    this.props.alertOn('Xóa Phần Tử '+ this.props.note.noteTitle +' Thành Công')
+
+  handleDeleteData  = () => {
+    this.props.deleteData(this.props.note)
   }
+
   render() {
     return (
         <div className="card">
@@ -20,11 +27,11 @@ class NoteContentItem extends Component {
                 {this.props.noteTitle}
                 </a>
             </h5>
-            <div className="btn-group " style={{display: 'inline', cursor: 'pointer', float: 'right'}}>
-              <div onClick={() => this.twoAction()} className="btn btn-warning sua">
+            <div className="btn-group " style={{display: 'block', cursor: 'pointer', float: 'right'}}>
+              <div onClick={() => this.handleEditData()} className="btn btn-warning sua">
                 <i className="fa fa-edit">Sửa</i>
               </div>
-              <div onClick={() => this.deleteAction()} className="btn btn-danger xoa">
+              <div onClick={() => this.handleDeleteData()} className="btn btn-danger xoa">
                 <i className="fa fa-delete">Xóa</i>
               </div>
             </div>
@@ -43,18 +50,19 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     changeEditStatus: () => {
       dispatch({
-        type: 'CHANGE_EDIT_STATUS'
+        type: 'CHANGE_STATUS_EDIT_FORM'
       })
     },
-    getEditData: (editObject) => {
+    getDataNeedEdit: (objNeedEdit) => {
       dispatch({
-        type: 'GET_EDIT_DATA',
-        editObject
+        type: 'GET_DATA_NEED_EDIT',
+        objNeedEdit: objNeedEdit
       })
     },
-    delete: () => {
+    deleteData: (objNeedDelete) => {
       dispatch({
-        type: 'DELETE',
+        type: 'DELETE_DATA',
+        objNeedDelete: objNeedDelete
       })
     },
     alertOn: (AlertContent) => {
@@ -72,6 +80,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
     
-  
-
 export default connect(null, mapDispatchToProps, null)(NoteContentItem)

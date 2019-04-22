@@ -32,14 +32,14 @@ router.get('/getdata01', function(req, res, next) {
 
 //GỬI DỮ LIỆU TỪ REACT LÊN NODE
 //TẠO ĐƯỜNG DẪN ĐỂ GET DỮ LIỆU TỪ REACT VỀ NODE
-router.get('/add', function(req, res, next) {
-  res.render('add', {})
-});
+// router.get('/add', function(req, res, next) {
+//   res.render('add', {})
+// });
 //TẠO ĐƯỜNG DẪN ĐỂ POST DỮ LIỆU TỪ REACT VỀ NODE
 router.post('/add', function(req, res, next) {
   var product_name = req.body.product_name,
-  product_price = req.body.product_price,
-  image = req.body.image;
+      product_price = req.body.product_price,
+      image = req.body.image;
   // INSERT DỮ LIỆU VÀO POSTGRESQL
   pool.query("INSERT INTO product_info (product_name, product_price, image) values ($1, $2, $3)", [product_name, product_price, image],
   (error, responsive) => {

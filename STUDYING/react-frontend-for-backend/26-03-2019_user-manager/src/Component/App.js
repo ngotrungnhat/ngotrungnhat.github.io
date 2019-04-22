@@ -40,14 +40,12 @@ class App extends Component {
     });
   }
 
-
 //CHỨC NĂNG TÌM KIẾM
   getTextSearch = (dataTaken) => {
     this.setState({
       textSearch: dataTaken
     });
   }
-
 
 //CHỨC NĂNG THÊM MỚI
   getObjectAddUser = (name, tel, permistion) => {
@@ -63,7 +61,6 @@ class App extends Component {
     localStorage.setItem('userData', JSON.stringify(this.state.data));
   }
 
-
   //CHỨC NĂNG SỬA
   editUser = (user) => {
     this.setState({
@@ -72,9 +69,8 @@ class App extends Component {
     this.thayDoiEditUserStatus()
   }
   thayDoiEditUserStatus = () => {
-    this.setState({
-      editUserStatus: !this.state.editUserStatus
-    });
+    this.setState({editUserStatus: !this.state.editUserStatus});
+    console.log('this.state.editUserStatus', this.state.editUserStatus)
   }
   propsObjEditUser = (objUserEdit) => {
     console.log("objUserEdit.permistion là: " + objUserEdit.permistion)
@@ -100,11 +96,10 @@ class App extends Component {
   render() { 
     var resultSearch = [];
     this.state.data.forEach((item) => {
-      if (item.name.indexOf(this.state.textSearch) !== -1) {
+      if (item.name.indexOf(this.state.textSearch) !== -1 || item.tel.indexOf(this.state.textSearch) !== -1) {
         resultSearch.push(item)
       }
     })
-    console.log(resultSearch)
       
     return (
       <div>

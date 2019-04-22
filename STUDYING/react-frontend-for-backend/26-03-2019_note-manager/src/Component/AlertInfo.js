@@ -11,7 +11,7 @@ class AlertInfo extends Component {
           return null
       }
     return (
-        <AlertContainer position="center">
+        <AlertContainer position="top-right">
 		    <Alert type="info" onDismiss={()=>this.handleDismiss()} timeout={1000}>{this.props.alertContent}</Alert>
 	    </AlertContainer>
     )

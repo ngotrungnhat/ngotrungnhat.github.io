@@ -6,7 +6,6 @@ import NavigationURL from '../Router/NavigationURL';
 
 class App extends Component {
   render() {
-    
     return (
       <Router>
         <div className="site">

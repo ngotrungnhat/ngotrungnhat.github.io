@@ -7,24 +7,24 @@ export default class Header extends Component {
 navbarToggle = (x) => {
 	if ($(".navHeader").css("display") === "block") {
 		$(".navHeader").css({"display": "none", "transition": "all 10s ease 5s"});
-		x.classList.toggle("change");
+		x.target.classList.toggle("change");
 	} else { 
 		$(".navHeader").css({"display": "block", "transition": "all 10s ease 5s"});
-		x.classList.toggle("change");
-	}
+		x.target.classList.toggle("change");
+  }
+  console.log('x.classList', x.target.classList)
 };
   render() {
     return (
         <div className="container header">
         <div className="topHeader">
           <div className="topHeader__logo">
-            {/* <a href="./home.html"><img src="https://i.imgur.com/Y9P26e7.png" alt="logo" /></a> */}
             <NavLink to="/"><img src="https://i.imgur.com/Y9P26e7.png" alt="logo" /></NavLink>
           </div>
           <div className="topHeader__title"> 
             <h1>TRANG QUẢN LÝ</h1>
           </div>
-          <div onClick={() => this.navbarToggle()} className="topHeader__menuToggle">
+          <div onClick={(e) => this.navbarToggle(e)} className="topHeader__menuToggle">
             <div className="bar1" />
             <div className="bar2" />
             <div className="bar3" />
@@ -34,27 +34,21 @@ navbarToggle = (x) => {
           <div className="navBar">
             <ul className="navBar__menu">
               <li className="navBar__menu-item">
-                {/* <a href="./home.html">Trang Chủ</a> */}
                 <NavLink to="/home">Home</NavLink>
               </li>
               <li className="navBar__menu-item">
-              {/* <a href="./story.html">Câu Chuyện</a> */}
                 <NavLink to="/story">Story</NavLink>
               </li>
               <li className="navBar__menu-item">
-                {/* <a href="./figures.html">Nhân Vật</a> */}
                 <NavLink to="/figures">Figures</NavLink>
               </li>
               <li className="navBar__menu-item">
-                {/* <a href="./book.html">Sách</a> */}
                 <NavLink to="/books">Books</NavLink>
               </li>
               <li className="navBar__menu-item">
-                {/* <a href="./videos.html">Videos</a> */}
                 <NavLink to="/videos">Videos</NavLink>
               </li>
               <li className="navBar__menu-item">
-                {/* <a href="./games.html">Games</a> */}
                 <NavLink to="/blog">Blog</NavLink>
               </li>
             </ul>

@@ -1,8 +1,27 @@
 import React, { Component } from 'react'
 
 export default class Content extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      editStatus: false
+    }
+  }
+  
+  handleClickDelete = () => {
+    this.props.deleteContent(this.props.id)
+  }
+
+  handleClickEdit = () => {
+    var objEdit = {}
+    objEdit.id = this.props.id
+    objEdit.year = this.props.year
+    objEdit.event = this.props.event
+    this.props.editContent(objEdit)
+    this.props.changeSttEditForm()
+  }
+
   render() {
-    console.log('this.props.year', this.props.year)
     return (
         <div className="card-parent">
         <div className="card">
@@ -11,10 +30,10 @@ export default class Content extends Component {
             <p className="card-text__content">{this.props.event}</p>
           </div>
           <div className="btn-group" style={{width: '100%'}}>
-            <div className="btn btn-warning" data-toggle="modal" data-target="#modelId">
+            <div onClick={() => this.handleClickEdit()} className="btn btn-warning" data-toggle="modal" data-target="#modelId">
               <i className="fa fa-edit">Sửa</i>
             </div>
-            <div className="btn btn-danger">
+            <div onClick={() => this.handleClickDelete()} className="btn btn-danger">
               <i className="fa fa-trash">Xóa</i>
             </div>
           </div>

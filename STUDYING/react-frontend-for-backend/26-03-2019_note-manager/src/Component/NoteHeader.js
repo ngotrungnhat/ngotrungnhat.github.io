@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 
 class NoteHeader extends Component {
-  handleAdd  = (event) => {
-    event.preventDefault()
-    this.props.changeEditStatus()
-    this.props.changeAddStatus()
+  handleDisplayAddForm = () => {
+    this.props.changeStatusAddForm()
   }
   render() {
     return (
@@ -16,25 +14,20 @@ class NoteHeader extends Component {
             <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
             <ul className="navbar-nav mt-2 mt-lg-0">
                 <li className="nav-item active">
-                <a className="nav-link" href="#trang">Home <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                <a onClick={(event) => this.handleAdd(event)} className="nav-link" href="#thoji">Thêm Mới Ghi chú</a>
+                <a onClick={() => this.handleDisplayAddForm()} className="nav-link" href="#thoji">Thêm Mới Ghi chú</a>
                 </li>
             </ul>
             </div>
         </nav>  
-        </div>    
+        
+      </div>    
     )
   }
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    changeEditStatus: () => {
-      dispatch({type: "CHANGE_EDIT_STATUS"})
-    },
-    changeAddStatus: () => {
-      dispatch({type: "CHANGE_ADD_STATUS"})
+    changeStatusAddForm: () => {
+      dispatch({type: "CHANGE_STATUS_ADD_FORM"})
     }
   }
 }

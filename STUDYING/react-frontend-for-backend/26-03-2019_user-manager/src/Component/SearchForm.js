@@ -34,6 +34,7 @@ class SearchForm extends Component {
     // }
 
     hienThiFormEditUser = () => {
+        console.log('this.props.editUserStatus', this.props.editUserStatus)
         if (this.props.editUserStatus === true) {
             return <FormEditUser
             changeEditUserStatus={()=>this.props.changeEditUserStatus()}

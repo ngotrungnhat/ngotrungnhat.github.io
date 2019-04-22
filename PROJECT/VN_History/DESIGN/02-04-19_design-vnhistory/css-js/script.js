@@ -7,4 +7,5 @@ function navbarToggle(x){
 		$(".navHeader").css({"display": "block", "transition": "all 10s ease 5s"});
 		x.classList.toggle("change");
 	}
+	console.log('x.classList', x.classList)
 };

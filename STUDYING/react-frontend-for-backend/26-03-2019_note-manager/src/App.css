@@ -31,3 +31,15 @@
     transform: rotate(360deg);
   }
 }
+
+.fade:not(.show) {
+  opacity: 1;
+}
+.modal{
+  display: block;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}

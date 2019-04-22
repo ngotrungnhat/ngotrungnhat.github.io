@@ -1,31 +1,47 @@
 import React, { Component } from 'react'
 
 export default class ContentBook extends Component {
+
+  handleClickEdit = () => {
+    const objNeedEdit = {}
+    objNeedEdit.id = this.props.id
+    objNeedEdit.book_name = this.props.book_name
+    objNeedEdit.book_author = this.props.book_author
+    objNeedEdit.book_price = this.props.book_price
+    objNeedEdit.book_sale = this.props.book_sale
+    objNeedEdit.book_background = this.props.book_background
+    this.props.changeSttFormEdit()
+    this.props.getObjNeedEdit(objNeedEdit)
+  }
+
+  handleClickDelete = () => {
+    this.props.deleteBook(this.props.id)
+  }
+
   render() {
     return (
         <div className="card-parent">
         <div className="card">
-          <div className="card-img" style={{backgroundImage: 'url(https://www.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_58671.jpg)'}} />
+          <div className="card-img" style={{backgroundImage: 'url("'+this.props.book_background+'")'}} />
           <div className="card-text card-text__book">
-            <h3 className="card-text__title">Lịch Sử Việt Nam Bằng Tranh</h3>
-            <p className="card-text__content">Trần Bạch Đằng</p>
+            <h3 className="card-text__title">{this.props.book_name}</h3>
+            <p className="card-text__content">{this.props.book_author}</p>
             <div className="card-price">
-              <span className="price">20.000&nbsp;đ</span>
-              <span className="sale">25.000&nbsp;đ</span>
-              <span className="pricesale">10%</span>
+              <span className="price mr-2">{this.props.book_price}&nbsp;đ</span>
+              <span className="sale mr-2">{this.props.book_sale}&nbsp;đ</span>
+              <span className="pricesale">{(((this.props.book_sale-this.props.book_price)/this.props.book_price)*100).toFixed(0)}%</span>
             </div>
           </div>
           <div className="btn-group" style={{width: '100%'}}>
-            <div className="btn btn-warning" data-toggle="modal" data-target="#modelId">
+            <div onClick = {() => this.handleClickEdit()} className="btn btn-warning" data-toggle="modal" data-target="#modelId">
               <i className="fa fa-edit">Sửa</i>
             </div>
-            <div className="btn btn-danger">
+            <div onClick={() => this.handleClickDelete()} className="btn btn-danger">
               <i className="fa fa-trash">Xóa</i>
             </div>
           </div>
         </div>
       </div>
-      
     )
   }
 }

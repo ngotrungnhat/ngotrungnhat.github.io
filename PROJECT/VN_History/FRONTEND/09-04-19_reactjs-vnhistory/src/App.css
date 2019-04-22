@@ -36,3 +36,14 @@
   text-decoration: none;
   border-color: #8e3d20;
 }
+.fade:not(.show) {
+  opacity: 1;
+}
+.modal{
+  display: block;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}

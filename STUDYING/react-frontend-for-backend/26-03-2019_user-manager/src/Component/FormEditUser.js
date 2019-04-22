@@ -28,6 +28,7 @@ class FormEditUser extends Component {
     }
 
     render() {
+        console.log('this.state.name', this.state.name)
         return (
             <div className="card text-black bg-secondary text-white mb-3 mt-5">
                 <div className="card-header text-center">Sửa Thông Tin User</div>
