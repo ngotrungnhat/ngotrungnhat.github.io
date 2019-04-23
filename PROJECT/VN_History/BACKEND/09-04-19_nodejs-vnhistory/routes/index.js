@@ -4,12 +4,27 @@ var router = express.Router();
 const { Pool, Client } = require('pg')
 
 const pool = new Pool({
+  // connectionString: process.env.DATABASE_URL,
+  // ssl: true,
   user: 'postgres',
   host: 'localhost',
   database: 'vietnam_history',
   password: '1',
   port: 5432,
 })
+
+// .get('/getDataHome', async (req, res) => {
+//   try {
+//     const client = await pool.connect()
+//     const result = await client.query('SELECT * FROM home_content');
+//     const results = { 'results': (result) ? result.rows : null};
+//     res.render('/getDataHome', results );
+//     client.release();
+//   } catch (err) {
+//     console.error(err);
+//     res.send("Error " + err);
+//   }
+// })
 
 // API get data HOME from postgresql
 router.get('/getDataHome', function(req, res, next) {

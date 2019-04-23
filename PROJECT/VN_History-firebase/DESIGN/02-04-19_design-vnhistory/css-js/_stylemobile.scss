@@ -1,0 +1,68 @@
+@media only screen and (min-width: 1201px){
+    .navHeader{display: block !important;}
+}
+@media only screen and (max-width: 479px){
+    .menuToggle{
+        width: 30px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .site{
+        width: 100%;
+        background: none;
+    }
+    .topHeader{
+        display: block;
+        width: auto;
+        padding: 10px 15px 10px 55px;
+        position: relative;
+        .topHeader__logo{
+            max-width: 280px;
+            padding-left: 20px;
+        }
+        .topHeader__title{display: none;}
+        .topHeader__menuToggle{
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 45%;
+            margin-top: -14px;
+        }
+    }
+    .navHeader{
+        display: block;
+        width: 100%;
+        .navBar{
+            display: block;
+            width: 100%;
+            ul.navBar__menu{display: block;}
+            div.navBar__search{
+                display: block;
+                .navBar__search-form{
+                    float: none;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+//TABLE HOME, STORY
+
+@media (max-width: 786px){
+  .content{
+      width: 31.33333%;
+  }
+  .container .card-parent{
+      width: 33.3333333333%;
+  }
+}
+@media (max-width: 425px){
+  .content{
+      width: 47%;
+  }
+  .container .card-parent{
+    width: 100%;
+}
+}
+
