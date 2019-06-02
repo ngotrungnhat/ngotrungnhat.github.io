@@ -25,6 +25,59 @@ a.link-tag:hover{
 }
 
 .list-user{
+    /* padding: 0 15px 0 0; */
+    
+}
+
+.list-group-item-hover:hover{
+    z-index: 1;
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.avaUser{
+    width: 100%;
+    height: 100%;
+}
+
+img{width: 100%; height: 100%;}
+
+.table td, .table th {border: none; padding: 0;}
+.table td.userAva{
+    width: 70px;
+    height: 70px;
+}
+.table td.userName{
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.table tr.userItem{
+    display: block;
+    margin: 8px 0px;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+    padding: 10px;
+    position: relative;
 }
+
+.table td.iconClose{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+.table td.iconClose:hover{cursor: pointer;}
+
+@media (max-width: 1024px){
+    .avaUser{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
